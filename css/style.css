@@ -393,7 +393,7 @@ body {
   clear: both;
 }
 
-.leftTabs .newsTab .row .column .captionContainer .comments {
+.leftTabs .newsTab .row .column .captionContainer .commentsContainer {
   float: right;
 }
 
@@ -689,8 +689,307 @@ footer {
   background: #252525;
 }
 
-footer .kenaz {
-  width: 302px;
-  height: 167px;
+footer h2 {
+  font-family: 'Bitter', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #CCCCCC;
+}
+
+footer .footerContainer {
+  margin: 57px 330px;
+  height: 735px;
+  background: red;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 300px 300px;
+      grid-template-columns: 300px 300px 300px;
+  grid-gap: 23px;
+}
+
+footer .footerContainer .kenaz {
+  height: 174px;
+}
+
+footer .footerContainer .kenaz .footerLogo {
+  position: absolute;
+  width: 28px;
+  height: 43px;
+  background: url("../assets/footerLogo.png") no-repeat;
+}
+
+footer .footerContainer .kenaz .footerLogo .footerHeading {
+  position: absolute;
+  color: #45B0E3;
+  margin-left: 48px;
+}
+
+footer .footerContainer .kenaz .footerLogo .footerHeading h2 {
+  font-family: 'Bitter', serif;
+  font-weight: normal;
+  font-size: 29.623px;
+  line-height: 52px;
+}
+
+footer .footerContainer .kenaz .kenazText {
+  width: 303px;
+  height: 40px;
+  margin-top: 55px;
+}
+
+footer .footerContainer .kenaz .kenazText p {
+  font-family: 'Bitter', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666666;
+}
+
+footer .footerContainer .kenaz .socials {
+  width: 100%;
+  margin-top: 23px;
+}
+
+footer .footerContainer .kenaz .socials i {
+  width: 18px;
+  height: 18px;
+  color: #FFFFFF;
+  margin: 10px 10px;
+}
+
+footer .footerContainer .kenaz .socials .rss {
+  width: 38px;
+  height: 38px;
+  background: #F8BC2E;
+  display: inline-block;
+}
+
+footer .footerContainer .kenaz .socials .facebook {
+  width: 38px;
+  height: 38px;
+  background: #39599F;
+  display: inline-block;
+}
+
+footer .footerContainer .kenaz .socials .twitter {
+  width: 38px;
+  height: 38px;
+  background: #45B0E3;
+  display: inline-block;
+}
+
+footer .footerContainer .kenaz .socials .dribble {
+  width: 38px;
+  height: 38px;
+  background: #D97AA5;
+  display: inline-block;
+}
+
+footer .footerContainer .kenaz .socials .linkedin {
+  width: 38px;
+  height: 38px;
+  background: #65B7D2;
+  display: inline-block;
+}
+
+footer .footerContainer .kenaz .socials .youtube {
+  width: 38px;
+  height: 38px;
+  background: #E70031;
+  display: inline-block;
+}
+
+footer .footerContainer .kenaz .socials .skype {
+  width: 38px;
+  height: 38px;
+  background: #00C6FF;
+  display: inline-block;
+}
+
+footer .footerContainer .newsletter {
+  height: 174px;
+}
+
+footer .footerContainer .newsletter .newsletterHeading {
+  margin-top: 6px;
+}
+
+footer .footerContainer .newsletter .newsletterText {
+  margin-top: 20px;
+}
+
+footer .footerContainer .newsletter .newsletterText p {
+  font-family: 'Bitter', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666666;
+}
+
+footer .footerContainer .newsletter .form {
+  width: 100%;
+}
+
+footer .footerContainer .newsletter .form .text {
+  width: 190px;
+}
+
+footer .footerContainer .newsletter .form .email {
+  background: #333333;
+  padding: 15px 70px 20px 20px;
+  width: 100%;
+  border: none;
+}
+
+footer .footerContainer .newsletter .form .email::-webkit-input-placeholder {
+  font-family: 'Varela Round', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #999999;
+}
+
+footer .footerContainer .newsletter .form .email:-ms-input-placeholder {
+  font-family: 'Varela Round', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #999999;
+}
+
+footer .footerContainer .newsletter .form .email::-ms-input-placeholder {
+  font-family: 'Varela Round', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #999999;
+}
+
+footer .footerContainer .newsletter .form .email::placeholder {
+  font-family: 'Varela Round', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #999999;
+}
+
+footer .footerContainer .newsletter .subscribeButton {
+  width: 110px;
+  height: 59px;
+  font-family: 'Varela Round',serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  background: #4D4382;
+  border: none;
+  color: #CCCCCC;
+}
+
+footer .tagsWidget {
+  height: 174px;
+}
+
+footer .tagsWidget .tagsWidgetHeading {
+  margin-top: 6px;
+}
+
+footer .tagsWidget .tagsWidgetHeading h2 {
+  font-family: 'Bitter', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #CCCCCC;
+}
+
+footer .buttonTags {
+  width: 100%;
+}
+
+footer .buttonTags button {
+  font-family: 'Varela',serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  height: 28px;
+  width: auto;
+  padding: 5px 10px;
+  background: #333333;
+  color: #CCCCCC;
+  margin: 1px;
+  border: none;
+}
+
+footer .buttonTags button:hover {
+  background: #4D4382;
+}
+
+footer .featured {
+  height: 364px;
+  background: green;
+}
+
+footer .featured .column {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 70px;
+      grid-template-columns: 1fr 70px;
+  grid-gap: 15px;
+}
+
+footer .featured .column .row {
+  width: 100%;
+  height: 115px;
+}
+
+footer .featured .column .row .captionContainer {
+  margin-top: 25px;
+  margin-right: 14px;
+  clear: both;
+  float: left;
+}
+
+footer .featured .column .row .captionContainer h4 {
+  font-family: 'Varela Round',serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  color: #666666;
+}
+
+footer .featured .column .row .captionContainer .commentsContainer {
+  float: right;
+}
+
+footer .featured .column .row .captionContainer p {
+  font-family: 'Bitter',serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #CCCCCC;
+}
+
+footer .featured .column .row .imageContainer {
+  width: 77px;
+  height: 77px;
+  border: 2px solid #FFFFFF;
+}
+
+footer .featured .column .row .imageContainer img {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
