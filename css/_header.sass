@@ -1,71 +1,88 @@
 $headerBackground: #252525
 $arrowBackground: #FFFFFF
 
-.main-nav
-  width: 100%
-  height: 53px
+header
   background: $headerBackground
+  width: 100%
 
-  .logo
-    position: absolute
-    width: 142px
+  .mainNav
+    width: 940px
     height: 53px
-    margin-left: 330px
+    margin: 0 auto
+    position: relative
 
-    .arrow
+    .logo
       position: absolute
-      width: 63px
+      width: 142px
       height: 53px
-      background: rgba(255,255,255,0.05)
+      left: 0
 
-    .arrowicon
+      .arrow
+        position: absolute
+        width: 63px
+        height: 53px
+        background: rgba(255,255,255,0.05)
+
+        .arrowicon
+          position: absolute
+          width: 14px
+          height: 21px
+          margin-left: 23px
+          margin-top: 15px
+          background: url('../assets/headerarrow.png') no-repeat
+
+      h2
+        position: absolute
+        color: $arrowBackground
+        margin-top: 16.5px
+        margin-left: 72px
+        font-family: 'Bitter', serif
+        font-weight: normal
+        font-size: 24px
+        line-height: 27px
+
+    .subnav
       position: absolute
-      width: 14px
-      height: 21px
-      margin-left: 23px
-      margin-top: 15px
-      background: url('../assets/headerarrow.png') no-repeat
+      right: 0
+      height: 100%
+      display: grid
+      grid-template-columns: 350px 60px
 
-    h2
-      position: absolute
-      color: $arrowBackground
-      margin-top: 16.5px
-      margin-left: 72px
-      font-family: 'Bitter', serif
-      font-weight: normal
-      font-size: 24px
-      line-height: 27px
+      .navLinksContainer
+        padding-top: 15px
+        overflow: hidden
 
-  .subnav
-    position: absolute
-    margin-left: 948px
-    margin-top: 14.5px
+        .navLinks
+          list-style: none
 
-    .nav-links
-      list-style: none
+          li
+            display: inline-block
+            padding: 0 20px
 
-      li
-        display: inline-block
+            a
+              font-family: 'Varela Round', sans-serif
+              font-size: 14px
+              line-height: 27px
+              color: $arrowBackground
+              text-decoration: none
 
-        a
-          padding-right: 20px
-          font-family: 'Varela Round', sans-serif
-          font-size: 14px
-          line-height: 27px
-          color: $arrowBackground
-          text-decoration: none
+      .search
+        right: 0
+        background: yellow
+        height: 100%
+        width: 60px
+        position: absolute
+        width: 62px
+        height: 53px
+        background: rgba(255,255,255,0.05)
 
-  .search
-    position: absolute
-    width: 62px
-    height: 53px
-    margin-left: 1210px
-    background: rgba(255,255,255,0.05)
+      .searchicon
+        position: absolute
+        width: 16px
+        height: 16px
+        margin-left: 23px
+        margin-top: 18px
+        background: url('../assets/searchicon.png') no-repeat
 
-    .searchicon
-      position: absolute
-      width: 16px
-      height: 16px
-      margin-left: 23px
-      margin-top: 18px
-      background: url('../assets/searchicon.png') no-repeat
+      .searchicon:hover
+        cursor: pointer
