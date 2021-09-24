@@ -242,31 +242,27 @@ header .mainNav .subnav .searchicon:hover {
 
 .sliderContainer {
   width: 940px;
+  position: relative;
+  cursor: pointer;
 }
 
 .sliderContainer .prev, .sliderContainer .next {
+  display: block;
+  position: absolute;
   width: 36px;
   height: 53px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1000;
 }
 
 .sliderContainer .prev {
-  display: block;
-  position: absolute;
-  z-index: 1000;
-  left: 15px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  left: 3%;
 }
 
 .sliderContainer .next {
-  display: block;
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: 1000;
+  right: 3%;
 }
 
 .sliderContainer .sliderImg {
@@ -274,6 +270,7 @@ header .mainNav .subnav .searchicon:hover {
           transform: scale(1);
   -webkit-transition: 1.7s;
   transition: 1.7s;
+  width: 100%;
 }
 
 .sliderContainer .sliderImg:hover {
@@ -282,7 +279,6 @@ header .mainNav .subnav .searchicon:hover {
 }
 
 .sliderContainer .upperSlider {
-  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -301,7 +297,7 @@ header .mainNav .subnav .searchicon:hover {
   position: relative;
 }
 
-.sliderContainer .upperSlider .slide .sliderCaption {
+.sliderContainer .upperSlider .sliderCaption {
   position: absolute;
   width: 588px;
   height: 113px;
@@ -312,7 +308,7 @@ header .mainNav .subnav .searchicon:hover {
   z-index: 1000;
 }
 
-.sliderContainer .upperSlider .slide .sliderCaption .commentsContainer {
+.sliderContainer .upperSlider .commentsContainer {
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,7 +322,7 @@ header .mainNav .subnav .searchicon:hover {
           justify-content: space-between;
 }
 
-.sliderContainer .upperSlider .slide .sliderCaption .commentsContainer h4 {
+.sliderContainer .upperSlider .commentsContainer h4 {
   font-family: 'Varela Round',serif;
   font-style: normal;
   font-weight: normal;
@@ -335,7 +331,7 @@ header .mainNav .subnav .searchicon:hover {
   color: #EEF6FA;
 }
 
-.sliderContainer .upperSlider .slide .sliderCaption .captionContainer {
+.sliderContainer .upperSlider .captionContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,7 +344,7 @@ header .mainNav .subnav .searchicon:hover {
           justify-content: flex-start;
 }
 
-.sliderContainer .upperSlider .slide .sliderCaption .captionContainer h2 {
+.sliderContainer .upperSlider .captionContainer h2 {
   font-family: 'Varela Round',serif;
   font-style: normal;
   font-weight: bold;
@@ -357,7 +353,7 @@ header .mainNav .subnav .searchicon:hover {
   color: #EEF6FA;
 }
 
-.sliderContainer .upperSlider .slide .sliderButton {
+.sliderContainer .upperSlider .sliderButton {
   position: absolute;
   width: 123px;
   height: 33px;
@@ -368,7 +364,7 @@ header .mainNav .subnav .searchicon:hover {
   z-index: 1000;
 }
 
-.sliderContainer .upperSlider .slide .sliderButton button {
+.sliderContainer .upperSlider button {
   font-family: 'Varela Round', serif;
   font-style: normal;
   font-weight: normal;
@@ -384,23 +380,36 @@ header .mainNav .subnav .searchicon:hover {
   transition: 0.7s;
 }
 
-.sliderContainer .upperSlider .slide .sliderButton button:hover {
+.sliderContainer .upperSlider button:hover {
   background-color: #c4d0d6;
   color: #000000;
 }
 
 .sliderContainer .bottomSlider {
-  width: 100%;
   margin: 0 auto;
-  position: relative;
+}
+
+.sliderContainer .bottomSlider .prev, .sliderContainer .bottomSlider .next {
+  display: block;
+  position: absolute;
+  width: 36px;
+  height: 53px;
+  top: -50%;
+}
+
+.sliderContainer .bottomSlider .prev {
+  left: 3%;
+}
+
+.sliderContainer .bottomSlider .next {
+  right: 3%;
 }
 
 .sliderContainer .bottomSlider .slide {
   position: relative;
-  width: 100%;
 }
 
-.sliderContainer .bottomSlider .slide .zoomContainer {
+.sliderContainer .bottomSlider .zoomContainer {
   position: absolute;
   width: 80px;
   height: 80px;
@@ -412,33 +421,24 @@ header .mainNav .subnav .searchicon:hover {
   opacity: 0;
 }
 
-.sliderContainer .bottomSlider .slide .zoomContainer i {
+.sliderContainer .bottomSlider i {
   color: #FFFFFF;
 }
 
-.sliderContainer .bottomSlider .slide:hover .zoomContainer {
-  cursor: pointer;
+.sliderContainer .bottomSlider:hover .zoomContainer {
   opacity: 1;
 }
 
-.sliderContainer .bottomSlider .bottomSliderThumbnails {
+.sliderContainer .thumbnails {
   position: absolute;
+  left: 0;
+  bottom: 20px;
   width: 100%;
-  height: 113px;
-  left: 30px;
-  top: 70%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: 1000;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1000;
 }
 
-.sliderContainer .bottomSlider .thumb {
-  margin: 0 auto;
-  display: block;
-  position: absolute;
+.sliderContainer .thumbnails img {
+  padding: 5px;
+  width: 120px;
 }
 
 .nineFortyBanner {

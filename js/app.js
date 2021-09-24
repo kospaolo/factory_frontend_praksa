@@ -64,11 +64,11 @@ $(document).ready(() => {
   slidesToScroll: 1,
   arrows: true,
   fade: true,
-  asNavFor: '.bottomSliderThumbnails'
+  asNavFor: '.bottomSliderThumbnailsContainer'
  });
 
- $('.bottomSliderThumbnails').slick({
-  slidesToShow: 3,
+ $('.bottomSliderThumbnailsContainer').slick({
+  slidesToShow: 7,
   slidesToScroll: 1,
   arrows: false,
   asNavFor: '.bottomSlider',

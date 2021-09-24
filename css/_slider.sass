@@ -1,148 +1,147 @@
 .sliderContainer
- width: 940px
-
- .prev, .next
-  width: 36px
-  height: 53px
-
- .prev
-  display: block
-  position: absolute
-  z-index: 1000
-  left: 15px
-  top: 50%
-  transform: translateY(-50%)
-
- .next
-  display: block
-  position: absolute
-  right: 15px
-  top: 50%
-  transform: translateY(-50%)
-  z-index: 1000
-
- .sliderImg
-  transform: scale(1)
-  transition: 1.7s
-
- .sliderImg:hover
-  transform: scale(1.1)
-
- .upperSlider
-  width: 100%
-  margin: 0 auto
-  position: relative
-
-  .sliderImg
-   filter: brightness(70%)
-
-  .sliderImg:hover
-   transform: scale(1.1)
-
-  .slide
+   width: 940px
    position: relative
-
-   .sliderCaption
-    position: absolute
-    width: 588px
-    height: 113px
-    left: 30px
-    top: 70%
-    transform: translateY(-50%)
-    z-index: 1000
-
-    .commentsContainer
-     width: 40%
-     display: flex
-     flex-direction: row
-     justify-content: space-between
-
-     h4
-      font-family: 'Varela Round',serif
-      font-style: normal
-      font-weight: normal
-      font-size: 12px
-      line-height: 14.45px
-      color: #EEF6FA
-
-    .captionContainer
-     display: flex
-     flex-direction: row
-     justify-content: flex-start
-
-     h2
-      font-family: 'Varela Round',serif
-      font-style: normal
-      font-weight: bold
-      font-size: 33px
-      line-height: 40,8px
-      color: #EEF6FA
-
-   .sliderButton
-    position: absolute
-    width: 123px
-    height: 33px
-    left: 30px
-    top: 88%
-    transform: translateY(-50%)
-    z-index: 1000
-
-    button
-     font-family: 'Varela Round', serif
-     font-style: normal
-     font-weight: normal
-     font-size: 14px
-     line-height: 17px
-     background: rgba(0, 0, 0, 0.0001)
-     border: 1px solid #FFFFFF
-     box-sizing: border-box
-     padding: 6px 15px
-     color: #EEF6FA
-     transition: 0.7s
-
-    button:hover
-     background-color: #c4d0d6
-     color: #000000
-
- .bottomSlider
-  width: 100%
-  margin: 0 auto
-  position: relative
-
-  .slide
-   position: relative
-   width: 100%
-
-   .zoomContainer
-    position: absolute
-    width: 80px
-    height: 80px
-    left: 50%
-    top: 30%
-    z-index: 1000
-    transition: 0.6s
-    opacity: 0
-
-    i
-     color: #FFFFFF
-
-  .slide:hover .zoomContainer
    cursor: pointer
-   opacity: 1
 
-  .bottomSliderThumbnails
-   position: absolute
-   width: 100%
-   height: 113px
-   left: 30px
-   top: 70%
-   transform: translateY(-50%)
-   z-index: 1000
-   margin: 0 auto
-   position: relative
-   z-index: 1000
+   .prev, .next
+      display: block
+      position: absolute
+      width: 36px
+      height: 53px
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 1000
 
-  .thumb
-   margin: 0 auto
-   display: block
-   position: absolute
+   .prev
+      left: 3%
+
+   .next
+      right: 3%
+
+   .sliderImg
+      transform: scale(1)
+      transition: 1.7s
+      width: 100%
+
+   .sliderImg:hover
+      transform: scale(1.1)
+
+   .upperSlider
+      margin: 0 auto
+      position: relative
+
+      .sliderImg
+         filter: brightness(70%)
+
+      .sliderImg:hover
+         transform: scale(1.1)
+
+      .slide
+         position: relative
+
+      .sliderCaption
+         position: absolute
+         width: 588px
+         height: 113px
+         left: 30px
+         top: 70%
+         transform: translateY(-50%)
+         z-index: 1000
+
+      .commentsContainer
+         width: 40%
+         display: flex
+         flex-direction: row
+         justify-content: space-between
+
+         h4
+            font-family: 'Varela Round',serif
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 14.45px
+            color: #EEF6FA
+
+      .captionContainer
+         display: flex
+         flex-direction: row
+         justify-content: flex-start
+
+         h2
+            font-family: 'Varela Round',serif
+            font-style: normal
+            font-weight: bold
+            font-size: 33px
+            line-height: 40,8px
+            color: #EEF6FA
+
+      .sliderButton
+         position: absolute
+         width: 123px
+         height: 33px
+         left: 30px
+         top: 88%
+         transform: translateY(-50%)
+         z-index: 1000
+
+      button
+         font-family: 'Varela Round', serif
+         font-style: normal
+         font-weight: normal
+         font-size: 14px
+         line-height: 17px
+         background: rgba(0, 0, 0, 0.0001)
+         border: 1px solid #FFFFFF
+         box-sizing: border-box
+         padding: 6px 15px
+         color: #EEF6FA
+         transition: 0.7s
+
+      button:hover
+         background-color: #c4d0d6
+         color: #000000
+
+   .bottomSlider
+      margin: 0 auto
+
+      .prev, .next
+         display: block
+         position: absolute
+         width: 36px
+         height: 53px
+         top: -50%
+
+      .prev
+         left: 3%
+
+      .next
+         right: 3%
+
+      .slide
+         position: relative
+
+      .zoomContainer
+         position: absolute
+         width: 80px
+         height: 80px
+         left: 50%
+         top: 30%
+         z-index: 1000
+         transition: 0.6s
+         opacity: 0
+
+      i
+         color: #FFFFFF
+
+   .bottomSlider:hover .zoomContainer
+      opacity: 1
+
+   .thumbnails
+      position: absolute
+      left: 0
+      bottom: 20px
+      width: 100%
+
+      img
+         padding: 5px
+         width: 120px
