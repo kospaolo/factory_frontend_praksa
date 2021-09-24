@@ -6,13 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link href="assets/fontawesome/css/all.css" rel="stylesheet">
+
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <link href="assets/fontawesome/css/all.css" rel="stylesheet">
+
+  <!-- Slick slider -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -84,28 +98,68 @@
     </div>
 
 
-    <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="assets/carouselimg.png" class="d-block w-100" alt="" />
-          <div class="caption carousel-caption d-none d-md-block">
-            <p class="smallerText">August 26, 2013</p>
-            <p class="chatlogo"><img src="./assets/comment ico.png"> 22 Comments</p>
-            <p class="biggerText">'Margot' breathlessly reimagines Anne Frank's sister</p>
-            <button class="button">Read article
+    <div class="sliderContainer">
+      <div class="upperSlider row">
+        <div class="slide">
+          <img class="sliderImg" src="assets/carouselimg.png" alt="">
+          <div class="sliderCaption">
+            <div class="commentsContainer">
+              <h4>August 26, 2013</h4>
+              <h4 class=""><i class="far fa-comment"></i> 22 Comments</h4>
+            </div>
+            <div class="captionContainer">
+              <h2>'Margot' breathlessly reimagines Anne Frank's sister</h2>
+            </div>
+          </div>
+          <div class="sliderButton">
+            <button>Read article</button>
           </div>
         </div>
-
-        <button class="carousel-control-prev controls" type="button" data-mdb-target="#carouselBasicExample"
-          data-mdb-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next controls" type="button" data-mdb-target="#carouselBasicExample"
-          data-mdb-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="slide">
+          <img class="sliderImg" src="assets/carouselimg.png" alt="">
+          <div class="sliderCaption">
+            <div class="commentsContainer">
+              <h4>August 26, 2013</h4>
+              <h4 class=""><i class="far fa-comment"></i> 22 Comments</h4>
+            </div>
+            <div class="captionContainer">
+              <h2>'Margot' breathlessly reimagines Anne Frank's sister</h2>
+            </div>
+          </div>
+          <div class="sliderButton">
+            <button>Read article</button>
+          </div>
+        </div>
+        <div class="slide">
+          <img class="sliderImg" src="assets/carouselimg.png" alt="">
+          <div class="sliderCaption">
+            <div class="commentsContainer">
+              <h4>August 26, 2013</h4>
+              <h4 class=""><i class="far fa-comment"></i> 22 Comments</h4>
+            </div>
+            <div class="captionContainer">
+              <h2>'Margot' breathlessly reimagines Anne Frank's sister</h2>
+            </div>
+          </div>
+          <div class="sliderButton">
+            <button>Read article</button>
+          </div>
+        </div>
+        <div class="slide">
+          <img class="sliderImg" src="assets/carouselimg.png" alt="">
+          <div class="sliderCaption">
+            <div class="commentsContainer">
+              <h4>August 26, 2013</h4>
+              <h4 class=""><i class="far fa-comment"></i> 22 Comments</h4>
+            </div>
+            <div class="captionContainer">
+              <h2>'Margot' breathlessly reimagines Anne Frank's sister</h2>
+            </div>
+          </div>
+          <div class="sliderButton">
+            <button>Read article</button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -455,33 +509,42 @@
       <p>banner<br>940x120</p>
     </div>
 
-    <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="assets/carouselimg.png" class="d-block w-100" alt="" />
-          <div class="caption carousel-caption d-none d-md-block">
-            <p class="smallerText">August 26, 2013</p>
-            <p class="chatlogo"><img src="./assets/comment ico.png"> 22 Comments</p>
-            <p class="biggerText">'Margot' breathlessly reimagines Anne Frank's sister</p>
-            <button class="button">Read article
+    <div class="sliderContainer">
+      <div class="bottomSlider row">
+        <div class="slide">
+          <img class="sliderImg enlargable" src="assets/bottomsliderimg.png" alt="">
+          <div class="zoomContainer">
+            <i class="fa fa-search fa-4x"></i>
           </div>
         </div>
-
-        <button class="carousel-control-prev controls" type="button" data-mdb-target="#carouselBasicExample"
-          data-mdb-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next controls" type="button" data-mdb-target="#carouselBasicExample"
-          data-mdb-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <!-- <div class="thumb">
+            <img class="sliderImg" src="assets/bottomsliderimg3.png" alt="">
+          </div>
+          <div class="thumb">
+            <img class="sliderImg" src="assets/bottomsliderimg4.png" alt="">
+          </div>
+          <div class="thumb">
+            <img class="sliderImg" src="assets/bottomsliderimg5.png" alt="">
+          </div>
+          <div class="thumb">
+            <img class="sliderImg" src="assets/bottomsliderimg6.png" alt="">
+          </div>
+          <div class="thumb">
+            <img class="sliderImg" src="assets/bottomsliderimg7.png" alt="">
+          </div>
+          <div class="thumb">
+            <img class="sliderImg" src="assets/bottomsliderimg8.png" alt="">
+          </div> -->
+      </div>
+      <div class="bottomSliderThumbnails">
+        <div class="thumb">
+          <img class="thumbImg" src="assets/bottomsliderimg.png" alt="">
+        </div>
       </div>
     </div>
   </section>
 
-
+  <!-- Footer -->
   <footer>
     <div class="footerContentContainer">
       <div class="upperFooterContainer">
@@ -669,7 +732,12 @@
   </div>
   </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
   integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+  integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/app.js"></script>
 
 </html>
