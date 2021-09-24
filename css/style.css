@@ -23,7 +23,6 @@ body {
 
 header {
   background: #252525;
-  width: 100%;
 }
 
 header .mainNav {
@@ -61,7 +60,7 @@ header .mainNav .logo h2 {
   color: #FFFFFF;
   margin-top: 16.5px;
   margin-left: 72px;
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
   font-weight: normal;
   font-size: 24px;
   line-height: 27px;
@@ -92,7 +91,7 @@ header .mainNav .subnav .navLinksContainer .navLinks li {
 }
 
 header .mainNav .subnav .navLinksContainer .navLinks li a {
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", serif;
   font-size: 14px;
   line-height: 27px;
   color: #FFFFFF;
@@ -124,7 +123,6 @@ header .mainNav .subnav .searchicon:hover {
 }
 
 .categoriesWrap {
-  width: 100%;
   background: #4D4382;
 }
 
@@ -323,7 +321,7 @@ header .mainNav .subnav .searchicon:hover {
 }
 
 .sliderContainer .upperSlider .commentsContainer h4 {
-  font-family: 'Varela Round',serif;
+  font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -345,7 +343,7 @@ header .mainNav .subnav .searchicon:hover {
 }
 
 .sliderContainer .upperSlider .captionContainer h2 {
-  font-family: 'Varela Round',serif;
+  font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 33px;
@@ -365,7 +363,7 @@ header .mainNav .subnav .searchicon:hover {
 }
 
 .sliderContainer .upperSlider button {
-  font-family: 'Varela Round', serif;
+  font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -423,6 +421,7 @@ header .mainNav .subnav .searchicon:hover {
 
 .sliderContainer .bottomSlider i {
   color: #FFFFFF;
+  text-shadow: 4px 4px 4px #000000;
 }
 
 .sliderContainer .bottomSlider:hover .zoomContainer {
@@ -452,7 +451,7 @@ header .mainNav .subnav .searchicon:hover {
 }
 
 .nineFortyBanner p {
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -478,7 +477,7 @@ header .mainNav .subnav .searchicon:hover {
 }
 
 .sixTwentyBanner p {
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -510,11 +509,12 @@ header .mainNav .subnav .searchicon:hover {
 }
 
 .smallBanners p {
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: #999999;
+  text-align: center;
 }
 
 section {
@@ -536,7 +536,7 @@ section h1 {
 
 section h4 {
   margin-top: 6px;
-  font-family: 'Varela Round', serif;
+  font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -545,7 +545,7 @@ section h4 {
 }
 
 section p {
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -554,7 +554,7 @@ section p {
 }
 
 section a {
-  font-family: 'Varela' Round;
+  font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -658,6 +658,7 @@ section .firstSection .popular {
   background: #4D4382;
   right: 0;
   top: 0;
+  overflow: hidden;
 }
 
 section .firstSection .popular .popularHeader {
@@ -678,7 +679,7 @@ section .firstSection .popular .popularHeader .nav-links li {
 
 section .firstSection .popular .popularHeader .nav-links a {
   padding-right: 20px;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", serif;
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
@@ -708,7 +709,7 @@ section .firstSection .popular .row .captionContainer {
 }
 
 section .firstSection .popular .row .captionContainer h4 {
-  font-family: 'Varela Round',serif;
+  font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -727,7 +728,7 @@ section .firstSection .popular .row .captionContainer .commentsContainer i {
 }
 
 section .firstSection .popular .row .captionContainer p {
-  font-family: 'Bitter',serif;
+  font-family: "Bitter", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -813,7 +814,7 @@ section .secondSection .sideBars .social {
 }
 
 section .secondSection .sideBars .social h2 {
-  font-family: 'Bitter',serif;
+  font-family: "Bitter", serif;
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
@@ -895,7 +896,7 @@ section .secondSection .sideBars .social .row .textTab {
 }
 
 section .secondSection .sideBars .social .row .textTab h2 {
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
@@ -919,7 +920,7 @@ section .secondSection .sideBars .social .row .socialNumbers {
 }
 
 section .secondSection .sideBars .social .row .socialNumbers p {
-  font-family: 'Varela Round';
+  font-family: "Varela Round", serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16.86px;
@@ -948,34 +949,34 @@ section .secondSection .sideBars .kenazTv .kenazTvHeading {
 }
 
 section .secondSection .sideBars .kenazTv .kenazTvHeading h2 {
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
   margin-left: 33px;
-  top: 15px;
   color: #363F48;
 }
 
 section .secondSection .sideBars .kenazTv .videoRow {
   height: 149px;
   background: url("../assets/video.png") no-repeat;
+  margin-bottom: 10px;
 }
 
 section .secondSection .sideBars .kenazTv .kenazTvCaption {
   height: 96px;
   position: relative;
-  padding: 17px 1px 25px 32px;
+  padding: 20px 1px 25px 32px;
   bottom: 15px;
 }
 
 section .secondSection .sideBars .kenazTv .kenazTvCaption h3 {
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 18px;
   color: #363F48;
-  padding-top: 35px;
+  padding-top: 20px;
 }
 
 section .secondSection .sideBars .kenazTv .kenazTvCaption .date {
@@ -985,12 +986,12 @@ section .secondSection .sideBars .kenazTv .kenazTvCaption .date {
 }
 
 section .secondSection .sideBars .kenazTv .kenazTvCaption .date h4 {
-  font-family: 'Varela Round',serif;
+  font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
   line-height: 12px;
-  color: #ACB3BA;
+  color: #363F48;
 }
 
 section .secondSection .sideBars .sideBanners {
@@ -1020,8 +1021,9 @@ section .secondSection .sideBars .facebookPosts {
 }
 
 section .secondSection .sideBars .facebookPosts .facebookImage {
-  height: 100%;
-  background: url(../assets/facebook.png) no-repeat;
+  height: 521px;
+  width: 270px;
+  margin: 15px;
 }
 
 section .secondSection .newsCarousel {
@@ -1191,7 +1193,6 @@ section .secondSection .brownTabs .localNewsTab .imageContainer .captionContaine
 }
 
 footer {
-  width: 100%;
   height: 992px;
   border-top: 23px solid #4D4382;
   margin-top: 19px;
@@ -1199,7 +1200,7 @@ footer {
 }
 
 footer h2 {
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -1240,20 +1241,21 @@ footer .footerContentContainer .upperFooterContainer .footerHeading {
 }
 
 footer .footerContentContainer .upperFooterContainer .footerHeading h2 {
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
   font-weight: normal;
   font-size: 29.623px;
   line-height: 52px;
+  color: #45B0E3;
 }
 
 footer .footerContentContainer .upperFooterContainer .kenazText {
   width: 303px;
   height: 40px;
-  margin-top: 55px;
+  margin-top: 60px;
 }
 
 footer .footerContentContainer .upperFooterContainer p {
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -1262,15 +1264,14 @@ footer .footerContentContainer .upperFooterContainer p {
 }
 
 footer .footerContentContainer .upperFooterContainer .socials {
-  width: 100%;
-  margin-top: 23px;
+  margin-top: 17px;
 }
 
 footer .footerContentContainer .upperFooterContainer i {
   width: 18px;
   height: 18px;
   color: #FFFFFF;
-  margin: 10px 10px;
+  padding: 10px;
 }
 
 footer .footerContentContainer .upperFooterContainer .rss {
@@ -1331,20 +1332,16 @@ footer .footerContentContainer .upperFooterContainer .newsletterHeading {
 }
 
 footer .footerContentContainer .upperFooterContainer .newsletterText {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 footer .footerContentContainer .upperFooterContainer p {
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: #666666;
-}
-
-footer .footerContentContainer .upperFooterContainer .form {
-  width: 100%;
 }
 
 footer .footerContentContainer .upperFooterContainer .text {
@@ -1354,13 +1351,12 @@ footer .footerContentContainer .upperFooterContainer .text {
 footer .footerContentContainer .upperFooterContainer .email {
   background: #333333;
   padding: 15px 70px 20px 20px;
-  width: 100%;
   border: none;
   color: #FFFFFF;
 }
 
 footer .footerContentContainer .upperFooterContainer .email::-webkit-input-placeholder {
-  font-family: 'Varela Round', serif;
+  font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1369,7 +1365,7 @@ footer .footerContentContainer .upperFooterContainer .email::-webkit-input-place
 }
 
 footer .footerContentContainer .upperFooterContainer .email:-ms-input-placeholder {
-  font-family: 'Varela Round', serif;
+  font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1378,7 +1374,7 @@ footer .footerContentContainer .upperFooterContainer .email:-ms-input-placeholde
 }
 
 footer .footerContentContainer .upperFooterContainer .email::-ms-input-placeholder {
-  font-family: 'Varela Round', serif;
+  font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1387,7 +1383,7 @@ footer .footerContentContainer .upperFooterContainer .email::-ms-input-placehold
 }
 
 footer .footerContentContainer .upperFooterContainer .email::placeholder {
-  font-family: 'Varela Round', serif;
+  font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1402,7 +1398,7 @@ footer .footerContentContainer .upperFooterContainer .email:focus {
 footer .footerContentContainer .upperFooterContainer .subscribeButton {
   width: 110px;
   height: 59px;
-  font-family: 'Varela Round',serif;
+  font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1421,7 +1417,7 @@ footer .footerContentContainer .upperFooterContainer .tagsWidget .tagsWidgetHead
 }
 
 footer .footerContentContainer .upperFooterContainer .tagsWidget h2 {
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -1430,11 +1426,12 @@ footer .footerContentContainer .upperFooterContainer .tagsWidget h2 {
 }
 
 footer .footerContentContainer .upperFooterContainer .tagsWidget .buttonTags {
+  margin-top: 25px;
   width: 100%;
 }
 
 footer .footerContentContainer .upperFooterContainer .tagsWidget .buttonTags button {
-  font-family: 'Varela',serif;
+  font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1469,7 +1466,7 @@ footer .footerContentContainer .upperFooterContainer .featured .row .captionCont
 }
 
 footer .footerContentContainer .upperFooterContainer .featured .row .captionContainer h4, footer .footerContentContainer .upperFooterContainer .randomPosts .row .captionContainer h4 {
-  font-family: 'Varela Round',serif;
+  font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -1484,7 +1481,7 @@ footer .footerContentContainer .upperFooterContainer .featured .row .captionCont
 }
 
 footer .footerContentContainer .upperFooterContainer .featured .row .captionContainer p, footer .footerContentContainer .upperFooterContainer .randomPosts .row .captionContainer p {
-  font-family: 'Bitter',serif;
+  font-family: "Bitter", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -1525,7 +1522,7 @@ footer .footerContentContainer .upperFooterContainer .twitterFeed .row {
 }
 
 footer .footerContentContainer .upperFooterContainer .twitterFeed .row .captionContainer {
-  margin-top: 10px;
+  margin-top: 15px;
   height: 54px;
   position: relative;
   display: inline;
@@ -1542,7 +1539,7 @@ footer .footerContentContainer .upperFooterContainer .twitterFeed .row .captionC
 }
 
 footer .footerContentContainer .upperFooterContainer .twitterFeed .row .captionContainer h4 {
-  font-family: 'Bitter',serif;
+  font-family: "Bitter", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1555,7 +1552,7 @@ footer .footerContentContainer .upperFooterContainer .twitterFeed .row .captionC
 }
 
 footer .footerContentContainer .upperFooterContainer .twitterFeed .row .captionContainer p {
-  font-family: 'Varela Round',serif;
+  font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -1565,7 +1562,7 @@ footer .footerContentContainer .upperFooterContainer .twitterFeed .row .captionC
 
 footer .footerContentContainer .bottomHr {
   height: 2px;
-  background: #333333;
+  background: #666666;
   margin: 0;
   padding: 0;
 }
