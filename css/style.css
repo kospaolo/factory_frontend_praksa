@@ -10,17 +10,6 @@ body {
   background: #EEEEEE;
 }
 
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-height: 100vh;
-}
-
 header {
   background: #252525;
 }
@@ -30,6 +19,11 @@ header .mainNav {
   height: 53px;
   margin: 0 auto;
   position: relative;
+}
+
+header .mainNav a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 header .mainNav .logo {
@@ -57,7 +51,6 @@ header .mainNav .logo .arrow .arrowicon {
 
 header .mainNav .logo h2 {
   position: absolute;
-  color: #FFFFFF;
   margin-top: 16.5px;
   margin-left: 72px;
   font-family: "Bitter", serif;
@@ -524,13 +517,14 @@ header .mainNav .subnav .searchicon:hover {
   text-align: center;
 }
 
-section {
+.mainWrapper {
   margin: 0 auto;
   width: 940px;
   margin-top: 16px;
+  position: relative;
 }
 
-section h1 {
+.mainWrapper h1 {
   padding-left: 31px;
   padding-top: 15px;
   font-family: 'Bitter', serif;
@@ -541,7 +535,7 @@ section h1 {
   color: #363F48;
 }
 
-section h4 {
+.mainWrapper h4 {
   margin-top: 6px;
   font-family: "Varela Round", serif;
   font-style: normal;
@@ -551,7 +545,7 @@ section h4 {
   float: left;
 }
 
-section p {
+.mainWrapper p {
   font-family: "Bitter", serif;
   font-style: normal;
   font-weight: bold;
@@ -560,7 +554,7 @@ section p {
   float: left;
 }
 
-section a {
+.mainWrapper a {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
@@ -571,12 +565,12 @@ section a {
   padding-right: 30px;
 }
 
-section .firstSection {
+.middleSection {
   width: 940px;
   position: relative;
 }
 
-section .firstSection .newsTab {
+.newsTab {
   width: 620px;
   height: 325px;
   margin-top: 19px;
@@ -584,30 +578,30 @@ section .firstSection .newsTab {
   border-left: 13px solid #3677B5;
 }
 
-section .firstSection .newsTab .row {
+.newsTab .row {
   width: 100%;
   height: 218px;
   padding-right: 30px;
 }
 
-section .firstSection .newsTab .row .column {
+.newsTab .row .column {
   float: left;
   width: 33.33%;
 }
 
-section .firstSection .newsTab .row .column .imageContainer {
+.newsTab .row .column .imageContainer {
   width: 170px;
   height: 128px;
   margin-left: 30px;
   margin-top: 30px;
 }
 
-section .firstSection .newsTab .row .column .imageContainer img {
+.newsTab .row .column .imageContainer img {
   width: 100%;
   height: 100%;
 }
 
-section .firstSection .newsTab .row .column .captionContainer {
+.newsTab .row .column .captionContainer {
   width: 100%;
   height: 85px;
   margin-left: 30px;
@@ -615,11 +609,11 @@ section .firstSection .newsTab .row .column .captionContainer {
   clear: both;
 }
 
-section .firstSection .newsTab .row .column .captionContainer .commentsContainer {
+.newsTab .row .column .captionContainer .commentsContainer {
   float: right;
 }
 
-section .firstSection .sportTab {
+.sportTab {
   width: 620px;
   height: 325px;
   margin-top: 17px;
@@ -627,30 +621,30 @@ section .firstSection .sportTab {
   border-left: 13px solid #84C14F;
 }
 
-section .firstSection .sportTab .row {
+.sportTab .row {
   width: 100%;
   height: 218px;
   padding-right: 30px;
 }
 
-section .firstSection .sportTab .row .column {
+.sportTab .row .column {
   float: left;
   width: 33.33%;
 }
 
-section .firstSection .sportTab .row .column .imageContainer {
+.sportTab .row .column .imageContainer {
   width: 170px;
   height: 128px;
   margin-left: 30px;
   margin-top: 30px;
 }
 
-section .firstSection .sportTab .row .column .imageContainer img {
+.sportTab .row .column .imageContainer img {
   width: 100%;
   height: 100%;
 }
 
-section .firstSection .sportTab .row .captionContainer {
+.sportTab .row .captionContainer {
   width: 100%;
   height: 85px;
   margin-left: 30px;
@@ -658,33 +652,32 @@ section .firstSection .sportTab .row .captionContainer {
   clear: both;
 }
 
-section .firstSection .popular {
-  position: absolute;
+.popular {
   width: 300px;
   height: 100%;
   background: #4D4382;
   right: 0;
   top: 0;
-  overflow: hidden;
+  margin-bottom: 25px;
 }
 
-section .firstSection .popular .popularHeader {
+.popular .popularHeader {
   width: 302px;
   height: 53px;
   background: rgba(0, 0, 0, 0.2);
 }
 
-section .firstSection .popular .popularHeader .nav-links {
+.popular .popularHeader .nav-links {
   list-style: none;
   padding-top: 20px;
 }
 
-section .firstSection .popular .popularHeader .nav-links li {
+.popular .popularHeader .nav-links li {
   display: inline-block;
   padding-top: 18px;
 }
 
-section .firstSection .popular .popularHeader .nav-links a {
+.popular .popularHeader .nav-links a {
   padding-right: 20px;
   font-family: "Varela Round", serif;
   font-size: 14px;
@@ -693,29 +686,29 @@ section .firstSection .popular .popularHeader .nav-links a {
   text-decoration: underline;
 }
 
-section .firstSection .popular .popularHeader .nav-links a:hover {
+.popular .popularHeader .nav-links a:hover {
   color: #FCC44D;
 }
 
-section .firstSection .popular .popularHeader .nav-links .first {
+.popular .popularHeader .nav-links .first {
   color: #FCC44D;
 }
 
-section .firstSection .popular .row {
+.popular .row {
   height: 117px;
   margin: 0;
   position: relative;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-section .firstSection .popular .row .captionContainer {
+.popular .row .captionContainer {
   margin-top: 20px;
   width: 170px;
   height: 52px;
   position: relative;
 }
 
-section .firstSection .popular .row .captionContainer h4 {
+.popular .row .captionContainer h4 {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
@@ -724,17 +717,17 @@ section .firstSection .popular .row .captionContainer h4 {
   color: #ACB3BA;
 }
 
-section .firstSection .popular .row .captionContainer .commentsContainer {
+.popular .row .captionContainer .commentsContainer {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-section .firstSection .popular .row .captionContainer .commentsContainer i {
+.popular .row .captionContainer .commentsContainer i {
   margin-right: 2px;
 }
 
-section .firstSection .popular .row .captionContainer p {
+.popular .row .captionContainer p {
   font-family: "Bitter", serif;
   font-style: normal;
   font-weight: normal;
@@ -745,7 +738,7 @@ section .firstSection .popular .row .captionContainer p {
   cursor: pointer;
 }
 
-section .firstSection .popular .row .imageContainer {
+.popular .row .imageContainer {
   width: 70px;
   height: 70px;
   position: absolute;
@@ -754,33 +747,28 @@ section .firstSection .popular .row .imageContainer {
   right: 0;
 }
 
-section .firstSection .popular .row .imageContainer img {
+.popular .row .imageContainer img {
   border: 2px solid #FFFFFF;
 }
 
-section .firstSection .popular .row:hover {
+.popular .row:hover {
   background: #453C75;
 }
 
-section .secondSection {
-  width: 940px;
-  position: relative;
-}
-
-section .secondSection .businessTab {
+.businessTab {
   width: 620px;
   margin-top: 17px;
   background: #FFFFFF;
   border-left: 13px solid #EE6151;
 }
 
-section .secondSection .businessTab .row {
+.businessTab .row {
   width: 100%;
   height: 250px;
   margin-top: 30px;
 }
 
-section .secondSection .businessTab .row .column {
+.businessTab .row .column {
   width: 40%;
   margin-left: 30px;
   margin-right: 10px;
@@ -791,36 +779,34 @@ section .secondSection .businessTab .row .column {
   grid-gap: 15px;
 }
 
-section .secondSection .businessTab .row .column .imageContainer {
+.businessTab .row .column .imageContainer {
   width: 120px;
   height: 90px;
 }
 
-section .secondSection .businessTab .row .column .imageContainer img {
+.businessTab .row .column .imageContainer img {
   width: 100%;
   height: 100%;
 }
 
-section .secondSection .businessTab .row .column .captionContainer {
+.businessTab .row .column .captionContainer {
   width: 154px;
   height: 85px;
 }
 
-section .secondSection .sideBars {
+.sideBars {
   width: 300px;
   right: 0;
   top: 0;
-  height: 100%;
   position: absolute;
   overflow: hidden;
 }
 
-section .secondSection .sideBars .social {
-  position: relative;
+.social {
   top: 10px;
 }
 
-section .secondSection .sideBars .social h2 {
+.social h2 {
   font-family: "Bitter", serif;
   font-weight: bold;
   font-size: 24px;
@@ -829,19 +815,19 @@ section .secondSection .sideBars .social h2 {
   margin-bottom: 15px;
 }
 
-section .secondSection .sideBars .social .row {
+.social .row {
   height: 43px;
   margin: 7px 0;
 }
 
-section .secondSection .sideBars .social .row i {
+.social .row i {
   width: 20px;
   height: 20px;
   color: #FFFFFF;
   margin: 0 auto;
 }
 
-section .secondSection .sideBars .social .row .facebook {
+.social .row .facebook {
   width: 40px;
   height: 100%;
   background: #39599F;
@@ -856,7 +842,7 @@ section .secondSection .sideBars .social .row .facebook {
           justify-content: center;
 }
 
-section .secondSection .sideBars .social .row .twitter {
+.social .row .twitter {
   width: 40px;
   height: 100%;
   background: #45B0E3;
@@ -871,7 +857,7 @@ section .secondSection .sideBars .social .row .twitter {
           justify-content: center;
 }
 
-section .secondSection .sideBars .social .row .youtube {
+.social .row .youtube {
   width: 40px;
   height: 100%;
   background: #E70031;
@@ -886,7 +872,7 @@ section .secondSection .sideBars .social .row .youtube {
           justify-content: center;
 }
 
-section .secondSection .sideBars .social .row .textTab {
+.social .row .textTab {
   width: 123px;
   height: 100%;
   background: #DDDDDD;
@@ -902,7 +888,7 @@ section .secondSection .sideBars .social .row .textTab {
   padding-top: 13px;
 }
 
-section .secondSection .sideBars .social .row .textTab h2 {
+.social .row .textTab h2 {
   font-family: "Bitter", serif;
   font-weight: bold;
   font-size: 18px;
@@ -910,7 +896,7 @@ section .secondSection .sideBars .social .row .textTab h2 {
   color: #363F48;
 }
 
-section .secondSection .sideBars .social .row .socialNumbers {
+.social .row .socialNumbers {
   width: 137px;
   height: 100%;
   background: #4D4382;
@@ -926,7 +912,7 @@ section .secondSection .sideBars .social .row .socialNumbers {
   padding-top: 12px;
 }
 
-section .secondSection .sideBars .social .row .socialNumbers p {
+.social .row .socialNumbers p {
   font-family: "Varela Round", serif;
   font-weight: 400;
   font-size: 14px;
@@ -935,14 +921,13 @@ section .secondSection .sideBars .social .row .socialNumbers p {
   text-align: center;
 }
 
-section .secondSection .sideBars .kenazTv {
-  position: relative;
+.kenazTv {
   width: 300px;
   margin-top: 27px;
   background: #FFFFFF;
 }
 
-section .secondSection .sideBars .kenazTv .kenazTvHeading {
+.kenazTv .kenazTvHeading {
   height: 79px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -955,7 +940,7 @@ section .secondSection .sideBars .kenazTv .kenazTvHeading {
           justify-content: flex-start;
 }
 
-section .secondSection .sideBars .kenazTv .kenazTvHeading h2 {
+.kenazTv .kenazTvHeading h2 {
   font-family: "Bitter", serif;
   font-weight: bold;
   font-size: 24px;
@@ -964,20 +949,20 @@ section .secondSection .sideBars .kenazTv .kenazTvHeading h2 {
   color: #363F48;
 }
 
-section .secondSection .sideBars .kenazTv .videoRow {
+.kenazTv .videoRow {
   height: 149px;
   background: url("../assets/video.png") no-repeat;
   margin-bottom: 10px;
 }
 
-section .secondSection .sideBars .kenazTv .kenazTvCaption {
+.kenazTv .kenazTvCaption {
   height: 96px;
   position: relative;
   padding: 20px 1px 25px 32px;
   bottom: 15px;
 }
 
-section .secondSection .sideBars .kenazTv .kenazTvCaption h3 {
+.kenazTv .kenazTvCaption h3 {
   font-family: "Bitter", serif;
   font-weight: bold;
   font-size: 15px;
@@ -986,13 +971,13 @@ section .secondSection .sideBars .kenazTv .kenazTvCaption h3 {
   padding-top: 20px;
 }
 
-section .secondSection .sideBars .kenazTv .kenazTvCaption .date {
+.kenazTv .kenazTvCaption .date {
   position: absolute;
   top: 17px;
   left: 32px;
 }
 
-section .secondSection .sideBars .kenazTv .kenazTvCaption .date h4 {
+.kenazTv .kenazTvCaption .date h4 {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
@@ -1001,13 +986,13 @@ section .secondSection .sideBars .kenazTv .kenazTvCaption .date h4 {
   color: #363F48;
 }
 
-section .secondSection .sideBars .sideBanners {
+.sideBanners {
   height: 167px;
   background: #DDDDDD;
   margin-top: 18px;
 }
 
-section .secondSection .sideBars .sideBanners .bannersContainer {
+.sideBanners .bannersContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1021,26 +1006,26 @@ section .secondSection .sideBars .sideBanners .bannersContainer {
   padding: 20px 7px;
 }
 
-section .secondSection .sideBars .facebookPosts {
+.facebookPosts {
   height: 556px;
   margin-top: 17px;
   background: #FFFFFF;
 }
 
-section .secondSection .sideBars .facebookPosts .facebookImage {
+.facebookPosts .facebookImage {
   height: 521px;
   width: 270px;
   margin: 15px;
 }
 
-section .secondSection .newsCarousel {
+.newsCarousel {
   width: 620px;
   margin-top: 17px;
   background: #FFFFFF;
   border-left: 13px solid #FCC44D;
 }
 
-section .secondSection .newsCarousel #prev {
+.newsCarousel #prev {
   background: url("../assets/newscarouselleftarrow.png") no-repeat;
   width: 16px;
   height: 22px;
@@ -1051,7 +1036,7 @@ section .secondSection .newsCarousel #prev {
   margin-top: -20px;
 }
 
-section .secondSection .newsCarousel #next {
+.newsCarousel #next {
   background: url("../assets/newscarouselrightarrow.png") no-repeat;
   width: 16px;
   height: 22px;
@@ -1062,13 +1047,13 @@ section .secondSection .newsCarousel #next {
   margin-top: -20px;
 }
 
-section .secondSection .newsCarousel .row {
+.newsCarousel .row {
   width: 100%;
   height: 250px;
   margin-top: 30px;
 }
 
-section .secondSection .newsCarousel .row .column {
+.newsCarousel .row .column {
   width: 40%;
   margin-left: 30px;
   margin-right: 10px;
@@ -1078,22 +1063,22 @@ section .secondSection .newsCarousel .row .column {
       grid-template-columns: 260px 260px;
 }
 
-section .secondSection .newsCarousel .row .column .imageContainer {
+.newsCarousel .row .column .imageContainer {
   height: 150px;
 }
 
-section .secondSection .newsCarousel .row .column .imageContainer img {
+.newsCarousel .row .column .imageContainer img {
   width: 100%;
   height: 100%;
 }
 
-section .secondSection .newsCarousel .row .column .captionContainer {
+.newsCarousel .row .column .imageContainer .captionContainer {
   margin-top: 9px;
   width: 100%;
   height: 67px;
 }
 
-section .secondSection .brownTabs {
+.brownTabs {
   width: 303px;
   display: -ms-grid;
   display: grid;
@@ -1103,7 +1088,7 @@ section .secondSection .brownTabs {
   margin-bottom: 37px;
 }
 
-section .secondSection .brownTabs .editorialsTab {
+.editorialsTab {
   width: 303px;
   height: 325px;
   margin-top: 17px;
@@ -1111,7 +1096,7 @@ section .secondSection .brownTabs .editorialsTab {
   border-left: 13px solid #A99765;
 }
 
-section .secondSection .brownTabs .editorialsTab #prev {
+.editorialsTab #prev {
   background: url("../assets/editorialsleftarrow.png") no-repeat;
   width: 16px;
   height: 22px;
@@ -1122,7 +1107,7 @@ section .secondSection .brownTabs .editorialsTab #prev {
   margin-top: -20px;
 }
 
-section .secondSection .brownTabs .editorialsTab #next {
+.editorialsTab #next {
   background: url("../assets/editorialsrightarrow.png") no-repeat;
   width: 16px;
   height: 22px;
@@ -1133,25 +1118,25 @@ section .secondSection .brownTabs .editorialsTab #next {
   margin-top: -20px;
 }
 
-section .secondSection .brownTabs .editorialsTab .imageContainer {
+.editorialsTab .imageContainer {
   margin: 0 auto;
   margin-top: 30px;
   width: 230px;
   height: 150px;
 }
 
-section .secondSection .brownTabs .editorialsTab .imageContainer img {
+.editorialsTab .imageContainer img {
   width: 100%;
   height: 100%;
 }
 
-section .secondSection .brownTabs .editorialsTab .imageContainer .captionContainer {
+.editorialsTab .captionContainer {
   margin-top: 9px;
   width: 100%;
   height: 67px;
 }
 
-section .secondSection .brownTabs .localNewsTab {
+.localNewsTab {
   width: 303px;
   height: 325px;
   margin-top: 17px;
@@ -1159,7 +1144,7 @@ section .secondSection .brownTabs .localNewsTab {
   border-left: 13px solid #A99765;
 }
 
-section .secondSection .brownTabs .localNewsTab #prev {
+.localNewsTab #prev {
   background: url("../assets/editorialsleftarrow.png") no-repeat;
   width: 16px;
   height: 22px;
@@ -1170,7 +1155,7 @@ section .secondSection .brownTabs .localNewsTab #prev {
   margin-top: -20px;
 }
 
-section .secondSection .brownTabs .localNewsTab #next {
+.localNewsTab #next {
   background: url("../assets/editorialsrightarrow.png") no-repeat;
   width: 16px;
   height: 22px;
@@ -1181,19 +1166,19 @@ section .secondSection .brownTabs .localNewsTab #next {
   margin-top: -20px;
 }
 
-section .secondSection .brownTabs .localNewsTab .imageContainer {
+.localNewsTab .imageContainer {
   margin: 0 auto;
   margin-top: 30px;
   width: 230px;
   height: 150px;
 }
 
-section .secondSection .brownTabs .localNewsTab .imageContainer img {
+.localNewsTab .imageContainer img {
   width: 100%;
   height: 100%;
 }
 
-section .secondSection .brownTabs .localNewsTab .imageContainer .captionContainer {
+.localNewsTab .captionContainer {
   margin-top: 9px;
   width: 100%;
   height: 67px;
@@ -1588,5 +1573,9 @@ footer .footerContentContainer .lowerFooterContainer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.newsCategory {
+  width: 622px;
 }
 /*# sourceMappingURL=style.css.map */
