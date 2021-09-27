@@ -1,8 +1,8 @@
-@import './fonts'
-section
+.mainWrapper
   margin: 0 auto
   width: 940px
   margin-top: 16px
+  position: relative
 
   h1
     padding-left: 31px
@@ -41,498 +41,246 @@ section
     margin-top: -20px
     padding-right: 30px
 
-  .firstSection
-    width: 940px
-    position: relative
+.middleSection
+  width: 940px
+  position: relative
 
-    .newsTab
-      width: 620px
-      height: 325px
-      margin-top: 19px
-      background: #FFFFFF
-      border-left: 13px solid #3677B5
+.newsTab
+  width: 620px
+  height: 325px
+  margin-top: 19px
+  background: #FFFFFF
+  border-left: 13px solid #3677B5
 
-      .row
-        width: 100%
-        height: 218px
-        padding-right: 30px
+  .row
+    width: 100%
+    height: 218px
+    padding-right: 30px
 
-        .column
-          float: left
-          width: 33.33%
+    .column
+      float: left
+      width: 33.33%
 
-          .imageContainer
-            width: 170px
-            height: 128px
-            margin-left: 30px
-            margin-top: 30px
+      .imageContainer
+        width: 170px
+        height: 128px
+        margin-left: 30px
+        margin-top: 30px
 
-            img
-              width: 100%
-              height: 100%
-
-          .captionContainer
-            width: 100%
-            height: 85px
-            margin-left: 30px
-            margin-bottom: 28px
-            clear: both
-
-            .commentsContainer
-              float: right
-
-    .sportTab
-      width: 620px
-      height: 325px
-      margin-top: 17px
-      background: #FFFFFF
-      border-left: 13px solid #84C14F
-
-      .row
-        width: 100%
-        height: 218px
-        padding-right: 30px
-
-        .column
-          float: left
-          width: 33.33%
-
-          .imageContainer
-            width: 170px
-            height: 128px
-            margin-left: 30px
-            margin-top: 30px
-
-            img
-              width: 100%
-              height: 100%
-
-        .captionContainer
+        img
           width: 100%
-          height: 85px
-          margin-left: 30px
-          margin-bottom: 28px
-          clear: both
+          height: 100%
 
-    .popular
-      position: absolute
-      width: 300px
-      height: 100%
-      background: #4D4382
-      right: 0
-      top: 0
-      overflow: hidden
+      .captionContainer
+        width: 100%
+        height: 85px
+        margin-left: 30px
+        margin-bottom: 28px
+        clear: both
 
-      .popularHeader
-        width: 302px
-        height: 53px
-        background: rgba(0,0,0,0.2)
+        .commentsContainer
+          float: right
 
-        .nav-links
-          list-style: none
-          padding-top: 20px
-          li
-            display: inline-block
-            padding-top: 18px
+.sportTab
+  width: 620px
+  height: 325px
+  margin-top: 17px
+  background: #FFFFFF
+  border-left: 13px solid #84C14F
 
-          a
-            padding-right: 20px
-            font-family: $varela
-            font-size: 14px
-            line-height: 17px
-            color: #FFFFFF
-            text-decoration: underline
+  .row
+    width: 100%
+    height: 218px
+    padding-right: 30px
 
-          a:hover
-            color: #FCC44D
+    .column
+      float: left
+      width: 33.33%
 
-          .first
-            color: #FCC44D
+      .imageContainer
+        width: 170px
+        height: 128px
+        margin-left: 30px
+        margin-top: 30px
 
-      .row
-        height: 117px
-        margin: 0
-        position: relative
-        border-bottom: 1px solid rgba(0,0,0,0.2)
+        img
+          width: 100%
+          height: 100%
+
+    .captionContainer
+      width: 100%
+      height: 85px
+      margin-left: 30px
+      margin-bottom: 28px
+      clear: both
+
+.businessTab
+  width: 620px
+  margin-top: 17px
+  background: #FFFFFF
+  border-left: 13px solid #EE6151
+
+  .row
+    width: 100%
+    height: 250px
+    margin-top: 30px
+
+    .column
+      width: 40%
+      margin-left: 30px
+      margin-right: 10px
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-gap: 15px
+
+      .imageContainer
+        width: 120px
+        height: 90px
+
+        img
+          width: 100%
+          height: 100%
+
+      .captionContainer
+        width: 154px
+        height: 85px
+
+.newsCarousel
+  width: 620px
+  margin-top: 17px
+  background: #FFFFFF
+  border-left: 13px solid #FCC44D
+
+  #prev
+    background: url('../assets/newscarouselleftarrow.png') no-repeat
+    width: 16px
+    height: 22px
+    outline: none
+    border: none
+    float: right
+    margin-right: 14px
+    margin-top: -20px
+
+  #next
+    background: url('../assets/newscarouselrightarrow.png') no-repeat
+    width: 16px
+    height: 22px
+    outline: none
+    border: none
+    float: right
+    margin-right: 28px
+    margin-top: -20px
+
+  .row
+    width: 100%
+    height: 250px
+    margin-top: 30px
+
+    .column
+      width: 40%
+      margin-left: 30px
+      margin-right: 10px
+      display: grid
+      grid-template-columns: 260px 260px
+
+      .imageContainer
+        height: 150px
+
+        img
+          width: 100%
+          height: 100%
 
         .captionContainer
-          margin-top: 20px
-          width: 170px
-          height: 52px
-          position: relative
+          margin-top: 9px
+          width: 100%
+          height: 67px
 
-          h4
-            font-family: $varela
-            font-style: normal
-            font-weight: normal
-            font-size: 10px
-            line-height: 12px
-            color: #ACB3BA
+.brownTabs
+  width: 303px
+  display: grid
+  grid-template-columns: 293px 293px
+  grid-gap: 23px
 
-          .commentsContainer
-            position: absolute
-            top: 0
-            right: 0
+  .editorialsTab
+    width: 303px
+    height: 325px
+    margin-top: 17px
+    background: #FFFFFF
+    border-left: 13px solid #A99765
 
-            i
-              margin-right: 2px
+    #prev
+      background: url('../assets/editorialsleftarrow.png') no-repeat
+      width: 16px
+      height: 22px
+      outline: none
+      border: none
+      float: right
+      margin-right: 14px
+      margin-top: -20px
 
-          p
-            font-family: $bitter
-            font-style: normal
-            font-weight: normal
-            font-size: 14px
-            line-height: 16,8px
-            color: #FFFFFF
-            text-decoration: none
-            cursor: pointer
+    #next
+      background: url('../assets/editorialsrightarrow.png') no-repeat
+      width: 16px
+      height: 22px
+      outline: none
+      border: none
+      float: right
+      margin-right: 28px
+      margin-top: -20px
 
-        .imageContainer
-          width: 70px
-          height: 70px
-          position: absolute
-          margin-right: 33px
-          top: 20px
-          right: 0
+    .imageContainer
+      margin: 0 auto
+      margin-top: 30px
+      width: 230px
+      height: 150px
 
-          img
-            border: 2px solid #FFFFFF
-
-      .row:hover
-        background: #453C75
-
-  .secondSection
-    width: 940px
-    position: relative
-
-    .businessTab
-      width: 620px
-      margin-top: 17px
-      background: #FFFFFF
-      border-left: 13px solid #EE6151
-
-      .row
+      img
         width: 100%
-        height: 250px
-        margin-top: 30px
+        height: 100%
 
-        .column
-          width: 40%
-          margin-left: 30px
-          margin-right: 10px
-          display: grid
-          grid-template-columns: 1fr 1fr
-          grid-gap: 15px
+    .captionContainer
+      margin-top: 9px
+      width: 100%
+      height: 67px
 
-          .imageContainer
-            width: 120px
-            height: 90px
+  .localNewsTab
+    width: 303px
+    height: 325px
+    margin-top: 17px
+    background: #FFFFFF
+    border-left: 13px solid #A99765
 
-            img
-              width: 100%
-              height: 100%
+    #prev
+      background: url('../assets/editorialsleftarrow.png') no-repeat
+      width: 16px
+      height: 22px
+      outline: none
+      border: none
+      float: right
+      margin-right: 14px
+      margin-top: -20px
 
-          .captionContainer
-            width: 154px
-            height: 85px
+    #next
+      background: url('../assets/editorialsrightarrow.png') no-repeat
+      width: 16px
+      height: 22px
+      outline: none
+      border: none
+      float: right
+      margin-right: 28px
+      margin-top: -20px
 
-    .sideBars
-      width: 300px
-      right: 0
-      top: 0
-      height: 100%
-      position: absolute
-      overflow: hidden
+    .imageContainer
+      margin: 0 auto
+      margin-top: 30px
+      width: 230px
+      height: 150px
 
-      .social
-        position: relative
-        top: 10px
-
-        h2
-          font-family: $bitter
-          font-weight: bold
-          font-size: 24px
-          line-height: 29px
-          color: #363F48
-          margin-bottom: 15px
-
-        .row
-          height: 43px
-          margin: 7px 0
-
-          i
-            width: 20px
-            height: 20px
-            color: #FFFFFF
-            margin: 0 auto
-
-          .facebook
-            width: 40px
-            height: 100%
-            background: #39599F
-            display: flex
-            align-items: center
-            justify-content: center
-
-          .twitter
-            width: 40px
-            height: 100%
-            background: #45B0E3
-            display: flex
-            align-items: center
-            justify-content: center
-
-          .youtube
-            width: 40px
-            height: 100%
-            background: #E70031
-            display: flex
-            align-items: center
-            justify-content: center
-
-          .textTab
-            width: 123px
-            height: 100%
-            background: #DDDDDD
-            display: flex
-            align-items: center
-            justify-content: flex-start
-            padding-top: 13px
-
-            h2
-              font-family: $bitter
-              font-weight: bold
-              font-size: 18px
-              line-height: 18px
-              color: #363F48
-
-          .socialNumbers
-            width: 137px
-            height: 100%
-            background: #4D4382
-            display: flex
-            align-items: center
-            justify-content: flex-start
-            padding-top: 12px
-
-            p
-              font-family: $varela
-              font-weight: 400
-              font-size: 14px
-              line-height: 16.86px
-              color: #FFFFFF
-              text-align: center
-
-      .kenazTv
-        position: relative
-        width: 300px
-        margin-top: 27px
-        background: #FFFFFF
-
-        .kenazTvHeading
-          height: 79px
-          display: flex
-          align-items: center
-          justify-content: flex-start
-
-          h2
-            font-family: $bitter
-            font-weight: bold
-            font-size: 24px
-            line-height: 29px
-            margin-left: 33px
-            color: #363F48
-
-        .videoRow
-          height: 149px
-          background: url("../assets/video.png") no-repeat
-          margin-bottom: 10px
-
-        .kenazTvCaption
-          height: 96px
-          position: relative
-          padding: 20px 1px 25px 32px
-          bottom: 15px
-
-          h3
-            font-family: $bitter
-            font-weight: bold
-            font-size: 15px
-            line-height: 18px
-            color: #363F48
-            padding-top: 20px
-
-          .date
-            position: absolute
-            top: 17px
-            left: 32px
-
-            h4
-              font-family: $varela
-              font-style: normal
-              font-weight: normal
-              font-size: 10px
-              line-height: 12px
-              color: #363F48
-
-      .sideBanners
-        height: 167px
-        background: #DDDDDD
-        margin-top: 18px
-
-        .bannersContainer
-          display: flex
-          flex-direction: row
-          justify-content: space-evenly
-          padding: 20px 7px
-
-      .facebookPosts
-        height: 556px
-        margin-top: 17px
-        background: #FFFFFF
-
-        .facebookImage
-          height: 521px
-          width: 270px
-          margin: 15px
-
-    .newsCarousel
-      width: 620px
-      margin-top: 17px
-      background: #FFFFFF
-      border-left: 13px solid #FCC44D
-
-      #prev
-        background: url('../assets/newscarouselleftarrow.png') no-repeat
-        width: 16px
-        height: 22px
-        outline: none
-        border: none
-        float: right
-        margin-right: 14px
-        margin-top: -20px
-
-      #next
-        background: url('../assets/newscarouselrightarrow.png') no-repeat
-        width: 16px
-        height: 22px
-        outline: none
-        border: none
-        float: right
-        margin-right: 28px
-        margin-top: -20px
-
-      .row
+      img
         width: 100%
-        height: 250px
-        margin-top: 30px
+        height: 100%
 
-        .column
-          width: 40%
-          margin-left: 30px
-          margin-right: 10px
-          display: grid
-          grid-template-columns: 260px 260px
-
-          .imageContainer
-            height: 150px
-
-            img
-              width: 100%
-              height: 100%
-
-          .captionContainer
-            margin-top: 9px
-            width: 100%
-            height: 67px
-
-    .brownTabs
-      width: 303px
-      display: grid
-      grid-template-columns: 293px 293px
-      grid-gap: 23px
-      margin-bottom: 37px
-
-      .editorialsTab
-        width: 303px
-        height: 325px
-        margin-top: 17px
-        background: #FFFFFF
-        border-left: 13px solid #A99765
-
-        #prev
-          background: url('../assets/editorialsleftarrow.png') no-repeat
-          width: 16px
-          height: 22px
-          outline: none
-          border: none
-          float: right
-          margin-right: 14px
-          margin-top: -20px
-
-        #next
-          background: url('../assets/editorialsrightarrow.png') no-repeat
-          width: 16px
-          height: 22px
-          outline: none
-          border: none
-          float: right
-          margin-right: 28px
-          margin-top: -20px
-
-        .imageContainer
-          margin: 0 auto
-          margin-top: 30px
-          width: 230px
-          height: 150px
-
-          img
-            width: 100%
-            height: 100%
-
-          .captionContainer
-            margin-top: 9px
-            width: 100%
-            height: 67px
-
-      .localNewsTab
-        width: 303px
-        height: 325px
-        margin-top: 17px
-        background: #FFFFFF
-        border-left: 13px solid #A99765
-
-        #prev
-          background: url('../assets/editorialsleftarrow.png') no-repeat
-          width: 16px
-          height: 22px
-          outline: none
-          border: none
-          float: right
-          margin-right: 14px
-          margin-top: -20px
-
-        #next
-          background: url('../assets/editorialsrightarrow.png') no-repeat
-          width: 16px
-          height: 22px
-          outline: none
-          border: none
-          float: right
-          margin-right: 28px
-          margin-top: -20px
-
-        .imageContainer
-          margin: 0 auto
-          margin-top: 30px
-          width: 230px
-          height: 150px
-
-          img
-            width: 100%
-            height: 100%
-
-          .captionContainer
-            margin-top: 9px
-            width: 100%
-            height: 67px
+    .captionContainer
+      margin-top: 9px
+      width: 100%
+      height: 67px

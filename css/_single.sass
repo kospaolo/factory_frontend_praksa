@@ -1,0 +1,244 @@
+.singleImage
+ margin-top: 18px
+ margin-bottom: 8px
+ width: 940px
+ height: 588px
+ background-image: linear-gradient(to top, #EEEEEE 7%, rgba(255, 255, 255, 0) 45%), url('../assets/singleimg.png')
+ position: relative
+
+ .singleCaption
+  height: 144px
+  position: absolute
+  left: 51px
+  bottom: 35px
+
+  .singleCommentsContainer
+   display: flex
+   flex-direction: row
+   margin-bottom: 10px
+
+   h4
+    font-family: $varela
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 14px
+    color: #222222
+
+  .singleCaptionContainer
+   display: flex
+   flex-direction: row
+   justify-content: flex-start
+   width: 751px
+
+   h2
+    font-family: $bitter
+    font-style: normal
+    font-weight: bold
+    font-size: 44px
+    line-height: 52.8px
+    color: #222222
+
+.singleCategory
+ width: 620px
+ height: 953px
+ background: #FFFFFF
+
+ .paragraph
+  width: 572px
+  padding: 30px 20px
+
+  p
+   font-family: $bitter
+   font-style: normal
+   font-weight: normal
+   font-size: 14px
+   line-height: 22px
+
+ .paragraphImage
+  img
+   width: 100%
+   height: 100%
+
+ .singleSocials
+  margin-top: 44px
+  width: 607px
+  height: 42px
+
+.aboutTheAuthor
+ margin-top: 16px
+ background: #FFFFFF
+ width: 620px
+
+ .row
+  padding: 30px
+  padding-top: 0
+  width: 100%
+  margin: 0
+
+  .heading
+   margin-top: 35px
+   margin-bottom: 15px
+
+  h2
+   font-family: $bitter
+   font-style: normal
+   font-weight: bold
+   font-size: 24px
+
+ .content
+  display: flex
+
+  .imageContainer
+   height: 110px
+   width: 110px
+   margin-right: 20px
+   object-fit: contain
+   align-self: flex-start
+   flex-shrink: 0
+   margin-top: 5px
+
+  img
+   width: 100%
+   height: 100%
+
+  .textContainer
+   flex: 1 1 auto
+
+  p
+   font-family: $varela
+   font-style: normal
+   font-weight: normal
+   font-size: 13px
+   line-height: 20px
+   color: #444444
+
+.comments
+ margin-top: 16px
+ background: #FFFFFF
+ width: 620px
+
+ .row
+  padding: 30px
+  padding-top: 0
+  width: 100%
+  margin: 0
+  margin-bottom: 5px
+
+  .heading
+   margin-top: 30px
+   margin-bottom: 15px
+
+   h2
+    font-family: $bitter
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+
+  .comment
+   display: flex
+   flex-direction: row
+
+   .userImageContainer
+    width: 57px
+    height: 58px
+    border: 1px solid #CCCCCC
+
+    .imageBackground
+     margin: 2px
+     background: #CCCCCC
+     width: 50px
+     height: 50px
+
+     img
+      padding-bottom: 0
+      padding-top: 7px
+      width: 100%
+      height: 100%
+
+  .commentContent
+   display: flex
+   flex-direction: column
+   margin-left: 10px
+
+   .user
+    width: 502px
+    height: 20px
+    display: flex
+    flex-direction: row
+    position: relative
+    margin-bottom: 5px
+
+    .reply
+     position: absolute
+     right: 30px
+     margin-bottom: 5px
+
+    h3
+     font-family: $bitter
+     font-style: normal
+     font-weight: normal
+     font-size: 18px
+     line-height: 20px
+     color: #4D4382
+
+    h4
+     font-family: $varela
+     font-style: normal
+     font-weight: normal
+     font-size: 11px
+     line-height: 20px
+     color: #666666
+     padding-left: 10px
+
+    span
+     color: #4D4382
+     font-family: $varela
+     font-style: normal
+     font-weight: normal
+     font-size: 14px
+     line-height: 17px
+
+   .usersComment
+    width: 502px
+
+    p
+     font-family: $varela
+     font-style: normal
+     font-weight: normal
+     font-size: 13px
+     line-height: 20px
+     color: #444444
+
+  .addCommentText
+   p
+    font-family: $varela
+    font-style: normal
+    font-weight: normal
+    font-size: 13px
+    line-height: 20px
+    color: #444444
+
+ form
+  input,textarea
+   margin-bottom: 8px
+   background: #DDDDDD
+   color: #666666
+
+   &::placeholder
+    font-family: $varela
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: #666666
+
+  input
+   width: 50%
+
+  button
+   margin-top: 18px
+   width: 153px
+   height: 53px
+   background: #4D4382
+   border: none
