@@ -383,6 +383,7 @@ header .mainNav .subnav .searchicon:hover {
 
 .sliderContainer .bottomSlider {
   margin: 0 auto;
+  position: relative;
 }
 
 .sliderContainer .bottomSlider .prev, .sliderContainer .bottomSlider .next {
@@ -390,7 +391,7 @@ header .mainNav .subnav .searchicon:hover {
   position: absolute;
   width: 36px;
   height: 53px;
-  top: 50%;
+  top: 40%;
 }
 
 .sliderContainer .bottomSlider .prev {
@@ -435,8 +436,8 @@ header .mainNav .subnav .searchicon:hover {
   position: absolute;
   left: 0;
   bottom: 20px;
-  width: 100%;
-  padding-left: 20px;
+  width: 940px;
+  padding: 0 20px;
 }
 
 .sliderContainer .thumbnails img {
@@ -985,11 +986,11 @@ header .mainNav .subnav .searchicon:hover {
   background: #453C75;
 }
 
-.social {
+.socialSidebar {
   top: 10px;
 }
 
-.social h2 {
+.socialSidebar h2 {
   font-family: "Bitter", serif;
   font-weight: bold;
   font-size: 24px;
@@ -998,19 +999,19 @@ header .mainNav .subnav .searchicon:hover {
   margin-bottom: 15px;
 }
 
-.social .row {
+.socialSidebar .row {
   height: 43px;
   margin: 7px 0;
 }
 
-.social .row i {
+.socialSidebar .row i {
   width: 20px;
   height: 20px;
   color: #FFFFFF;
   margin: 0 auto;
 }
 
-.social .row .facebook {
+.socialSidebar .row .facebook {
   width: 40px;
   height: 100%;
   background: #39599F;
@@ -1025,7 +1026,7 @@ header .mainNav .subnav .searchicon:hover {
           justify-content: center;
 }
 
-.social .row .twitter {
+.socialSidebar .row .twitter {
   width: 40px;
   height: 100%;
   background: #45B0E3;
@@ -1040,7 +1041,7 @@ header .mainNav .subnav .searchicon:hover {
           justify-content: center;
 }
 
-.social .row .youtube {
+.socialSidebar .row .youtube {
   width: 40px;
   height: 100%;
   background: #E70031;
@@ -1055,7 +1056,7 @@ header .mainNav .subnav .searchicon:hover {
           justify-content: center;
 }
 
-.social .row .textTab {
+.socialSidebar .row .textTab {
   width: 123px;
   height: 100%;
   background: #DDDDDD;
@@ -1071,7 +1072,7 @@ header .mainNav .subnav .searchicon:hover {
   padding-top: 13px;
 }
 
-.social .row .textTab h2 {
+.socialSidebar .row .textTab h2 {
   font-family: "Bitter", serif;
   font-weight: bold;
   font-size: 18px;
@@ -1079,7 +1080,7 @@ header .mainNav .subnav .searchicon:hover {
   color: #363F48;
 }
 
-.social .row .socialNumbers {
+.socialSidebar .row .socialNumbers {
   width: 137px;
   height: 100%;
   background: #4D4382;
@@ -1095,7 +1096,7 @@ header .mainNav .subnav .searchicon:hover {
   padding-top: 12px;
 }
 
-.social .row .socialNumbers p {
+.socialSidebar .row .socialNumbers p {
   font-family: "Varela Round", serif;
   font-weight: 400;
   font-size: 14px;
@@ -1203,7 +1204,7 @@ header .mainNav .subnav .searchicon:hover {
 }
 
 .newsCategory .mainHeading {
-  padding-left: 15px;
+  padding-left: 10px;
   padding-top: 15px;
 }
 
@@ -1266,7 +1267,7 @@ header .mainNav .subnav .searchicon:hover {
 }
 
 .newsCategory .imageContainer {
-  height: 130px;
+  height: 128px;
   width: 170px;
   margin-right: 20px;
   -o-object-fit: contain;
@@ -1278,7 +1279,7 @@ header .mainNav .subnav .searchicon:hover {
   margin-top: 5px;
 }
 
-.newsCategory img {
+.newsCategory .imageContainer img {
   width: 100%;
   height: 100%;
 }
@@ -1352,14 +1353,14 @@ header .mainNav .subnav .searchicon:hover {
   position: relative;
 }
 
-.singleImage .singleCaption {
+.singleCaption {
   height: 144px;
   position: absolute;
   left: 51px;
   bottom: 35px;
 }
 
-.singleImage .singleCaption .singleCommentsContainer {
+.singleCaption .singleCommentsContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1370,7 +1371,7 @@ header .mainNav .subnav .searchicon:hover {
   margin-bottom: 10px;
 }
 
-.singleImage .singleCaption .singleCommentsContainer h4 {
+.singleCaption h4 {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
@@ -1379,7 +1380,7 @@ header .mainNav .subnav .searchicon:hover {
   color: #222222;
 }
 
-.singleImage .singleCaption .singleCaptionContainer {
+.singleCaption .singleCaptionContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1393,7 +1394,7 @@ header .mainNav .subnav .searchicon:hover {
   width: 751px;
 }
 
-.singleImage .singleCaption .singleCaptionContainer h2 {
+.singleCaption h2 {
   font-family: "Bitter", serif;
   font-style: normal;
   font-weight: bold;
@@ -1406,14 +1407,15 @@ header .mainNav .subnav .searchicon:hover {
   width: 620px;
   height: 953px;
   background: #FFFFFF;
+  position: relative;
 }
 
-.singleCategory .paragraph {
+.paragraph {
   width: 572px;
-  padding: 30px 20px;
+  padding: 37px;
 }
 
-.singleCategory .paragraph p {
+.paragraph p {
   font-family: "Bitter", serif;
   font-style: normal;
   font-weight: normal;
@@ -1421,15 +1423,22 @@ header .mainNav .subnav .searchicon:hover {
   line-height: 22px;
 }
 
-.singleCategory .paragraphImage img {
+.paragraphImage img {
   width: 100%;
   height: 100%;
 }
 
-.singleCategory .singleSocials {
+.singleSocials {
   margin-top: 44px;
   width: 607px;
   height: 42px;
+  position: absolute;
+  bottom: 18px;
+}
+
+.singleSocials img {
+  padding-left: 20px;
+  width: 100%;
 }
 
 .aboutTheAuthor {
@@ -1445,25 +1454,28 @@ header .mainNav .subnav .searchicon:hover {
   margin: 0;
 }
 
-.aboutTheAuthor .row .heading {
+.aboutTheAuthor .heading {
   margin-top: 35px;
   margin-bottom: 15px;
+  color: #363F48;
 }
 
-.aboutTheAuthor .row h2 {
+.aboutTheAuthor h2 {
   font-family: "Bitter", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
+  line-height: 29px;
+  color: #363F48;
 }
 
-.aboutTheAuthor .content {
+.singleContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.aboutTheAuthor .content .imageContainer {
+.singleContent .imageContainer {
   height: 110px;
   width: 110px;
   margin-right: 20px;
@@ -1476,18 +1488,18 @@ header .mainNav .subnav .searchicon:hover {
   margin-top: 5px;
 }
 
-.aboutTheAuthor .content img {
+.singleContent img {
   width: 100%;
   height: 100%;
 }
 
-.aboutTheAuthor .content .textContainer {
+.singleContent .textContainer {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
 
-.aboutTheAuthor .content p {
+.singleContent p {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
@@ -1507,22 +1519,23 @@ header .mainNav .subnav .searchicon:hover {
   padding-top: 0;
   width: 100%;
   margin: 0;
-  margin-bottom: 5px;
 }
 
-.comments .row .heading {
+.comments .heading {
   margin-top: 30px;
   margin-bottom: 15px;
 }
 
-.comments .row .heading h2 {
+.comments h2 {
   font-family: "Bitter", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
+  line-height: 28.8px;
+  color: #363F48;
 }
 
-.comments .row .comment {
+.comments .comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1532,27 +1545,27 @@ header .mainNav .subnav .searchicon:hover {
           flex-direction: row;
 }
 
-.comments .row .comment .userImageContainer {
+.comments .userImageContainer {
   width: 57px;
   height: 58px;
   border: 1px solid #CCCCCC;
 }
 
-.comments .row .comment .userImageContainer .imageBackground {
+.comments .userImageContainer .imageBackground {
   margin: 2px;
   background: #CCCCCC;
   width: 50px;
   height: 50px;
 }
 
-.comments .row .comment .userImageContainer .imageBackground img {
+.comments .userImageContainer img {
   padding-bottom: 0;
   padding-top: 7px;
   width: 100%;
   height: 100%;
 }
 
-.comments .row .commentContent {
+.comments .commentContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1563,7 +1576,7 @@ header .mainNav .subnav .searchicon:hover {
   margin-left: 10px;
 }
 
-.comments .row .commentContent .user {
+.comments .user {
   width: 502px;
   height: 20px;
   display: -webkit-box;
@@ -1577,13 +1590,13 @@ header .mainNav .subnav .searchicon:hover {
   margin-bottom: 5px;
 }
 
-.comments .row .commentContent .user .reply {
+.comments .user .reply {
   position: absolute;
   right: 30px;
   margin-bottom: 5px;
 }
 
-.comments .row .commentContent .user h3 {
+.comments .user h3 {
   font-family: "Bitter", serif;
   font-style: normal;
   font-weight: normal;
@@ -1592,7 +1605,7 @@ header .mainNav .subnav .searchicon:hover {
   color: #4D4382;
 }
 
-.comments .row .commentContent .user h4 {
+.comments .user h4 {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
@@ -1602,7 +1615,7 @@ header .mainNav .subnav .searchicon:hover {
   padding-left: 10px;
 }
 
-.comments .row .commentContent .user span {
+.comments .user span {
   color: #4D4382;
   font-family: "Varela Round", serif;
   font-style: normal;
@@ -1611,11 +1624,11 @@ header .mainNav .subnav .searchicon:hover {
   line-height: 17px;
 }
 
-.comments .row .commentContent .usersComment {
+.comments .usersComment {
   width: 502px;
 }
 
-.comments .row .commentContent .usersComment p {
+.comments .usersComment p {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
@@ -1624,7 +1637,7 @@ header .mainNav .subnav .searchicon:hover {
   color: #444444;
 }
 
-.comments .row .addCommentText p {
+.comments p {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
@@ -1633,13 +1646,18 @@ header .mainNav .subnav .searchicon:hover {
   color: #444444;
 }
 
-.comments form input, .comments form textarea {
+.comments .singleForm {
+  margin-top: -20px;
+}
+
+.comments .singleForm input, .comments .singleForm textarea {
+  border-radius: 0;
   margin-bottom: 8px;
   background: #DDDDDD;
   color: #666666;
 }
 
-.comments form input::-webkit-input-placeholder, .comments form textarea::-webkit-input-placeholder {
+.comments .singleForm::-webkit-input-placeholder {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
@@ -1648,7 +1666,7 @@ header .mainNav .subnav .searchicon:hover {
   color: #666666;
 }
 
-.comments form input:-ms-input-placeholder, .comments form textarea:-ms-input-placeholder {
+.comments .singleForm:-ms-input-placeholder {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
@@ -1657,7 +1675,7 @@ header .mainNav .subnav .searchicon:hover {
   color: #666666;
 }
 
-.comments form input::-ms-input-placeholder, .comments form textarea::-ms-input-placeholder {
+.comments .singleForm::-ms-input-placeholder {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
@@ -1666,7 +1684,7 @@ header .mainNav .subnav .searchicon:hover {
   color: #666666;
 }
 
-.comments form input::placeholder, .comments form textarea::placeholder {
+.comments .singleForm::placeholder {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
@@ -1675,11 +1693,12 @@ header .mainNav .subnav .searchicon:hover {
   color: #666666;
 }
 
-.comments form input {
+.comments .singleForm input {
   width: 50%;
 }
 
-.comments form button {
+.comments .singleForm button {
+  border-radius: 0;
   margin-top: 18px;
   width: 153px;
   height: 53px;

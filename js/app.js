@@ -15,7 +15,8 @@ $(document).ready(() => {
 
  $(upperSlider).slick({
   prevArrow: "<span class='prev'><img class='a-left control-c prev slick-prev' src='./assets/sliderleftarrow.png'></span>",
-  nextArrow: "<span class='next'><img class='a-right control-c next slick-next' src='./assets/sliderrightarrow.png'></span>"
+  nextArrow: "<span class='next'><img class='a-right control-c next slick-next' src='./assets/sliderrightarrow.png'></span>",
+  autoplay: true
  });
 
  $(bottomSlider).slick({
@@ -23,16 +24,13 @@ $(document).ready(() => {
   nextArrow: "<span class='next'><img class='a-right control-c next slick-next' src='./assets/sliderrightarrow.png'></span>",
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: true,
-  fade: true,
-  asNavFor: '.bottomSliderThumbnailsContainer'
+  arrows: true
  });
 
  $(thumbnails).slick({
-  slidesToShow: 6,
+  slidesToShow: 7,
   slidesToScroll: 1,
-  arrows: false,
-  asNavFor: '.bottomSlider',
+  asNavFor: bottomSlider,
   centerMode: false,
   focusOnSelect: true
  });
