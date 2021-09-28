@@ -118,7 +118,7 @@
               </div>
             </div>
             <div class="sliderButton">
-              <button>Read article</button>
+              <a class="button" href="single.html">Read article</a>
             </div>
           </div>
           <div class="slide">
@@ -133,7 +133,7 @@
               </div>
             </div>
             <div class="sliderButton">
-              <button>Read article</button>
+              <a class="button" href="single.html">Read article</a>
             </div>
           </div>
           <div class="slide">
@@ -148,7 +148,7 @@
               </div>
             </div>
             <div class="sliderButton">
-              <button>Read article</button>
+              <a class="button" href="single.html">Read article</a>
             </div>
           </div>
           <div class="slide">
@@ -163,7 +163,7 @@
               </div>
             </div>
             <div class="sliderButton">
-              <button>Read article</button>
+              <a class="button" href="single.html">Read article</a>
             </div>
           </div>
         </div>
@@ -310,10 +310,10 @@
         <!-- News carousel -->
         <div class="newsCarousel">
           <h1>News Carousel</h1>
-          <div><button id="next"></button></div>
-          <div><button id="prev"></button></div>
+          <div><button class="newsCarouselNext"></button></div>
+          <div><button class="newsCarouselPrev"></button></div>
 
-          <div class="row">
+          <div class="newsCarouselContentContainer row">
             <div class="column">
               <div class="imageContainer">
                 <img src="assets/carouselimg.png" alt="">
@@ -333,6 +333,26 @@
                 </div>
               </div>
             </div>
+
+            <div class="column">
+              <div class="imageContainer">
+                <img src="assets/carouselimg.png" alt="">
+                <div class="captionContainer">
+                  <h4>August 26, 2013</h4>
+                  <p>For Obama, MLK's shadow looms large ahead of speech</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="imageContainer">
+                <img src="assets/carouselimg.png" alt="">
+                <div class="captionContainer">
+                  <h4>August 26, 2013</h4>
+                  <p>For Obama, MLK's shadow looms large ahead of speech</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -342,13 +362,22 @@
           <!-- Editorials tab -->
           <div class="editorialsTab">
             <h1>Editorials</h1>
-            <div><button id="next"></button></div>
-            <div><button id="prev"></button></div>
-            <div class="imageContainer">
-              <img src="assets/carouselimg.png" alt="">
-              <div class="captionContainer">
-                <h4>August 26, 2013</h4>
-                <p>For Obama, MLK's shadow looms large ahead of speech</p>
+            <div><button class="editorialsNext"></button></div>
+            <div><button class="editorialsPrev"></button></div>
+            <div class="editorialsContentContainer row">
+              <div class="editorialsSlide">
+                <img src="assets/carouselimg.png" alt="">
+                <div class="captionContainer">
+                  <h4>August 26, 2013</h4>
+                  <p>For Obama, MLK's shadow looms large ahead of speech</p>
+                </div>
+              </div>
+              <div class="editorialsSlide">
+                <img src="assets/carouselimg.png" alt="">
+                <div class="captionContainer">
+                  <h4>August 26, 2013</h4>
+                  <p>For Obama, MLK's shadow looms large ahead of speech</p>
+                </div>
               </div>
             </div>
           </div>
@@ -356,13 +385,22 @@
           <!-- Local news tab -->
           <div class="localNewsTab">
             <h1>Local News</h1>
-            <div><button id="next"></button></div>
-            <div><button id="prev"></button></div>
-            <div class="imageContainer">
-              <img src="assets/carouselimg.png" alt="">
-              <div class="captionContainer">
-                <h4>August 26, 2013</h4>
-                <p>For Obama, MLK's shadow looms large ahead of speech</p>
+            <div><button class="localNewsNext"></button></div>
+            <div><button class="localNewsPrev"></button></div>
+            <div class="localNewsContentContainer row">
+              <div class="localNewsSlide">
+                <img src="assets/carouselimg.png" alt="">
+                <div class="captionContainer">
+                  <h4>August 26, 2013</h4>
+                  <p>For Obama, MLK's shadow looms large ahead of speech</p>
+                </div>
+              </div>
+              <div class="localNewsSlide">
+                <img src="assets/carouselimg.png" alt="">
+                <div class="captionContainer">
+                  <h4>August 26, 2013</h4>
+                  <p>For Obama, MLK's shadow looms large ahead of speech</p>
+                </div>
               </div>
             </div>
           </div>
@@ -377,43 +415,43 @@
         <div class="sliderContainer">
           <div class="bottomSlider row">
             <div class="slide">
-              <img class="sliderImg enlargable" src="assets/bottomsliderimg2.png" alt="">
+              <img data-enlargeable class="sliderImg" src="assets/bottomsliderimg2.png" alt="">
               <div class="zoomContainer">
                 <i class="fa fa-search fa-4x zoom"></i>
               </div>
             </div>
             <div class="slide">
-              <img class="sliderImg enlargable" src="assets/bottomsliderimg3.png" alt="">
+              <img data-enlargeable class="sliderImg" src="assets/bottomsliderimg3.png" alt="">
               <div class="zoomContainer">
                 <i class="fa fa-search fa-4x zoom"></i>
               </div>
             </div>
             <div class="slide">
-              <img class="sliderImg enlargable" src="assets/bottomsliderimg4.png" alt="">
+              <img data-enlargeable class="sliderImg" src="assets/bottomsliderimg4.png" alt="">
               <div class="zoomContainer">
                 <i class="fa fa-search fa-4x zoom"></i>
               </div>
             </div>
             <div class="slide">
-              <img class="sliderImg enlargable" src="assets/bottomsliderimg5.png" alt="">
+              <img data-enlargeable class="sliderImg" src="assets/bottomsliderimg5.png" alt="">
               <div class="zoomContainer">
                 <i class="fa fa-search fa-4x zoom"></i>
               </div>
             </div>
             <div class="slide">
-              <img class="sliderImg enlargable" src="assets/bottomsliderimg6.png" alt="">
+              <img data-enlargeable class="sliderImg" src="assets/bottomsliderimg6.png" alt="">
               <div class="zoomContainer">
                 <i class="fa fa-search fa-4x zoom"></i>
               </div>
             </div>
             <div class="slide">
-              <img class="sliderImg enlargable" src="assets/bottomsliderimg7.png" alt="">
+              <img data-enlargeable class="sliderImg" src="assets/bottomsliderimg7.png" alt="">
               <div class="zoomContainer">
                 <i class="fa fa-search fa-4x zoom"></i>
               </div>
             </div>
             <div class="slide">
-              <img class="sliderImg enlargable" src="assets/bottomsliderimg8.png" alt="">
+              <img data-enlargeable class="sliderImg" src="assets/bottomsliderimg8.png" alt="">
               <div class="zoomContainer">
                 <i class="fa fa-search fa-4x zoom"></i>
               </div>
@@ -581,9 +619,7 @@
 
           <!-- Facebook posts tab -->
           <div class="facebookPosts">
-            <div class="facebookImage">
-              <img src="./assets/facebook.png" alt="">
-            </div>
+            <img src="./assets/facebook.png" alt="">
           </div>
         </div>
       </div>

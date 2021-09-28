@@ -79,25 +79,30 @@
          position: absolute
          width: 123px
          height: 33px
-         left: 30px
-         top: 88%
+         left: 20px
+         bottom: 0
          transform: translateY(-50%)
          z-index: 1000
 
-      button
-         font-family: $varela
-         font-style: normal
-         font-weight: normal
-         font-size: 14px
-         line-height: 17px
-         background: rgba(0, 0, 0, 0.0001)
-         border: 1px solid #FFFFFF
-         box-sizing: border-box
-         padding: 6px 15px
-         color: #EEF6FA
-         transition: 0.7s
+         a
+            -webkit-appearance: button
+            -moz-appearance: button
+            appearance: button
+            display: inline
+            color: #EEF6FA
+            text-decoration: none
+            font-family: $varela
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 17px
+            background: rgba(0, 0, 0, 0.0001)
+            border: 1px solid #FFFFFF
+            box-sizing: border-box
+            padding: 6px 15px
+            transition: 0.7s
 
-      button:hover
+      a:hover
          background-color: #c4d0d6
          color: #000000
 

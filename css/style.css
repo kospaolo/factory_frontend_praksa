@@ -348,14 +348,20 @@ header .mainNav .subnav .searchicon:hover {
   position: absolute;
   width: 123px;
   height: 33px;
-  left: 30px;
-  top: 88%;
+  left: 20px;
+  bottom: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 1000;
 }
 
-.sliderContainer .upperSlider button {
+.sliderContainer .upperSlider .sliderButton a {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  display: inline;
+  color: #EEF6FA;
+  text-decoration: none;
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
@@ -366,12 +372,11 @@ header .mainNav .subnav .searchicon:hover {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 6px 15px;
-  color: #EEF6FA;
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
 
-.sliderContainer .upperSlider button:hover {
+.sliderContainer .upperSlider a:hover {
   background-color: #c4d0d6;
   color: #000000;
 }
@@ -549,7 +554,7 @@ header .mainNav .subnav .searchicon:hover {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 15px;
   float: left;
 }
 
@@ -695,38 +700,45 @@ header .mainNav .subnav .searchicon:hover {
   margin-top: 17px;
   background: #FFFFFF;
   border-left: 13px solid #FCC44D;
+  position: relative;
 }
 
-.newsCarousel #prev {
+.newsCarousel .newsCarouselPrev {
   background: url("../assets/newscarouselleftarrow.png") no-repeat;
   width: 16px;
   height: 22px;
   outline: none;
   border: none;
-  float: right;
-  margin-right: 14px;
-  margin-top: -20px;
+  display: block;
+  position: absolute;
+  top: 28px;
+  right: 45px;
+  z-index: 1000;
 }
 
-.newsCarousel #next {
+.newsCarousel .newsCarouselNext {
   background: url("../assets/newscarouselrightarrow.png") no-repeat;
   width: 16px;
   height: 22px;
   outline: none;
   border: none;
-  float: right;
-  margin-right: 28px;
-  margin-top: -20px;
+  display: block;
+  position: absolute;
+  top: 28px;
+  right: 21px;
+  z-index: 1000;
 }
 
-.newsCarousel .row {
+.newsCarousel .newsCarouselContentContainer {
   width: 100%;
   height: 250px;
   margin-top: 30px;
+  padding: 0 13px;
 }
 
-.newsCarousel .row .column {
-  width: 40%;
+.newsCarousel .newsCarouselContentContainer .column {
+  width: 260px;
+  height: 220px;
   margin-left: 30px;
   margin-right: 10px;
   display: -ms-grid;
@@ -735,16 +747,12 @@ header .mainNav .subnav .searchicon:hover {
       grid-template-columns: 260px 260px;
 }
 
-.newsCarousel .row .column .imageContainer {
+.newsCarousel .newsCarouselContentContainer .column .imageContainer img {
+  width: 260px;
   height: 150px;
 }
 
-.newsCarousel .row .column .imageContainer img {
-  width: 100%;
-  height: 100%;
-}
-
-.newsCarousel .row .column .imageContainer .captionContainer {
+.newsCarousel .newsCarouselContentContainer .column .imageContainer .captionContainer {
   margin-top: 9px;
   width: 100%;
   height: 67px;
@@ -765,40 +773,45 @@ header .mainNav .subnav .searchicon:hover {
   margin-top: 17px;
   background: #FFFFFF;
   border-left: 13px solid #A99765;
+  position: relative;
 }
 
-.brownTabs .editorialsTab #prev {
+.brownTabs .editorialsTab .editorialsPrev {
+  position: absolute;
   background: url("../assets/editorialsleftarrow.png") no-repeat;
   width: 16px;
   height: 22px;
   outline: none;
   border: none;
-  float: right;
-  margin-right: 14px;
-  margin-top: -20px;
+  display: block;
+  top: 28px;
+  right: 45px;
+  z-index: 1000;
 }
 
-.brownTabs .editorialsTab #next {
+.brownTabs .editorialsTab .editorialsNext {
   background: url("../assets/editorialsrightarrow.png") no-repeat;
   width: 16px;
   height: 22px;
   outline: none;
   border: none;
-  float: right;
-  margin-right: 28px;
-  margin-top: -20px;
+  display: block;
+  position: absolute;
+  top: 28px;
+  right: 21px;
+  z-index: 1000;
 }
 
-.brownTabs .editorialsTab .imageContainer {
+.brownTabs .editorialsTab .editorialsContentContainer {
   margin: 0 auto;
   margin-top: 30px;
   width: 230px;
-  height: 150px;
+  height: 219px;
 }
 
-.brownTabs .editorialsTab .imageContainer img {
-  width: 100%;
-  height: 100%;
+.brownTabs .editorialsTab .editorialsContentContainer img {
+  width: 230px;
+  height: 150px;
 }
 
 .brownTabs .editorialsTab .captionContainer {
@@ -813,40 +826,46 @@ header .mainNav .subnav .searchicon:hover {
   margin-top: 17px;
   background: #FFFFFF;
   border-left: 13px solid #A99765;
+  position: relative;
 }
 
-.brownTabs .localNewsTab #prev {
+.brownTabs .localNewsTab .localNewsPrev {
+  position: absolute;
   background: url("../assets/editorialsleftarrow.png") no-repeat;
   width: 16px;
   height: 22px;
   outline: none;
   border: none;
-  float: right;
-  margin-right: 14px;
-  margin-top: -20px;
+  display: block;
+  position: absolute;
+  top: 28px;
+  right: 45px;
+  z-index: 1000;
 }
 
-.brownTabs .localNewsTab #next {
+.brownTabs .localNewsTab .localNewsNext {
   background: url("../assets/editorialsrightarrow.png") no-repeat;
   width: 16px;
   height: 22px;
   outline: none;
   border: none;
-  float: right;
-  margin-right: 28px;
-  margin-top: -20px;
+  display: block;
+  position: absolute;
+  top: 28px;
+  right: 21px;
+  z-index: 1000;
 }
 
-.brownTabs .localNewsTab .imageContainer {
+.brownTabs .localNewsTab .localNewsContentContainer {
   margin: 0 auto;
   margin-top: 30px;
   width: 230px;
-  height: 150px;
+  height: 219px;
 }
 
-.brownTabs .localNewsTab .imageContainer img {
-  width: 100%;
-  height: 100%;
+.brownTabs .localNewsTab .localNewsContentContainer img {
+  width: 230px;
+  height: 150px;
 }
 
 .brownTabs .localNewsTab .captionContainer {
@@ -1174,12 +1193,7 @@ header .mainNav .subnav .searchicon:hover {
   height: 556px;
   margin-top: 17px;
   background: #FFFFFF;
-}
-
-.facebookPosts .facebookImage {
-  height: 521px;
-  width: 270px;
-  margin: 15px;
+  padding: 15px;
 }
 
 .newsCategory {
