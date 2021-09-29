@@ -1,9 +1,8 @@
-.sideBars
+.side-bars
   width: 300px
   right: 0
   top: 0
   position: absolute
-  overflow: hidden
 
 .popular
   width: 300px
@@ -13,7 +12,7 @@
   top: 0
   margin-bottom: 25px
 
-  .popularHeader
+  .popular-header
     width: 302px
     height: 53px
     background: rgba(0,0,0,0.2)
@@ -45,7 +44,7 @@
     position: relative
     border-bottom: 1px solid rgba(0,0,0,0.2)
 
-    .captionContainer
+    .caption-container
       margin-top: 20px
       width: 170px
       height: 52px
@@ -69,7 +68,7 @@
         text-decoration: none
         cursor: pointer
 
-      .commentsContainer
+      .comments-container
         position: absolute
         top: 0
         right: 0
@@ -77,7 +76,7 @@
         i
           margin-right: 2px
 
-    .imageContainer
+    .image-container
       width: 70px
       height: 70px
       position: absolute
@@ -91,8 +90,9 @@
   .row:hover
     background: #453C75
 
-.social
-  top: 10px
+.social-sidebar
+  height: 191px
+  margin-top: 28px
 
   h2
     font-family: $bitter
@@ -152,13 +152,13 @@
         line-height: 18px
         color: #363F48
 
-    .socialNumbers
+    .social-numbers
       width: 137px
       height: 100%
       background: #4D4382
       display: flex
-      align-items: center
       justify-content: flex-start
+      align-items: center
       padding-top: 12px
 
       p
@@ -169,12 +169,12 @@
         color: #FFFFFF
         text-align: center
 
-.kenazTv
-  width: 300px
-  margin-top: 27px
+.kenaz-tv
+  height: 324px
+  margin-top: 17px
   background: #FFFFFF
 
-  .kenazTvHeading
+  .kenaz-tv-heading
     height: 79px
     display: flex
     align-items: center
@@ -188,16 +188,13 @@
       margin-left: 33px
       color: #363F48
 
-  .videoRow
+  .video-row
     height: 149px
-    background: url("../assets/video.png") no-repeat
-    margin-bottom: 10px
 
-  .kenazTvCaption
+  .kenaz-tv-caption
     height: 96px
     position: relative
     padding: 20px 1px 25px 32px
-    bottom: 15px
 
     h3
       font-family: $bitter
@@ -220,23 +217,19 @@
         line-height: 12px
         color: #363F48
 
-.sideBanners
+.side-banners
   height: 167px
   background: #DDDDDD
   margin-top: 18px
 
-  .bannersContainer
+  .banners-container
     display: flex
     flex-direction: row
     justify-content: space-evenly
     padding: 20px 7px
 
-.facebookPosts
+.facebook-posts
   height: 556px
   margin-top: 17px
   background: #FFFFFF
-
-  .facebookImage
-    height: 521px
-    width: 270px
-    margin: 15px
+  padding: 15px

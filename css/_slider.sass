@@ -1,45 +1,48 @@
-.sliderContainer
+@mixin arrows
+   display: block
+   position: absolute
+   width: 36px
+   height: 53px
+   top: 50%
+   transform: translateY(-50%)
+   z-index: 1000
+
+.slider-container
    width: 940px
    position: relative
    cursor: pointer
-
-   .prev, .next
-      display: block
-      position: absolute
-      width: 36px
-      height: 53px
-      top: 50%
-      transform: translateY(-50%)
-      z-index: 1000
+   margin-top: 18px
 
    .prev
+      @include arrows
       left: 3%
 
    .next
+      @include arrows
       right: 3%
 
-   .sliderImg
+   .slider-img
       transform: scale(1)
       transition: 1.7s
       width: 100%
 
-   .sliderImg:hover
+   .slider-img:hover
       transform: scale(1.1)
 
-   .upperSlider
+   .upper-slider
       margin: 0 auto
       position: relative
 
-      .sliderImg
+      .slider-img
          filter: brightness(70%)
 
-      .sliderImg:hover
+      .slider-img:hover
          transform: scale(1.1)
 
       .slide
          position: relative
 
-      .sliderCaption
+      .slider-caption
          position: absolute
          width: 588px
          height: 113px
@@ -48,7 +51,7 @@
          transform: translateY(-50%)
          z-index: 1000
 
-      .commentsContainer
+      .comments-container
          width: 40%
          display: flex
          flex-direction: row
@@ -62,7 +65,7 @@
             line-height: 14.45px
             color: #EEF6FA
 
-      .captionContainer
+      .caption-container
          display: flex
          flex-direction: row
          justify-content: flex-start
@@ -75,41 +78,47 @@
             line-height: 40,8px
             color: #EEF6FA
 
-      .sliderButton
+      .slider-button
          position: absolute
          width: 123px
          height: 33px
-         left: 30px
-         top: 88%
+         left: 20px
+         bottom: 0
          transform: translateY(-50%)
          z-index: 1000
 
-      button
-         font-family: $varela
-         font-style: normal
-         font-weight: normal
-         font-size: 14px
-         line-height: 17px
-         background: rgba(0, 0, 0, 0.0001)
-         border: 1px solid #FFFFFF
-         box-sizing: border-box
-         padding: 6px 15px
-         color: #EEF6FA
-         transition: 0.7s
+         a
+            -webkit-appearance: button
+            -moz-appearance: button
+            appearance: button
+            display: inline
+            color: #EEF6FA
+            text-decoration: none
+            font-family: $varela
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 17px
+            background: rgba(0, 0, 0, 0.0001)
+            border: 1px solid #FFFFFF
+            box-sizing: border-box
+            padding: 6px 15px
+            transition: 0.7s
 
-      button:hover
+      a:hover
          background-color: #c4d0d6
          color: #000000
 
-   .bottomSlider
+   .bottom-slider
       margin: 0 auto
+      position: relative
 
       .prev, .next
          display: block
          position: absolute
          width: 36px
          height: 53px
-         top: 50%
+         top: 40%
 
       .prev
          left: 3%
@@ -120,7 +129,7 @@
       .slide
          position: relative
 
-      .zoomContainer
+      .zoom-container
          position: absolute
          width: 80px
          height: 80px
@@ -138,15 +147,15 @@
          width: 100%
          height: 400px
 
-   .bottomSlider:hover .zoomContainer
+   .bottom-slider:hover .zoom-container
       opacity: 1
 
    .thumbnails
       position: absolute
       left: 0
       bottom: 20px
-      width: 100%
-      padding-left: 20px
+      width: 940px
+      padding: 0 20px
 
       img
          display: inline-block

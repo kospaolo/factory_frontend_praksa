@@ -1,53 +1,32 @@
-.nineFortyBanner
-  height: 120px
+@mixin banners
   margin-top: 16px
   background-color: #FFFFFF
-  border: 1px solid #D7D7D7
-  box-sizing: border-box
-
-  p
-    font-family: $varela
-    font-weight: normal
-    font-size: 14px
-    line-height: 17px
-    display: flex
-    align-items: flex-end
-    text-align: center
-    color: #999999
-    padding: 42px 426px 47px 426px
-
-.sixTwentyBanner
-  width: 620px
-  height: 120px
-  background-color: #FFFFFF
-  border: 1px solid #D7D7D7
-  box-sizing: border-box
-  margin-top: 19px
-
-  p
-    font-family: $varela
-    font-weight: normal
-    font-size: 14px
-    line-height: 17px
-    display: flex
-    align-items: flex-end
-    text-align: center
-    color: #999999
-    padding: 41px 267px 47px 266px
-
-.smallBanners
-  width: 128px
-  height: 128px
-  background: #FFFFFF
   border: 1px solid #D7D7D7
   display: flex
   justify-content: center
   align-items: center
+  border: 1px solid #D7D7D7
 
   p
     font-family: $varela
     font-weight: normal
     font-size: 14px
-    line-height: 17px
+    line-height: 16.86px
     color: #999999
     text-align: center
+
+.nineforty-banner
+  width: 940px
+  height: 120px
+  @include banners
+
+.sixtwenty-banner
+  width: 620px
+  height: 120px
+  @include banners
+
+.small-banners
+  width: 128px
+  height: 128px
+  @include banners
+  margin: 0

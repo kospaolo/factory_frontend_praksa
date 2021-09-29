@@ -1,4 +1,4 @@
-.mainWrapper
+.main-wrapper
   margin: 0 auto
   width: 940px
   margin-top: 16px
@@ -7,7 +7,7 @@
   h1
     padding-left: 31px
     padding-top: 15px
-    font-family: 'Bitter', serif
+    font-family: $bitter
     font-style: normal
     font-weight: bold
     font-size: 24px
@@ -28,7 +28,7 @@
     font-style: normal
     font-weight: bold
     font-size: 14px
-    line-height: 18px
+    line-height: 15px
     float: left
 
   a
@@ -41,11 +41,11 @@
     margin-top: -20px
     padding-right: 30px
 
-.middleSection
+.middle-section
   width: 940px
   position: relative
 
-.newsTab
+.news-tab
   width: 620px
   height: 325px
   margin-top: 19px
@@ -61,7 +61,7 @@
       float: left
       width: 33.33%
 
-      .imageContainer
+      .image-container
         width: 170px
         height: 128px
         margin-left: 30px
@@ -71,17 +71,17 @@
           width: 100%
           height: 100%
 
-      .captionContainer
+      .caption-container
         width: 100%
         height: 85px
         margin-left: 30px
         margin-bottom: 28px
         clear: both
 
-        .commentsContainer
+        .comments-container
           float: right
 
-.sportTab
+.sport-tab
   width: 620px
   height: 325px
   margin-top: 17px
@@ -97,7 +97,7 @@
       float: left
       width: 33.33%
 
-      .imageContainer
+      .image-container
         width: 170px
         height: 128px
         margin-left: 30px
@@ -107,14 +107,14 @@
           width: 100%
           height: 100%
 
-    .captionContainer
+    .caption-container
       width: 100%
       height: 85px
       margin-left: 30px
       margin-bottom: 28px
       clear: both
 
-.businessTab
+.business-tab
   width: 620px
   margin-top: 17px
   background: #FFFFFF
@@ -133,7 +133,7 @@
       grid-template-columns: 1fr 1fr
       grid-gap: 15px
 
-      .imageContainer
+      .image-container
         width: 120px
         height: 90px
 
@@ -141,146 +141,162 @@
           width: 100%
           height: 100%
 
-      .captionContainer
+      .caption-container
         width: 154px
         height: 85px
 
-.newsCarousel
+.news-carousel
   width: 620px
   margin-top: 17px
   background: #FFFFFF
   border-left: 13px solid #FCC44D
+  position: relative
 
-  #prev
+  .news-carousel-prev
     background: url('../assets/newscarouselleftarrow.png') no-repeat
     width: 16px
     height: 22px
     outline: none
     border: none
-    float: right
-    margin-right: 14px
-    margin-top: -20px
+    display: block
+    position: absolute
+    top: 28px
+    right: 45px
+    z-index: 1000
 
-  #next
+  .news-carousel-next
     background: url('../assets/newscarouselrightarrow.png') no-repeat
     width: 16px
     height: 22px
     outline: none
     border: none
-    float: right
-    margin-right: 28px
-    margin-top: -20px
+    display: block
+    position: absolute
+    top: 28px
+    right: 21px
+    z-index: 1000
 
-  .row
+  .news-carousel-content-container
     width: 100%
     height: 250px
     margin-top: 30px
+    padding: 0 13px
 
     .column
-      width: 40%
+      width: 260px
+      height: 220px
       margin-left: 30px
       margin-right: 10px
       display: grid
       grid-template-columns: 260px 260px
 
-      .imageContainer
-        height: 150px
-
+      .image-container
         img
-          width: 100%
-          height: 100%
+          width: 260px
+          height: 150px
 
-        .captionContainer
+        .caption-container
           margin-top: 9px
           width: 100%
           height: 67px
 
-.brownTabs
+.brown-tabs
   width: 303px
   display: grid
   grid-template-columns: 293px 293px
   grid-gap: 23px
 
-  .editorialsTab
+  .editorials-tab
     width: 303px
     height: 325px
     margin-top: 17px
     background: #FFFFFF
     border-left: 13px solid #A99765
+    position: relative
 
-    #prev
+    .editorials-prev
+      position: absolute
       background: url('../assets/editorialsleftarrow.png') no-repeat
       width: 16px
       height: 22px
       outline: none
       border: none
-      float: right
-      margin-right: 14px
-      margin-top: -20px
+      display: block
+      top: 28px
+      right: 45px
+      z-index: 1000
 
-    #next
+    .editorials-next
       background: url('../assets/editorialsrightarrow.png') no-repeat
       width: 16px
       height: 22px
       outline: none
       border: none
-      float: right
-      margin-right: 28px
-      margin-top: -20px
+      display: block
+      position: absolute
+      top: 28px
+      right: 21px
+      z-index: 1000
 
-    .imageContainer
+    .editorials-content-container
       margin: 0 auto
       margin-top: 30px
       width: 230px
-      height: 150px
+      height: 219px
 
       img
-        width: 100%
-        height: 100%
+        width: 230px
+        height: 150px
 
-    .captionContainer
+    .caption-container
       margin-top: 9px
       width: 100%
       height: 67px
 
-  .localNewsTab
+  .local-news-tab
     width: 303px
     height: 325px
     margin-top: 17px
     background: #FFFFFF
     border-left: 13px solid #A99765
+    position: relative
 
-    #prev
+    .local-news-prev
+      position: absolute
       background: url('../assets/editorialsleftarrow.png') no-repeat
       width: 16px
       height: 22px
       outline: none
       border: none
-      float: right
-      margin-right: 14px
-      margin-top: -20px
+      display: block
+      position: absolute
+      top: 28px
+      right: 45px
+      z-index: 1000
 
-    #next
+    .local-news-next
       background: url('../assets/editorialsrightarrow.png') no-repeat
       width: 16px
       height: 22px
       outline: none
       border: none
-      float: right
-      margin-right: 28px
-      margin-top: -20px
+      display: block
+      position: absolute
+      top: 28px
+      right: 21px
+      z-index: 1000
 
-    .imageContainer
+    .local-news-content-container
       margin: 0 auto
       margin-top: 30px
       width: 230px
-      height: 150px
+      height: 219px
 
       img
-        width: 100%
-        height: 100%
+        width: 230px
+        height: 150px
 
-    .captionContainer
+    .caption-container
       margin-top: 9px
       width: 100%
       height: 67px
