@@ -1,18 +1,28 @@
 $(document).ready(() => {
 
- let upperSlider = document.getElementsByClassName('upper-slider')
- let bottomSlider = document.getElementsByClassName('bottom-slider')
- let thumbnails = document.getElementsByClassName('bottom-slider-thumbnails-container')
- let editorials = document.getElementsByClassName('editorials-content-container')
- let editorialsPrev = document.getElementsByClassName('editorials-prev')
- let editorialsNext = document.getElementsByClassName('editorials-next')
- let localNews = document.getElementsByClassName('local-news-content-container')
- let localNewsPrev = document.getElementsByClassName('local-news-prev')
- let localNewsNext = document.getElementsByClassName('local-news-next')
- let newsCarousel = document.getElementsByClassName('news-carousel-content-container')
- let newsCarouselPrev = document.getElementsByClassName('news-carousel-prev')
- let newsCarouselNext = document.getElementsByClassName('news-carousel-next')
+ //Variables
+ let upperSlider = document.getElementsByClassName('upper-slider');
+ let bottomSlider = document.getElementsByClassName('bottom-slider');
+ let thumbnails = document.getElementsByClassName('bottom-slider-thumbnails-container');
+ let editorials = document.getElementsByClassName('editorials-content-container');
+ let editorialsPrev = document.getElementsByClassName('editorials-prev');
+ let editorialsNext = document.getElementsByClassName('editorials-next');
+ let localNews = document.getElementsByClassName('local-news-content-container');
+ let localNewsPrev = document.getElementsByClassName('local-news-prev');
+ let localNewsNext = document.getElementsByClassName('local-news-next');
+ let newsCarousel = document.getElementsByClassName('news-carousel-content-container');
+ let newsCarouselPrev = document.getElementsByClassName('news-carousel-prev');
+ let newsCarouselNext = document.getElementsByClassName('news-carousel-next');
+ let popular = document.getElementById('popular');
+ let topRated = document.getElementById('top-rated');
+ let comments = document.getElementById('comments');
 
+ //Stop page scroll on refresh
+ window.onunload = () => {
+  window.scrollTo(0, 0);
+ }
+
+ //Slider animations
  $(upperSlider).slick({
   prevArrow: "<span class='prev'><img class='a-left control-c prev slick-prev' src='./assets/sliderleftarrow.png'></span>",
   nextArrow: "<span class='next'><img class='a-right control-c next slick-next' src='./assets/sliderrightarrow.png'></span>",
@@ -35,6 +45,8 @@ $(document).ready(() => {
   focusOnSelect: true
  });
 
+
+ //Carousel animations
  $(newsCarousel).slick({
   prevArrow: newsCarouselPrev,
   nextArrow: newsCarouselNext,
@@ -53,6 +65,7 @@ $(document).ready(() => {
  });
 
 
+ //Slider zoom in
  $('img[data-enlargeable]').addClass('img-enlargeable').click(function () {
 
   let src = $(this).attr('src');
@@ -72,7 +85,6 @@ $(document).ready(() => {
    top: '0',
    left: '0',
    cursor: 'pointer'
-
   }).click(function () {
    removeZoomedImage();
   }).appendTo('body');
@@ -83,4 +95,25 @@ $(document).ready(() => {
   });
  });
 
+ //Popular tab
+ popular.onclick = (e) => {
+  e.preventDefault();
+  popular.style.color = '#FCC44D';
+  topRated.style.color = '#FFFFFF';
+  comments.style.color = '#FFFFFF';
+ }
+
+ topRated.onclick = (e) => {
+  e.preventDefault();
+  popular.style.color = '#FFFFFF';
+  topRated.style.color = '#FCC44D';
+  comments.style.color = '#FFFFFF';
+ }
+
+ comments.onclick = (e) => {
+  e.preventDefault();
+  popular.style.color = '#FFFFFF';
+  topRated.style.color = '#FFFFFF';
+  comments.style.color = '#FCC44D';
+ }
 });
