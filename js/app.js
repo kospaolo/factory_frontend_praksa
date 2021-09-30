@@ -56,14 +56,14 @@ $(document).ready(() => {
  $('img[data-enlargeable]').addClass('img-enlargeable').click(function () {
 
   let src = $(this).attr('src');
-  let modal;
+  let zoomedImage;
 
-  function removeModal() {
-   modal.remove();
-   $('body').off('keyup.modal-close');
+  function removeZoomedImage() {
+   zoomedImage.remove();
+   $('body').off('keyup.zoomedImage-close');
   }
-  modal = $('<div>').css({
-   background: 'RGBA(0,0,0,.5) url(' + src + ') no-repeat center',
+  zoomedImage = $('<div>').css({
+   background: 'RGBA(0,0,0,0.8) url(' + src + ') no-repeat center',
    backgroundSize: 'contain',
    width: '100%',
    height: '100%',
@@ -74,11 +74,11 @@ $(document).ready(() => {
    cursor: 'pointer'
 
   }).click(function () {
-   removeModal();
+   removeZoomedImage();
   }).appendTo('body');
-  $('body').on('keyup.modal-close', function (e) {
+  $('body').on('keyup.zoomedImage-close', function (e) {
    if (e.key === 'Escape') {
-    removeModal();
+    removeZoomedImage();
    }
   });
  });

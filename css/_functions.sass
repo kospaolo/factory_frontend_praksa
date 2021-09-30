@@ -1,0 +1,69 @@
+//Main wrapper
+
+@mixin mainwrappercontent
+  h1
+    padding-left: 31px
+    padding-top: 15px
+    font-family: $bitter
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 29px
+    color: #363F48
+
+  h4
+    margin-top: 6px
+    font-family: $varela
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 14px
+    float: left
+
+  p
+    font-family: $bitter
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 15px
+    float: left
+
+  a
+    font-family: $varela
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    float: right
+    margin-top: -20px
+    padding-right: 30px
+
+//Banners
+
+@mixin banners
+  margin-top: 16px
+  background-color: #FFFFFF
+  border: 1px solid #D7D7D7
+  display: flex
+  justify-content: center
+  align-items: center
+  border: 1px solid #D7D7D7
+
+  p
+    font-family: $varela
+    font-weight: normal
+    font-size: 14px
+    line-height: 16.86px
+    color: #999999
+    text-align: center
+
+//Slider arrows
+
+@mixin arrows
+  display: block
+  position: absolute
+  width: 36px
+  height: 53px
+  top: 50%
+  transform: translateY(-50%)
+  z-index: 1000
