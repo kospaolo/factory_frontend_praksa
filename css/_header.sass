@@ -88,3 +88,42 @@ header
 
       .searchicon:hover
         cursor: pointer
+
+.togglesearch
+  background: #252525
+  position: absolute
+  top: 70px
+  right: 5%
+  width: 350px
+  height: 60px
+  box-shadow: 0 0 10px rgba(0,0,0,0.5)
+  border-top: 4px solid #252525
+  display: none
+
+  &:before
+    content: ""
+    position: absolute
+    top: -32px
+    right: 13px
+    border-left: 12px solid transparent
+    border-right: 12px solid transparent
+    border-top: 14px solid transparent
+    border-bottom: 14px solid #252525
+
+  & input[type="text"]
+    width: 200px
+    padding: 5px 10px
+    margin-left: 23px
+    margin-top: 4px
+    border: 1px solid #252525
+    outline: none
+
+  & input[type="button"]
+    width: 80px
+    padding: 5px 0
+    background: rgba(255,255,255,0.05)
+    color: #fff
+    margin-left: -6px
+    border: none
+    outline: none
+    cursor: pointer

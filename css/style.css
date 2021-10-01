@@ -115,6 +115,50 @@ header .main-nav .sub-nav .searchicon:hover {
   cursor: pointer;
 }
 
+.togglesearch {
+  background: #252525;
+  position: absolute;
+  top: 70px;
+  right: 5%;
+  width: 350px;
+  height: 60px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-top: 4px solid #252525;
+  display: none;
+}
+
+.togglesearch:before {
+  content: "";
+  position: absolute;
+  top: -32px;
+  right: 13px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid #252525;
+}
+
+.togglesearch input[type="text"] {
+  width: 200px;
+  padding: 5px 10px;
+  margin-left: 23px;
+  margin-top: 4px;
+  border: 1px solid #252525;
+  outline: none;
+}
+
+.togglesearch input[type="button"] {
+  width: 80px;
+  padding: 5px 0;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  margin-left: -6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 .categories-wrap {
   background: #4D4382;
 }
@@ -154,11 +198,11 @@ header .main-nav .sub-nav .searchicon:hover {
 
 .categories-wrap .categories .category-links .business-div .red {
   width: 132px;
-  height: 6px;
+  height: 4px;
   margin-left: 0;
   top: 97px;
   background: #EE6151;
-  margin-top: 14px;
+  margin-top: 16px;
 }
 
 .categories-wrap .categories .category-links .sport-div {
@@ -169,11 +213,11 @@ header .main-nav .sub-nav .searchicon:hover {
 
 .categories-wrap .categories .category-links .sport-div .green {
   width: 100px;
-  height: 6px;
+  height: 4px;
   margin-left: 0;
   top: 47px;
   background: #84C14F;
-  margin-top: 14px;
+  margin-top: 16px;
 }
 
 .categories-wrap .categories .category-links .life-div {
@@ -184,11 +228,11 @@ header .main-nav .sub-nav .searchicon:hover {
 
 .categories-wrap .categories .category-links .life-div .blue {
   width: 81px;
-  height: 6px;
+  height: 4px;
   margin-left: 0;
   top: 47px;
   background: #5DCFF3;
-  margin-top: 14px;
+  margin-top: 16px;
 }
 
 .categories-wrap .categories .category-links .tech-div {
@@ -199,11 +243,11 @@ header .main-nav .sub-nav .searchicon:hover {
 
 .categories-wrap .categories .category-links .tech-div .yellow {
   width: 91px;
-  height: 6px;
+  height: 4px;
   margin-left: 0;
   top: 47px;
   background: #FCC44D;
-  margin-top: 14px;
+  margin-top: 16px;
 }
 
 .categories-wrap .categories .category-links .travel-div {
@@ -214,11 +258,11 @@ header .main-nav .sub-nav .searchicon:hover {
 
 .categories-wrap .categories .category-links .travel-div .brown {
   width: 113px;
-  height: 6px;
+  height: 4px;
   margin-left: 0;
   top: 47px;
   background: #A99765;
-  margin-top: 14px;
+  margin-top: 16px;
 }
 
 .categories-wrap .categories .category-links a {
@@ -848,7 +892,7 @@ header .main-nav .sub-nav .searchicon:hover {
   display: block;
   position: absolute;
   top: 28px;
-  right: 45px;
+  right: 51px;
   z-index: 1000;
 }
 
@@ -962,7 +1006,7 @@ header .main-nav .sub-nav .searchicon:hover {
   border: none;
   display: block;
   top: 28px;
-  right: 45px;
+  right: 51px;
   z-index: 1000;
 }
 
@@ -1016,7 +1060,7 @@ header .main-nav .sub-nav .searchicon:hover {
   display: block;
   position: absolute;
   top: 28px;
-  right: 45px;
+  right: 51px;
   z-index: 1000;
 }
 
@@ -1095,6 +1139,18 @@ header .main-nav .sub-nav .searchicon:hover {
 
 .popular .popular-header .nav-links .first {
   color: #FCC44D;
+}
+
+.popular #popular-content {
+  display: block;
+}
+
+.popular #top-rated-content {
+  display: none;
+}
+
+.popular #comments-content {
+  display: none;
 }
 
 .popular .row {
@@ -1268,7 +1324,7 @@ header .main-nav .sub-nav .searchicon:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 12px;
+  padding-top: 16px;
 }
 
 .social-sidebar .row .social-numbers p {
@@ -1420,6 +1476,11 @@ header .main-nav .sub-nav .searchicon:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: -13px;
+}
+
+.news-category .date-and-author i {
+  font-size: 16px;
 }
 
 .news-category .date-and-author span {
@@ -1813,6 +1874,10 @@ header .main-nav .sub-nav .searchicon:hover {
   color: #444444;
 }
 
+.comments .add-comment-text {
+  margin-top: -26.5px;
+}
+
 .comments p {
   font-family: "Varela Round", serif;
   font-style: normal;
@@ -2043,11 +2108,16 @@ footer .footer-content-container .upper-footer-container .text {
   width: 190px;
 }
 
+footer .footer-content-container .upper-footer-container .form {
+  margin-top: 25px;
+}
+
 footer .footer-content-container .upper-footer-container .email {
   background: #333333;
   padding: 15px 70px 20px 20px;
   border: none;
   color: #FFFFFF;
+  height: 53px;
 }
 
 footer .footer-content-container .upper-footer-container .email::-webkit-input-placeholder {
@@ -2092,7 +2162,7 @@ footer .footer-content-container .upper-footer-container .email:focus {
 
 footer .footer-content-container .upper-footer-container .subscribe-button {
   width: 110px;
-  height: 59px;
+  height: 53px;
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
