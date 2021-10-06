@@ -1,15 +1,15 @@
 .side-bars
-  width: 300px
-  right: 0
-  top: 0
-  position: absolute
+  display: flex
+  flex-direction: column
+  max-width: 300px
+  width: 100%
+  padding: 0
+  margin: 19px 0
+  float: right
 
 .popular
   height: 667px
   background: #4D4382
-  right: 0
-  top: 0
-  margin-bottom: 25px
 
   .popular-header
     height: 53px
@@ -24,9 +24,7 @@
 
       a
         padding-right: 20px
-        font-family: $varela
-        font-size: 14px
-        line-height: 17px
+        @include varela-normal
         color: #FFFFFF
         text-decoration: underline
 
@@ -54,25 +52,24 @@
     align-content: space-between
 
     .caption-container
-      width: 172px
+      max-width: 172px
+      width: 100%
       position: relative
       margin-top: 15px
       padding: 0
 
       h4
-        font-family: $varela
-        font-style: normal
-        font-weight: normal
+        @include varela-normal
         font-size: 10px
         line-height: 12px
         color: #ACB3BA
         margin-bottom: 0
 
+      a
+        text-decoration: none
+
       p
-        font-family: $bitter
-        font-style: normal
-        font-weight: normal
-        font-size: 14px
+        @include bitter-normal
         line-height: 16,8px
         color: #FFFFFF
         text-decoration: none
@@ -87,7 +84,8 @@
           margin-right: 2px
 
     .image-container
-      width: 70px
+      max-width: 70px
+      width: 100%
       height: 70px
       padding: 0
 
@@ -103,11 +101,7 @@
   margin-top: 28px
 
   h2
-    font-family: $bitter
-    font-weight: bold
-    font-size: 24px
-    line-height: 29px
-    color: #363F48
+    @include bitter-bold-bigger
     margin-bottom: 15px
 
   .row
@@ -115,13 +109,16 @@
     margin: 7px 0
 
     i
-      width: 20px
-      height: 20px
+      max-width: 20px
+      width: 100%
+      max-height: 20px
+      height: 100%
       color: #FFFFFF
       margin: 0 auto
 
     .facebook
-      width: 40px
+      max-width: 40px
+      width: 100%
       height: 100%
       background: #39599F
       display: flex
@@ -129,7 +126,8 @@
       justify-content: center
 
     .twitter
-      width: 40px
+      max-width: 40px
+      width: 100%
       height: 100%
       background: #45B0E3
       display: flex
@@ -137,7 +135,8 @@
       justify-content: center
 
     .youtube
-      width: 40px
+      max-width: 40px
+      width: 100%
       height: 100%
       background: #E70031
       display: flex
@@ -145,7 +144,8 @@
       justify-content: center
 
     .textTab
-      width: 123px
+      max-width: 123px
+      width: 100%
       height: 100%
       background: #DDDDDD
       display: flex
@@ -170,10 +170,7 @@
       padding-top: 16px
 
       p
-        font-family: $varela
-        font-weight: 400
-        font-size: 14px
-        line-height: 16.86px
+        @include varela-normal
         color: #FFFFFF
         text-align: center
 
@@ -189,26 +186,24 @@
     justify-content: flex-start
 
     h2
-      font-family: $bitter
-      font-weight: bold
-      font-size: 24px
-      line-height: 29px
+      @include bitter-bold-bigger
       margin-left: 33px
-      color: #363F48
 
   .video-row
-    height: 149px
+    max-height: 149px
+    height: 100%
 
   .kenaz-tv-caption
     position: relative
     padding: 20px 1px 25px 32px
 
+    a
+      text-decoration: none
+
     h3
-      font-family: $bitter
-      font-weight: bold
+      @include bitter-bold-bigger
       font-size: 15px
       line-height: 18px
-      color: #363F48
       padding-top: 20px
 
     .date
@@ -217,9 +212,7 @@
       left: 32px
 
       h4
-        font-family: $varela
-        font-style: normal
-        font-weight: normal
+        @include varela-normal
         font-size: 10px
         line-height: 12px
         color: #363F48

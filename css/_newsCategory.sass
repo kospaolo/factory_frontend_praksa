@@ -1,18 +1,21 @@
 .news-category
-  width: 620px
+  max-width: 620px
+  width: 100%
   background: #FFFFFF
-  margin-top: 19px
+  display: flex
+  flex-direction: column
+  margin: 19px 0
+  float: left
 
   .main-heading
     padding-left: 42px
     padding-top: 15px
 
   h1
-    font-family: $bitter
-    font-style: normal
-    font-weight: bold
+    @include bitter-bold
     font-size: 24px
     line-height: 29px
+    color: #363F48
 
   .row
     border-bottom: 1px solid #DDDDDD
@@ -21,18 +24,20 @@
     margin: 0
 
   .heading
-    width: 500px
+    max-width: 500px
+    width: 100%
     margin-top: 35px
     margin-bottom: 16px
 
   h2
-    font-family: $bitter
-    font-style: normal
-    font-weight: bold
+    @include bitter-bold
     font-size: 24px
+    line-height: 28.8px
+    color: #363F48
 
   .date-and-author
-    width: 380px
+    max-width: 380px
+    width: 100%
     margin-bottom: 15px
     display: flex
     flex-direction: row
@@ -43,9 +48,7 @@
       font-size: 16px
 
     span
-      font-family: $varela
-      font-style: normal
-      font-weight: normal
+      @include varela-normal
       font-size: 12px
       display: inline-block
       color: #666666
@@ -54,8 +57,10 @@
     display: flex
 
   .image-container
-    height: 128px
-    width: 170px
+    max-height: 128px
+    height: 100%
+    max-width: 170px
+    width: 100%
     margin-right: 20px
     object-fit: contain
     align-self: flex-start
@@ -70,33 +75,19 @@
     flex: 1 1 auto
 
   p
-    font-family: $bitter
-    font-style: normal
-    font-weight: normal
-    font-size: 14px
-    line-height: 22px
+    @include bitter-normal
     color: #444444
     float: right
 
-  button
-    width: 120px
-    height: 30px
-    background: #4D4382
-    padding: 8px 20px
-    color: #FFFFFF
-    font-family: $varela
-    font-style: normal
-    font-weight: normal
-    font-size: 14px
-    line-height: 17px
-    border: none
+  @include category-button
 
   .pagination
     margin-top: 30px
 
     .number
-      width: 33px
+      max-width: 33px
       height: 32px
+      width: 100%
       margin-right: 5px
       display: table
 
@@ -105,11 +96,8 @@
       display: table-cell
       vertical-align: middle
       text-align: center
-      font-family: $varela
-      font-style: normal
-      font-weight: normal
-      font-size: 14px
-      line-height: 17px
+      @include varela-normal
+      color: #4D4382
 
     span:hover
       background: #4D4382

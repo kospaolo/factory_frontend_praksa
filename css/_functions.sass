@@ -4,39 +4,37 @@
   h1
     padding-left: 31px
     padding-top: 15px
-    font-family: $bitter
-    font-style: normal
-    font-weight: bold
+    @include bitter-bold
     font-size: 24px
     line-height: 29px
     color: #363F48
 
   h4
     margin-top: 6px
-    font-family: $varela
-    font-style: normal
-    font-weight: normal
+    @include varela-normal
     font-size: 12px
     line-height: 14px
     float: left
+    color: #666666
 
   p
-    font-family: $bitter
-    font-style: normal
-    font-weight: bold
+    @include bitter-bold
     font-size: 14px
     line-height: 15px
     float: left
+    color: #666666
 
   a
-    font-family: $varela
-    font-style: normal
-    font-weight: normal
-    font-size: 14px
-    line-height: 17px
+    @include varela-normal
     float: right
     margin-top: -20px
     padding-right: 30px
+    color: #3677B5
+
+@mixin sectionsp
+  p
+    margin-top: 16px
+    color: #222
 
 //Banners
 
@@ -50,10 +48,7 @@
   border: 1px solid #D7D7D7
 
   p
-    font-family: $varela
-    font-weight: normal
-    font-size: 14px
-    line-height: 16.86px
+    @include varela-normal
     color: #999999
     text-align: center
 
@@ -62,8 +57,10 @@
 @mixin arrows
   display: block
   position: absolute
-  width: 36px
-  height: 53px
+  max-width: 36px
+  max-height: 53px
+  width: 100%
+  height: 100%
   top: 47%
   transform: translateY(-50%)
   z-index: 1000

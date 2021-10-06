@@ -1,5 +1,6 @@
 .slider-container
-   width: 940px
+   max-width: 940px
+   width: 100%
    position: relative
    cursor: pointer
    margin-top: 18px
@@ -35,8 +36,10 @@
 
       .slider-caption
          position: absolute
-         width: 588px
-         height: 113px
+         max-width: 588px
+         max-height: 113px
+         width: 100%
+         height: 100%
          left: 30px
          top: 70%
          transform: translateY(-50%)
@@ -49,12 +52,9 @@
          justify-content: space-between
 
          h4
-            font-family: $varela
-            font-style: normal
-            font-weight: normal
+            @include varela-normal
             font-size: 12px
             line-height: 14.45px
-            color: #EEF6FA
 
       .caption-container
          display: flex
@@ -62,43 +62,9 @@
          justify-content: flex-start
 
          h2
-            font-family: $varela
-            font-style: normal
-            font-weight: bold
-            font-size: 33px
-            line-height: 40,8px
-            color: #EEF6FA
+            @include varela-bold
 
-      .slider-button
-         position: absolute
-         width: 123px
-         height: 33px
-         left: 20px
-         bottom: 0
-         transform: translateY(-50%)
-         z-index: 1000
-
-         a
-            -webkit-appearance: button
-            -moz-appearance: button
-            appearance: button
-            display: inline
-            color: #EEF6FA
-            text-decoration: none
-            font-family: $varela
-            font-style: normal
-            font-weight: normal
-            font-size: 14px
-            line-height: 17px
-            background: rgba(0, 0, 0, 0.0001)
-            border: 1px solid #FFFFFF
-            box-sizing: border-box
-            padding: 6px 15px
-            transition: 0.7s
-
-      a:hover
-         background-color: #c4d0d6
-         color: #000000
+      @include slider-button
 
    .bottom-slider
       margin: 0 auto
@@ -107,8 +73,10 @@
       .prev, .next
          display: block
          position: absolute
-         width: 36px
-         height: 53px
+         max-width: 36px
+         max-height: 53px
+         width: 100%
+         height: 100%
          top: 40%
 
       .prev
@@ -122,8 +90,10 @@
 
       .zoom-container
          position: absolute
-         width: 80px
-         height: 80px
+         max-width: 80px
+         max-height: 80px
+         width: 100%
+         height: 100%
          left: 50%
          top: 30%
          z-index: 1000
@@ -145,10 +115,13 @@
       position: absolute
       left: 0
       bottom: 20px
-      width: 940px
+      max-width: 940px
+      width: 100%
       padding: 0 20px
 
       img
          display: inline-block
-         width: 120px
-         height: 120px
+         max-width: 120px
+         max-height: 120px
+         width: 100%
+         height: 100%

@@ -1,18 +1,23 @@
 $categoryBackground: #4D4382
 $active: #299EC3
 
+@mixin text-box
+  display: flex
+  flex-direction: column
+  padding: 0 20px
+  justify-content: center
+
 .categories-wrap
   background: $categoryBackground
 
   .categories
+    max-width: 940px
     margin: 0 auto
-    width: 940px
-    height: 53px
+    width: 100%
 
     .category-links
       display: flex
       flex-direction: row
-      padding-right: 330px
 
       .inline
         text-align: center
@@ -23,75 +28,41 @@ $active: #299EC3
         padding: 15px 21px 14px 20px
 
       .business-div
-        padding-top: 9px
-        margin-left: 17px
-        margin: 0 auto
+        display: flex
 
-        .red
-          width: 132px
-          height: 4px
-          margin-left: 0
-          top: 97px
-          background: #EE6151
-          margin-top: 16px
+        .business-text-box
+        @include text-box
+        border-bottom: 4px solid #EE6151
 
       .sport-div
-        padding-top: 9px
-        margin-left: 11px
-        margin: 0 auto
+        display: flex
 
-        .green
-          width: 100px
-          height: 4px
-          margin-left: 0
-          top: 47px
-          background: #84C14F
-          margin-top: 16px
+        .sport-text-box
+        @include text-box
+        border-bottom: 4px solid #84C14F
 
       .life-div
-        padding-top: 9px
-        margin-left: 9px
-        margin: 0 auto
+        display: flex
 
-        .blue
-          width: 81px
-          height: 4px
-          margin-left: 0
-          top: 47px
-          background: #5DCFF3
-          margin-top: 16px
+        .life-text-box
+          @include text-box
+          border-bottom: 4px solid #5DCFF3
 
       .tech-div
-        padding-top: 9px
-        margin-left: 10px
-        margin: 0 auto
+        display: flex
 
-        .yellow
-          width: 91px
-          height: 4px
-          margin-left: 0
-          top: 47px
-          background: #FCC44D
-          margin-top: 16px
+        .tech-text-box
+          @include text-box
+          border-bottom: 4px solid #FCC44D
 
       .travel-div
-        padding-top: 9px
-        margin-left: 10px
-        margin: 0 auto
+        display: flex
 
-        .brown
-          width: 113px
-          height: 4px
-          margin-left: 0
-          top: 47px
-          background: #A99765
-          margin-top: 16px
+        .travel-text-box
+          @include text-box
+          border-bottom: 4px solid #A99765
 
       a
-        font-family: 'Bitter', serif
-        font-size: 18px
-        font-weight: bold
-        line-height: 21.6px
-        color: #fff
+        @include bitter-bold
         text-transform: uppercase
         text-decoration: none

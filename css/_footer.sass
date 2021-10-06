@@ -6,15 +6,14 @@ footer
    overflow: hidden
 
    h2
-      font-family: $bitter
-      font-style: normal
-      font-weight: bold
+      @include bitter-bold
       font-size: 24px
       line-height: 29px
       color: #CCCCCC
 
    .footer-content-container
-      width: 940px
+      max-width: 940px
+      width: 100%
       margin: 0 auto
 
       .upper-footer-container
@@ -25,12 +24,15 @@ footer
          grid-gap: 23px
 
          .kenaz
-            height: 174px
+            max-height: 174px
+            height: 100%
 
          .footer-logo
             position: absolute
-            width: 28px
-            height: 43px
+            max-width: 28px
+            max-height: 43px
+            width: 100%
+            height: 100%
             background: url('../assets/footerLogo.png') no-repeat
 
          .footer-heading
@@ -46,24 +48,26 @@ footer
                color: #45B0E3
 
          .kenaz-text
-            width: 303px
-            height: 40px
+            max-width: 303px
+            max-height: 40px
+            width: 100%
+            height: 100%
             margin-top: 60px
 
          p
-            font-family: $bitter
-            font-style: normal
-            font-weight: bold
+            @include bitter-bold
             font-size: 14px
             line-height: 20px
             color: #666666
 
          .socials
-            margin-top: 17px
+            margin-top: 27px
 
             i
-               width: 18px
-               height: 18px
+               max-width: 18px
+               max-height: 18px
+               width: 100%
+               height: 100%
                color: #FFFFFF
                padding: 10px
 
@@ -71,49 +75,57 @@ footer
             cursor: pointer
 
          .rss
-            width: 38px
+            max-width: 38px
             height: 38px
+            width: 100%
             background: #F8BC2E
             display: inline-block
 
          .facebook
-            width: 38px
+            max-width: 38px
             height: 38px
+            width: 100%
             background: #39599F
             display: inline-block
 
          .twitter
-            width: 38px
+            max-width: 38px
             height: 38px
+            width: 100%
             background: #45B0E3
             display: inline-block
 
          .dribble
-            width: 38px
+            max-width: 38px
             height: 38px
+            width: 100%
             background: #D97AA5
             display: inline-block
 
          .linkedin
-            width: 38px
+            max-width: 38px
             height: 38px
+            width: 100%
             background: #65B7D2
             display: inline-block
 
          .youtube
-            width: 38px
+            max-width: 38px
             height: 38px
+            width: 100%
             background: #E70031
             display: inline-block
 
          .skype
-            width: 38px
+            max-width: 38px
             height: 38px
+            width: 100%
             background: #00C6FF
             display: inline-block
 
          .newsletter
-            height: 174px
+            max-height: 174px
+            height: 100%
 
          .newsletter-heading
             margin-top: 6px
@@ -122,48 +134,31 @@ footer
             margin-top: 25px
 
          p
-            font-family: $bitter
-            font-style: normal
-            font-weight: normal
-            font-size: 14px
-            line-height: 20px
-            color: #666666
+            @include bitter-normal
 
          .text
-            width: 190px
+            max-width: 190px
+            width: 100%
 
          .form
             margin-top: 25px
 
          .email
             background: #333333
-            padding: 15px 70px 20px 20px
+            padding: 0 15px
             border: none
             color: #FFFFFF
             height: 53px
+            max-width: 193px
+            width: 100%
 
             &::placeholder
-               font-family: $varela
-               font-style: normal
-               font-weight: normal
-               font-size: 16px
-               line-height: 19px
-               color: #999999
+               @include varela-normal-bigger
 
          .email:focus
             outline: none
 
-         .subscribe-button
-            width: 110px
-            height: 53px
-            font-family: $varela
-            font-style: normal
-            font-weight: normal
-            font-size: 16px
-            line-height: 19px
-            background: #4D4382
-            border: none
-            color: #CCCCCC
+         @include footer-subscribe-button
 
          .tags-widget
             height: 174px
@@ -172,9 +167,7 @@ footer
                margin-top: 6px
 
             h2
-               font-family: $bitter
-               font-style: normal
-               font-weight: bold
+               @include bitter-bold
                font-size: 24px
                line-height: 29px
                color: #CCCCCC
@@ -183,40 +176,27 @@ footer
                margin-top: 25px
                width: 100%
 
-               button
-                  font-family: $varela
-                  font-style: normal
-                  font-weight: normal
-                  font-size: 12px
-                  line-height: 20px
-                  height: 28px
-                  width: auto
-                  padding: 5px 10px
-                  background: #333333
-                  color: #CCCCCC
-                  margin: 1px
-                  border: none
-
-               button:hover
-                  background: #4D4382
+               @include footer-tags-button
 
          .featured, .random-posts
-            height: 364px
+            max-height: 364px
+            height: 100%
 
             .row
-               height: 115px
+               max-height: 115px
+               height: 100%
                position: relative
 
                .caption-container
                   margin-top: 25px
-                  width: 214px
-                  height: 52px
+                  max-width: 214px
+                  max-height: 52px
+                  width: 100%
+                  height: 100%
                   position: relative
 
                   h4
-                     font-family: $varela
-                     font-style: normal
-                     font-weight: normal
+                     @include varela-normal
                      font-size: 10px
                      line-height: 12px
                      color: #666666
@@ -226,17 +206,19 @@ footer
                      top: 0px
                      right: 14px
 
+                  a
+                     text-decoration: none
+
                   p
-                     font-family: $bitter
-                     font-style: normal
-                     font-weight: normal
+                     @include bitter-normal
                      font-size: 15px
-                     line-height: 20px
                      color: #CCCCCC
 
                .image-container
-                  width: 70px
-                  height: 70px
+                  max-width: 70px
+                  max-height: 70px
+                  width: 100%
+                  height: 100%
                   position: absolute
                   top: 20px
                   left: 220px
@@ -245,8 +227,10 @@ footer
                      border: 2px solid #FFFFFF
 
             hr
-               width: 303px
-               height: 2px
+               max-width: 303px
+               max-height: 2px
+               width: 100%
+               height: 100%
                margin-top: 41px
                margin-left: 12px
                margin-right: 12px
@@ -254,44 +238,43 @@ footer
                opacity: 0.2
 
          .twitter-feed
-            height: 364px
+            max-height: 364px
+            height: 100%
 
             .row
-               height: 115px
+               max-height: 115px
+               height: 100%
                position: relative
                margin: 0
 
                .caption-container
                   margin-top: 15px
-                  height: 54px
+                  max-height: 54px
+                  height: 100%
                   position: relative
                   display: inline
                   padding: 0
 
                   i
-                     width: 24px
-                     height: 18px
+                     max-width: 24px
+                     max-height: 18px
+                     width: 100%
+                     height: 100%
                      color: #45B0E3
                      margin: 0
                      padding: 0
                      display: inline
 
                   h4
-                     font-family: $bitter
-                     font-style: normal
-                     font-weight: normal
-                     font-size: 14px
+                     @include bitter-normal
                      line-height: 16px
-                     color: #666666
                      margin: 0
                      padding: 0
                      display: inline
                      margin-left: 4px
 
                   p
-                     font-family: $varela
-                     font-style: normal
-                     font-weight: normal
+                     @include varela-normal
                      font-size: 13px
                      line-height: 18px
                      color: #CCCCCC
@@ -305,7 +288,8 @@ footer
          margin-left: -50%
 
       .lower-footer-container
-         height: 36px
+         max-height: 36px
+         height: 100%
          margin-top: 18px
          color: #999999
          display: flex

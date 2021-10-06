@@ -1,2 +1,52 @@
 $varela: 'Varela Round',serif
 $bitter: 'Bitter',serif
+
+@mixin varela-normal
+ font-family: $varela
+ font-style: normal
+ font-weight: normal
+ font-size: 14px
+ line-height: 17px
+ color: #EEF6FA
+
+@mixin varela-normaln-smaller
+ @include varela-normal
+ font-size: 13px
+ line-height: 20px
+ color: #444444
+
+@mixin varela-normal-bigger
+ @include varela-normal
+ font-size: 16px
+ line-height: 19px
+ color: #999999
+
+@mixin varela-bold
+ font-family: $varela
+ font-style: normal
+ font-weight: bold
+ font-size: 33px
+ line-height: 40,8px
+ color: #EEF6FA
+
+@mixin bitter-normal
+ font-family: $bitter
+ font-style: normal
+ font-weight: normal
+ font-size: 14px
+ line-height: 20px
+ color: #666666
+
+@mixin bitter-bold
+ font-family: $bitter
+ font-style: normal
+ font-size: 18px
+ font-weight: bold
+ line-height: 21.6px
+ color: #fff
+
+@mixin bitter-bold-bigger
+ @include bitter-bold
+ font-size: 24px
+ line-height: 29px
+ color: #363F48

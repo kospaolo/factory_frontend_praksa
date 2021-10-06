@@ -15,8 +15,9 @@ header {
 }
 
 header .main-nav {
-  width: 940px;
+  max-width: 940px;
   height: 53px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -28,22 +29,28 @@ header .main-nav a {
 
 header .main-nav .logo {
   position: absolute;
-  width: 142px;
-  height: 53px;
+  max-width: 142px;
+  max-height: 53px;
+  width: 100%;
+  height: 100%;
   left: 0;
 }
 
 header .main-nav .logo .arrow {
   position: absolute;
-  width: 63px;
-  height: 53px;
+  max-width: 63px;
+  max-height: 53px;
+  width: 100%;
+  height: 100%;
   background: rgba(255, 255, 255, 0.05);
 }
 
 header .main-nav .logo .arrow .arrow-icon {
   position: absolute;
-  width: 14px;
-  height: 21px;
+  max-width: 14px;
+  max-height: 21px;
+  width: 100%;
+  height: 100%;
   margin-left: 23px;
   margin-top: 15px;
   background: url("../assets/headerarrow.png") no-repeat;
@@ -54,9 +61,14 @@ header .main-nav .logo h2 {
   margin-top: 16.5px;
   margin-left: 72px;
   font-family: "Bitter", serif;
+  font-style: normal;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666666;
   font-size: 24px;
   line-height: 27px;
+  color: #FFFFFF;
 }
 
 header .main-nav .sub-nav {
@@ -85,7 +97,11 @@ header .main-nav .sub-nav .nav-links-container .nav-links li {
 
 header .main-nav .sub-nav .nav-links-container .nav-links li a {
   font-family: "Varela Round", serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
+  line-height: 17px;
+  color: #EEF6FA;
   line-height: 27px;
   color: #FFFFFF;
   text-decoration: none;
@@ -95,68 +111,27 @@ header .main-nav .sub-nav .search {
   right: 0;
   background: yellow;
   height: 100%;
-  width: 60px;
+  max-width: 60px;
+  width: 100%;
   position: absolute;
   width: 62px;
   height: 53px;
   background: rgba(255, 255, 255, 0.05);
 }
 
+header .main-nav .sub-nav .search:hover {
+  cursor: pointer;
+}
+
 header .main-nav .sub-nav .search-icon {
   position: absolute;
-  width: 16px;
-  height: 16px;
+  max-width: 16px;
+  max-height: 16px;
+  width: 100%;
+  height: 100%;
   margin-left: 23px;
   margin-top: 18px;
   background: url("../assets/searchicon.png") no-repeat;
-}
-
-header .main-nav .sub-nav .searchicon:hover {
-  cursor: pointer;
-}
-
-.togglesearch {
-  background: #252525;
-  position: absolute;
-  top: 70px;
-  right: 5%;
-  width: 350px;
-  height: 60px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border-top: 4px solid #252525;
-  display: none;
-}
-
-.togglesearch:before {
-  content: "";
-  position: absolute;
-  top: -32px;
-  right: 13px;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-top: 14px solid transparent;
-  border-bottom: 14px solid #252525;
-}
-
-.togglesearch input[type="text"] {
-  width: 200px;
-  padding: 5px 10px;
-  margin-left: 23px;
-  margin-top: 4px;
-  border: 1px solid #252525;
-  outline: none;
-}
-
-.togglesearch input[type="button"] {
-  width: 80px;
-  padding: 5px 0;
-  background: rgba(255, 255, 255, 0.05);
-  color: #fff;
-  margin-left: -6px;
-  border: none;
-  outline: none;
-  cursor: pointer;
 }
 
 .categories-wrap {
@@ -164,9 +139,9 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .categories-wrap .categories {
+  max-width: 940px;
   margin: 0 auto;
-  width: 940px;
-  height: 53px;
+  width: 100%;
 }
 
 .categories-wrap .categories .category-links {
@@ -177,7 +152,6 @@ header .main-nav .sub-nav .searchicon:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-right: 330px;
 }
 
 .categories-wrap .categories .category-links .inline {
@@ -191,82 +165,103 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .categories-wrap .categories .category-links .business-div {
-  padding-top: 9px;
-  margin-left: 17px;
-  margin: 0 auto;
-}
-
-.categories-wrap .categories .category-links .business-div .red {
-  width: 132px;
-  height: 4px;
-  margin-left: 0;
-  top: 97px;
-  background: #EE6151;
-  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 4px solid #EE6151;
 }
 
 .categories-wrap .categories .category-links .sport-div {
-  padding-top: 9px;
-  margin-left: 11px;
-  margin: 0 auto;
-}
-
-.categories-wrap .categories .category-links .sport-div .green {
-  width: 100px;
-  height: 4px;
-  margin-left: 0;
-  top: 47px;
-  background: #84C14F;
-  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 4px solid #84C14F;
 }
 
 .categories-wrap .categories .category-links .life-div {
-  padding-top: 9px;
-  margin-left: 9px;
-  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.categories-wrap .categories .category-links .life-div .blue {
-  width: 81px;
-  height: 4px;
-  margin-left: 0;
-  top: 47px;
-  background: #5DCFF3;
-  margin-top: 16px;
+.categories-wrap .categories .category-links .life-div .life-text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 4px solid #5DCFF3;
 }
 
 .categories-wrap .categories .category-links .tech-div {
-  padding-top: 9px;
-  margin-left: 10px;
-  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.categories-wrap .categories .category-links .tech-div .yellow {
-  width: 91px;
-  height: 4px;
-  margin-left: 0;
-  top: 47px;
-  background: #FCC44D;
-  margin-top: 16px;
+.categories-wrap .categories .category-links .tech-div .tech-text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 4px solid #FCC44D;
 }
 
 .categories-wrap .categories .category-links .travel-div {
-  padding-top: 9px;
-  margin-left: 10px;
-  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.categories-wrap .categories .category-links .travel-div .brown {
-  width: 113px;
-  height: 4px;
-  margin-left: 0;
-  top: 47px;
-  background: #A99765;
-  margin-top: 16px;
+.categories-wrap .categories .category-links .travel-div .travel-text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 4px solid #A99765;
 }
 
 .categories-wrap .categories .category-links a {
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
+  font-style: normal;
   font-size: 18px;
   font-weight: bold;
   line-height: 21.6px;
@@ -276,7 +271,8 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .slider-container {
-  width: 940px;
+  max-width: 940px;
+  width: 100%;
   position: relative;
   cursor: pointer;
   margin-top: 18px;
@@ -285,8 +281,10 @@ header .main-nav .sub-nav .searchicon:hover {
 .slider-container .prev {
   display: block;
   position: absolute;
-  width: 36px;
-  height: 53px;
+  max-width: 36px;
+  max-height: 53px;
+  width: 100%;
+  height: 100%;
   top: 47%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -297,8 +295,10 @@ header .main-nav .sub-nav .searchicon:hover {
 .slider-container .next {
   display: block;
   position: absolute;
-  width: 36px;
-  height: 53px;
+  max-width: 36px;
+  max-height: 53px;
+  width: 100%;
+  height: 100%;
   top: 47%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -340,8 +340,10 @@ header .main-nav .sub-nav .searchicon:hover {
 
 .slider-container .upper-slider .slider-caption {
   position: absolute;
-  width: 588px;
-  height: 113px;
+  max-width: 588px;
+  max-height: 113px;
+  width: 100%;
+  height: 100%;
   left: 30px;
   top: 70%;
   -webkit-transform: translateY(-50%);
@@ -367,9 +369,11 @@ header .main-nav .sub-nav .searchicon:hover {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EEF6FA;
   font-size: 12px;
   line-height: 14.45px;
-  color: #EEF6FA;
 }
 
 .slider-container .upper-slider .caption-container {
@@ -396,10 +400,12 @@ header .main-nav .sub-nav .searchicon:hover {
 
 .slider-container .upper-slider .slider-button {
   position: absolute;
-  width: 123px;
-  height: 33px;
-  left: 20px;
-  bottom: 0;
+  max-width: 123px;
+  max-height: 33px;
+  width: 100%;
+  height: 100%;
+  left: 30px;
+  bottom: 5%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 1000;
@@ -410,13 +416,7 @@ header .main-nav .sub-nav .searchicon:hover {
   -moz-appearance: button;
   appearance: button;
   display: inline;
-  color: #EEF6FA;
   text-decoration: none;
-  font-family: "Varela Round", serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
   background: rgba(0, 0, 0, 0.0001);
   border: 1px solid #FFFFFF;
   -webkit-box-sizing: border-box;
@@ -424,9 +424,15 @@ header .main-nav .sub-nav .searchicon:hover {
   padding: 6px 15px;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+  font-family: "Varela Round", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EEF6FA;
 }
 
-.slider-container .upper-slider a:hover {
+.slider-container .upper-slider .slider-button a:hover {
   background-color: #c4d0d6;
   color: #000000;
 }
@@ -439,8 +445,10 @@ header .main-nav .sub-nav .searchicon:hover {
 .slider-container .bottom-slider .prev, .slider-container .bottom-slider .next {
   display: block;
   position: absolute;
-  width: 36px;
-  height: 53px;
+  max-width: 36px;
+  max-height: 53px;
+  width: 100%;
+  height: 100%;
   top: 40%;
 }
 
@@ -458,8 +466,10 @@ header .main-nav .sub-nav .searchicon:hover {
 
 .slider-container .bottom-slider .zoom-container {
   position: absolute;
-  width: 80px;
-  height: 80px;
+  max-width: 80px;
+  max-height: 80px;
+  width: 100%;
+  height: 100%;
   left: 50%;
   top: 30%;
   z-index: 1000;
@@ -486,19 +496,23 @@ header .main-nav .sub-nav .searchicon:hover {
   position: absolute;
   left: 0;
   bottom: 20px;
-  width: 940px;
+  max-width: 940px;
+  width: 100%;
   padding: 0 20px;
 }
 
 .slider-container .thumbnails img {
   display: inline-block;
-  width: 120px;
-  height: 120px;
+  max-width: 120px;
+  max-height: 120px;
+  width: 100%;
+  height: 100%;
 }
 
 .nineforty-banner {
-  width: 940px;
+  max-width: 940px;
   height: 120px;
+  width: 100%;
   margin-top: 16px;
   background-color: #FFFFFF;
   border: 1px solid #D7D7D7;
@@ -516,16 +530,19 @@ header .main-nav .sub-nav .searchicon:hover {
 
 .nineforty-banner p {
   font-family: "Varela Round", serif;
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 16.86px;
+  line-height: 17px;
+  color: #EEF6FA;
   color: #999999;
   text-align: center;
 }
 
 .sixtwenty-banner {
-  width: 620px;
+  max-width: 620px;
   height: 120px;
+  width: 100%;
   margin-top: 16px;
   background-color: #FFFFFF;
   border: 1px solid #D7D7D7;
@@ -543,16 +560,19 @@ header .main-nav .sub-nav .searchicon:hover {
 
 .sixtwenty-banner p {
   font-family: "Varela Round", serif;
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 16.86px;
+  line-height: 17px;
+  color: #EEF6FA;
   color: #999999;
   text-align: center;
 }
 
 .small-banners {
-  width: 128px;
+  max-width: 128px;
   height: 128px;
+  width: 100%;
   margin-top: 16px;
   background-color: #FFFFFF;
   border: 1px solid #D7D7D7;
@@ -571,29 +591,46 @@ header .main-nav .sub-nav .searchicon:hover {
 
 .small-banners p {
   font-family: "Varela Round", serif;
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 16.86px;
+  line-height: 17px;
+  color: #EEF6FA;
   color: #999999;
   text-align: center;
 }
 
 .main-wrapper {
   margin: 0 auto;
-  width: 940px;
+  max-width: 940px;
+  width: 100%;
   margin-top: 16px;
   position: relative;
 }
 
 .middle-section {
-  width: 940px;
+  max-width: 940px;
+  width: 100%;
   position: relative;
 }
 
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  float: left;
+  margin: 19px 0;
+}
+
 .news-tab {
-  width: 620px;
+  max-width: 620px;
   height: 325px;
-  margin-top: 19px;
+  width: 100%;
   background: #FFFFFF;
   border-left: 13px solid #3677B5;
 }
@@ -603,7 +640,10 @@ header .main-nav .sub-nav .searchicon:hover {
   padding-top: 15px;
   font-family: "Bitter", serif;
   font-style: normal;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 21.6px;
+  color: #fff;
   font-size: 24px;
   line-height: 29px;
   color: #363F48;
@@ -614,18 +654,26 @@ header .main-nav .sub-nav .searchicon:hover {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EEF6FA;
   font-size: 12px;
   line-height: 14px;
   float: left;
+  color: #666666;
 }
 
 .news-tab p {
   font-family: "Bitter", serif;
   font-style: normal;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 21.6px;
+  color: #fff;
   font-size: 14px;
   line-height: 15px;
   float: left;
+  color: #666666;
 }
 
 .news-tab a {
@@ -634,9 +682,11 @@ header .main-nav .sub-nav .searchicon:hover {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
+  color: #EEF6FA;
   float: right;
   margin-top: -20px;
   padding-right: 30px;
+  color: #3677B5;
 }
 
 .news-tab .row {
@@ -651,8 +701,9 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .news-tab .row .column .image-container {
-  width: 170px;
+  max-width: 170px;
   height: 128px;
+  width: 100%;
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -670,13 +721,19 @@ header .main-nav .sub-nav .searchicon:hover {
   clear: both;
 }
 
+.news-tab .row .column .caption-container p {
+  margin-top: 16px;
+  color: #222;
+}
+
 .news-tab .row .column .caption-container .comments-container {
   float: right;
 }
 
 .sport-tab {
-  width: 620px;
+  max-width: 620px;
   height: 325px;
+  width: 100%;
   margin-top: 17px;
   background: #FFFFFF;
   border-left: 13px solid #84C14F;
@@ -687,7 +744,10 @@ header .main-nav .sub-nav .searchicon:hover {
   padding-top: 15px;
   font-family: "Bitter", serif;
   font-style: normal;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 21.6px;
+  color: #fff;
   font-size: 24px;
   line-height: 29px;
   color: #363F48;
@@ -698,18 +758,26 @@ header .main-nav .sub-nav .searchicon:hover {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EEF6FA;
   font-size: 12px;
   line-height: 14px;
   float: left;
+  color: #666666;
 }
 
 .sport-tab p {
   font-family: "Bitter", serif;
   font-style: normal;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 21.6px;
+  color: #fff;
   font-size: 14px;
   line-height: 15px;
   float: left;
+  color: #666666;
 }
 
 .sport-tab a {
@@ -718,9 +786,11 @@ header .main-nav .sub-nav .searchicon:hover {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
+  color: #EEF6FA;
   float: right;
   margin-top: -20px;
   padding-right: 30px;
+  color: #3677B5;
 }
 
 .sport-tab .row {
@@ -735,8 +805,9 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .sport-tab .row .column .image-container {
-  width: 170px;
+  max-width: 170px;
   height: 128px;
+  width: 100%;
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -754,8 +825,14 @@ header .main-nav .sub-nav .searchicon:hover {
   clear: both;
 }
 
+.sport-tab .row .caption-container p {
+  margin-top: 16px;
+  color: #222;
+}
+
 .business-tab {
-  width: 620px;
+  max-width: 620px;
+  width: 100%;
   margin-top: 17px;
   background: #FFFFFF;
   border-left: 13px solid #EE6151;
@@ -766,7 +843,10 @@ header .main-nav .sub-nav .searchicon:hover {
   padding-top: 15px;
   font-family: "Bitter", serif;
   font-style: normal;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 21.6px;
+  color: #fff;
   font-size: 24px;
   line-height: 29px;
   color: #363F48;
@@ -777,18 +857,26 @@ header .main-nav .sub-nav .searchicon:hover {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EEF6FA;
   font-size: 12px;
   line-height: 14px;
   float: left;
+  color: #666666;
 }
 
 .business-tab p {
   font-family: "Bitter", serif;
   font-style: normal;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 21.6px;
+  color: #fff;
   font-size: 14px;
   line-height: 15px;
   float: left;
+  color: #666666;
 }
 
 .business-tab a {
@@ -797,9 +885,11 @@ header .main-nav .sub-nav .searchicon:hover {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
+  color: #EEF6FA;
   float: right;
   margin-top: -20px;
   padding-right: 30px;
+  color: #3677B5;
 }
 
 .business-tab .row {
@@ -834,8 +924,14 @@ header .main-nav .sub-nav .searchicon:hover {
   height: 85px;
 }
 
+.business-tab .row .column .caption-container p {
+  margin-top: 16px;
+  color: #222;
+}
+
 .news-carousel {
-  width: 620px;
+  max-width: 620px;
+  width: 100%;
   margin-top: 17px;
   background: #FFFFFF;
   border-left: 13px solid #FCC44D;
@@ -847,7 +943,10 @@ header .main-nav .sub-nav .searchicon:hover {
   padding-top: 15px;
   font-family: "Bitter", serif;
   font-style: normal;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 21.6px;
+  color: #fff;
   font-size: 24px;
   line-height: 29px;
   color: #363F48;
@@ -858,18 +957,26 @@ header .main-nav .sub-nav .searchicon:hover {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EEF6FA;
   font-size: 12px;
   line-height: 14px;
   float: left;
+  color: #666666;
 }
 
 .news-carousel p {
   font-family: "Bitter", serif;
   font-style: normal;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 21.6px;
+  color: #fff;
   font-size: 14px;
   line-height: 15px;
   float: left;
+  color: #666666;
 }
 
 .news-carousel a {
@@ -878,15 +985,19 @@ header .main-nav .sub-nav .searchicon:hover {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
+  color: #EEF6FA;
   float: right;
   margin-top: -20px;
   padding-right: 30px;
+  color: #3677B5;
 }
 
 .news-carousel .news-carousel-prev {
   background: url("../assets/newscarouselleftarrow.png") no-repeat;
-  width: 16px;
-  height: 22px;
+  max-width: 16px;
+  max-height: 22px;
+  width: 100%;
+  height: 100%;
   outline: none;
   border: none;
   display: block;
@@ -898,8 +1009,10 @@ header .main-nav .sub-nav .searchicon:hover {
 
 .news-carousel .news-carousel-next {
   background: url("../assets/newscarouselrightarrow.png") no-repeat;
-  width: 16px;
-  height: 22px;
+  max-width: 16px;
+  max-height: 22px;
+  width: 100%;
+  height: 100%;
   outline: none;
   border: none;
   display: block;
@@ -917,8 +1030,9 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .news-carousel .news-carousel-content-container .column {
-  width: 260px;
+  max-width: 260px;
   height: 220px;
+  width: 100%;
   margin-left: 30px;
   margin-right: 10px;
   display: -ms-grid;
@@ -928,8 +1042,9 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .news-carousel .news-carousel-content-container .column .image-container img {
-  width: 260px;
+  max-width: 260px;
   height: 150px;
+  width: 100%;
 }
 
 .news-carousel .news-carousel-content-container .column .image-container .caption-container {
@@ -938,12 +1053,18 @@ header .main-nav .sub-nav .searchicon:hover {
   height: 67px;
 }
 
+.news-carousel .news-carousel-content-container .column .image-container .caption-container p {
+  margin-top: 16px;
+  color: #222;
+}
+
 .brown-tabs {
-  width: 303px;
+  max-width: 609px;
+  width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 293px 293px;
-      grid-template-columns: 293px 293px;
+  -ms-grid-columns: 299px 299px;
+      grid-template-columns: 299px 299px;
   grid-gap: 23px;
 }
 
@@ -952,7 +1073,10 @@ header .main-nav .sub-nav .searchicon:hover {
   padding-top: 15px;
   font-family: "Bitter", serif;
   font-style: normal;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 21.6px;
+  color: #fff;
   font-size: 24px;
   line-height: 29px;
   color: #363F48;
@@ -963,18 +1087,26 @@ header .main-nav .sub-nav .searchicon:hover {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EEF6FA;
   font-size: 12px;
   line-height: 14px;
   float: left;
+  color: #666666;
 }
 
 .brown-tabs p {
   font-family: "Bitter", serif;
   font-style: normal;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 21.6px;
+  color: #fff;
   font-size: 14px;
   line-height: 15px;
   float: left;
+  color: #666666;
 }
 
 .brown-tabs a {
@@ -983,14 +1115,17 @@ header .main-nav .sub-nav .searchicon:hover {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
+  color: #EEF6FA;
   float: right;
   margin-top: -20px;
   padding-right: 30px;
+  color: #3677B5;
 }
 
 .brown-tabs .editorials-tab {
-  width: 303px;
+  max-width: 303px;
   height: 325px;
+  width: 100%;
   margin-top: 17px;
   background: #FFFFFF;
   border-left: 13px solid #A99765;
@@ -1000,8 +1135,10 @@ header .main-nav .sub-nav .searchicon:hover {
 .brown-tabs .editorials-tab .editorials-prev {
   position: absolute;
   background: url("../assets/editorialsleftarrow.png") no-repeat;
-  width: 16px;
-  height: 22px;
+  max-width: 16px;
+  max-height: 22px;
+  width: 100%;
+  height: 100%;
   outline: none;
   border: none;
   display: block;
@@ -1012,8 +1149,10 @@ header .main-nav .sub-nav .searchicon:hover {
 
 .brown-tabs .editorials-tab .editorials-next {
   background: url("../assets/editorialsrightarrow.png") no-repeat;
-  width: 16px;
-  height: 22px;
+  max-width: 16px;
+  max-height: 22px;
+  width: 100%;
+  height: 100%;
   outline: none;
   border: none;
   display: block;
@@ -1026,13 +1165,15 @@ header .main-nav .sub-nav .searchicon:hover {
 .brown-tabs .editorials-tab .editorials-content-container {
   margin: 0 auto;
   margin-top: 30px;
-  width: 230px;
+  max-width: 230px;
   height: 219px;
+  width: 100%;
 }
 
 .brown-tabs .editorials-tab .editorials-content-container img {
-  width: 230px;
+  max-width: 230px;
   height: 150px;
+  width: 100%;
 }
 
 .brown-tabs .editorials-tab .caption-container {
@@ -1041,9 +1182,15 @@ header .main-nav .sub-nav .searchicon:hover {
   height: 67px;
 }
 
+.brown-tabs .editorials-tab .caption-container p {
+  margin-top: 16px;
+  color: #222;
+}
+
 .brown-tabs .local-news-tab {
-  width: 303px;
+  max-width: 303px;
   height: 325px;
+  width: 100%;
   margin-top: 17px;
   background: #FFFFFF;
   border-left: 13px solid #A99765;
@@ -1053,8 +1200,10 @@ header .main-nav .sub-nav .searchicon:hover {
 .brown-tabs .local-news-tab .local-news-prev {
   position: absolute;
   background: url("../assets/editorialsleftarrow.png") no-repeat;
-  width: 16px;
-  height: 22px;
+  max-width: 16px;
+  max-height: 22px;
+  width: 100%;
+  height: 100%;
   outline: none;
   border: none;
   display: block;
@@ -1066,8 +1215,10 @@ header .main-nav .sub-nav .searchicon:hover {
 
 .brown-tabs .local-news-tab .local-news-next {
   background: url("../assets/editorialsrightarrow.png") no-repeat;
-  width: 16px;
-  height: 22px;
+  max-width: 16px;
+  max-height: 22px;
+  width: 100%;
+  height: 100%;
   outline: none;
   border: none;
   display: block;
@@ -1080,13 +1231,15 @@ header .main-nav .sub-nav .searchicon:hover {
 .brown-tabs .local-news-tab .local-news-content-container {
   margin: 0 auto;
   margin-top: 30px;
-  width: 230px;
+  max-width: 230px;
   height: 219px;
+  width: 100%;
 }
 
 .brown-tabs .local-news-tab .local-news-content-container img {
-  width: 230px;
+  max-width: 230px;
   height: 150px;
+  width: 100%;
 }
 
 .brown-tabs .local-news-tab .caption-container {
@@ -1095,19 +1248,29 @@ header .main-nav .sub-nav .searchicon:hover {
   height: 67px;
 }
 
+.brown-tabs .local-news-tab .caption-container p {
+  margin-top: 16px;
+  color: #222;
+}
+
 .side-bars {
-  width: 300px;
-  right: 0;
-  top: 0;
-  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+  padding: 0;
+  margin: 19px 0;
+  float: right;
 }
 
 .popular {
   height: 667px;
   background: #4D4382;
-  right: 0;
-  top: 0;
-  margin-bottom: 25px;
 }
 
 .popular .popular-header {
@@ -1127,8 +1290,11 @@ header .main-nav .sub-nav .searchicon:hover {
 .popular .popular-header .nav-links a {
   padding-right: 20px;
   font-family: "Varela Round", serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
+  color: #EEF6FA;
   color: #FFFFFF;
   text-decoration: underline;
 }
@@ -1164,7 +1330,8 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .popular .row .caption-container {
-  width: 172px;
+  max-width: 172px;
+  width: 100%;
   position: relative;
   margin-top: 15px;
   padding: 0;
@@ -1174,10 +1341,17 @@ header .main-nav .sub-nav .searchicon:hover {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EEF6FA;
   font-size: 10px;
   line-height: 12px;
   color: #ACB3BA;
   margin-bottom: 0;
+}
+
+.popular .row .caption-container a {
+  text-decoration: none;
 }
 
 .popular .row .caption-container p {
@@ -1185,6 +1359,8 @@ header .main-nav .sub-nav .searchicon:hover {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
+  line-height: 20px;
+  color: #666666;
   line-height: 16,8px;
   color: #FFFFFF;
   text-decoration: none;
@@ -1202,7 +1378,8 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .popular .row .image-container {
-  width: 70px;
+  max-width: 70px;
+  width: 100%;
   height: 70px;
   padding: 0;
 }
@@ -1223,7 +1400,11 @@ header .main-nav .sub-nav .searchicon:hover {
 
 .social-sidebar h2 {
   font-family: "Bitter", serif;
+  font-style: normal;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 21.6px;
+  color: #fff;
   font-size: 24px;
   line-height: 29px;
   color: #363F48;
@@ -1236,14 +1417,17 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .social-sidebar .row i {
-  width: 20px;
-  height: 20px;
+  max-width: 20px;
+  width: 100%;
+  max-height: 20px;
+  height: 100%;
   color: #FFFFFF;
   margin: 0 auto;
 }
 
 .social-sidebar .row .facebook {
-  width: 40px;
+  max-width: 40px;
+  width: 100%;
   height: 100%;
   background: #39599F;
   display: -webkit-box;
@@ -1258,7 +1442,8 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .social-sidebar .row .twitter {
-  width: 40px;
+  max-width: 40px;
+  width: 100%;
   height: 100%;
   background: #45B0E3;
   display: -webkit-box;
@@ -1273,7 +1458,8 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .social-sidebar .row .youtube {
-  width: 40px;
+  max-width: 40px;
+  width: 100%;
   height: 100%;
   background: #E70031;
   display: -webkit-box;
@@ -1288,7 +1474,8 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .social-sidebar .row .textTab {
-  width: 123px;
+  max-width: 123px;
+  width: 100%;
   height: 100%;
   background: #DDDDDD;
   display: -webkit-box;
@@ -1329,9 +1516,11 @@ header .main-nav .sub-nav .searchicon:hover {
 
 .social-sidebar .row .social-numbers p {
   font-family: "Varela Round", serif;
-  font-weight: 400;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
-  line-height: 16.86px;
+  line-height: 17px;
+  color: #EEF6FA;
   color: #FFFFFF;
   text-align: center;
 }
@@ -1357,15 +1546,20 @@ header .main-nav .sub-nav .searchicon:hover {
 
 .kenaz-tv .kenaz-tv-heading h2 {
   font-family: "Bitter", serif;
+  font-style: normal;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 21.6px;
+  color: #fff;
   font-size: 24px;
   line-height: 29px;
-  margin-left: 33px;
   color: #363F48;
+  margin-left: 33px;
 }
 
 .kenaz-tv .video-row {
-  height: 149px;
+  max-height: 149px;
+  height: 100%;
 }
 
 .kenaz-tv .kenaz-tv-caption {
@@ -1373,12 +1567,22 @@ header .main-nav .sub-nav .searchicon:hover {
   padding: 20px 1px 25px 32px;
 }
 
+.kenaz-tv .kenaz-tv-caption a {
+  text-decoration: none;
+}
+
 .kenaz-tv .kenaz-tv-caption h3 {
   font-family: "Bitter", serif;
+  font-style: normal;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 21.6px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 29px;
+  color: #363F48;
   font-size: 15px;
   line-height: 18px;
-  color: #363F48;
   padding-top: 20px;
 }
 
@@ -1392,6 +1596,9 @@ header .main-nav .sub-nav .searchicon:hover {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EEF6FA;
   font-size: 10px;
   line-height: 12px;
   color: #363F48;
@@ -1425,9 +1632,18 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .news-category {
-  width: 620px;
+  max-width: 620px;
+  width: 100%;
   background: #FFFFFF;
-  margin-top: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 19px 0;
+  float: left;
 }
 
 .news-category .main-heading {
@@ -1438,9 +1654,13 @@ header .main-nav .sub-nav .searchicon:hover {
 .news-category h1 {
   font-family: "Bitter", serif;
   font-style: normal;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 21.6px;
+  color: #fff;
   font-size: 24px;
   line-height: 29px;
+  color: #363F48;
 }
 
 .news-category .row {
@@ -1451,7 +1671,8 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .news-category .heading {
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   margin-top: 35px;
   margin-bottom: 16px;
 }
@@ -1459,12 +1680,18 @@ header .main-nav .sub-nav .searchicon:hover {
 .news-category h2 {
   font-family: "Bitter", serif;
   font-style: normal;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 21.6px;
+  color: #fff;
   font-size: 24px;
+  line-height: 28.8px;
+  color: #363F48;
 }
 
 .news-category .date-and-author {
-  width: 380px;
+  max-width: 380px;
+  width: 100%;
   margin-bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1487,6 +1714,9 @@ header .main-nav .sub-nav .searchicon:hover {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EEF6FA;
   font-size: 12px;
   display: inline-block;
   color: #666666;
@@ -1499,8 +1729,10 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .news-category .image-container {
-  height: 128px;
-  width: 170px;
+  max-height: 128px;
+  height: 100%;
+  max-width: 170px;
+  width: 100%;
   margin-right: 20px;
   -o-object-fit: contain;
      object-fit: contain;
@@ -1527,22 +1759,25 @@ header .main-nav .sub-nav .searchicon:hover {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 20px;
+  color: #666666;
   color: #444444;
   float: right;
 }
 
 .news-category button {
-  width: 120px;
+  max-width: 120px;
   height: 30px;
+  width: 100%;
   background: #4D4382;
   padding: 8px 20px;
-  color: #FFFFFF;
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
+  color: #EEF6FA;
+  color: #FFFFFF;
   border: none;
 }
 
@@ -1551,8 +1786,9 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .news-category .pagination .number {
-  width: 33px;
+  max-width: 33px;
   height: 32px;
+  width: 100%;
   margin-right: 5px;
   display: table;
 }
@@ -1567,6 +1803,8 @@ header .main-nav .sub-nav .searchicon:hover {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
+  color: #EEF6FA;
+  color: #4D4382;
 }
 
 .news-category .pagination span:hover {
@@ -1583,7 +1821,8 @@ header .main-nav .sub-nav .searchicon:hover {
 .single-image {
   margin-top: 18px;
   margin-bottom: 8px;
-  width: 940px;
+  max-width: 940px;
+  width: 100%;
   height: 588px;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(7%, #EEEEEE), color-stop(45%, rgba(255, 255, 255, 0))), url("../assets/singleimg.png");
   background-image: linear-gradient(to top, #EEEEEE 7%, rgba(255, 255, 255, 0) 45%), url("../assets/singleimg.png");
@@ -1591,7 +1830,8 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .single-caption {
-  height: 144px;
+  max-height: 144px;
+  height: 100%;
   position: absolute;
   left: 51px;
   bottom: 35px;
@@ -1641,14 +1881,25 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .single-category {
-  width: 620px;
+  max-width: 620px;
+  width: 100%;
   height: 953px;
   background: #FFFFFF;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 19px 0;
+  float: left;
 }
 
 .paragraph {
-  width: 572px;
+  max-width: 572px;
+  width: 100%;
   padding: 37px;
 }
 
@@ -1667,8 +1918,10 @@ header .main-nav .sub-nav .searchicon:hover {
 
 .single-socials {
   margin-top: 44px;
-  width: 607px;
-  height: 42px;
+  max-width: 607px;
+  width: 100%;
+  max-height: 42px;
+  height: 100%;
   position: absolute;
   bottom: 18px;
 }
@@ -1681,7 +1934,8 @@ header .main-nav .sub-nav .searchicon:hover {
 .about-the-author {
   margin-top: 16px;
   background: #FFFFFF;
-  width: 620px;
+  max-width: 620px;
+  width: 100%;
 }
 
 .about-the-author .row {
@@ -1713,8 +1967,10 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .single-content .image-container {
-  height: 110px;
-  width: 110px;
+  max-height: 110px;
+  max-width: 110px;
+  height: 100%;
+  width: 100%;
   margin-right: 20px;
   -o-object-fit: contain;
      object-fit: contain;
@@ -1748,7 +2004,8 @@ header .main-nav .sub-nav .searchicon:hover {
 .comments {
   margin-top: 16px;
   background: #FFFFFF;
-  width: 620px;
+  max-width: 620px;
+  width: 100%;
 }
 
 .comments .row {
@@ -1783,8 +2040,10 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .comments .user-image-container {
-  width: 57px;
-  height: 58px;
+  max-width: 57px;
+  width: 100%;
+  max-height: 58px;
+  height: 100%;
   border: 1px solid #CCCCCC;
 }
 
@@ -1814,8 +2073,10 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .comments .user {
-  width: 502px;
-  height: 20px;
+  max-width: 502px;
+  max-height: 20px;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1862,13 +2123,17 @@ header .main-nav .sub-nav .searchicon:hover {
 }
 
 .comments .users-comment {
-  width: 502px;
+  max-width: 502px;
+  width: 100%;
 }
 
 .comments .users-comment p {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EEF6FA;
   font-size: 13px;
   line-height: 20px;
   color: #444444;
@@ -1882,6 +2147,9 @@ header .main-nav .sub-nav .searchicon:hover {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EEF6FA;
   font-size: 13px;
   line-height: 20px;
   color: #444444;
@@ -1904,6 +2172,7 @@ header .main-nav .sub-nav .searchicon:hover {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
+  color: #EEF6FA;
   color: #666666;
 }
 
@@ -1913,6 +2182,7 @@ header .main-nav .sub-nav .searchicon:hover {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
+  color: #EEF6FA;
   color: #666666;
 }
 
@@ -1922,6 +2192,7 @@ header .main-nav .sub-nav .searchicon:hover {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
+  color: #EEF6FA;
   color: #666666;
 }
 
@@ -1931,6 +2202,7 @@ header .main-nav .sub-nav .searchicon:hover {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
+  color: #EEF6FA;
   color: #666666;
 }
 
@@ -1941,10 +2213,13 @@ header .main-nav .sub-nav .searchicon:hover {
 .comments .single-form button {
   border-radius: 0;
   margin-top: 18px;
-  width: 153px;
-  height: 53px;
+  max-width: 153px;
+  width: 100%;
+  max-height: 53px;
+  height: 100%;
   background: #4D4382;
   border: none;
+  margin-bottom: 30px;
 }
 
 footer {
@@ -1958,14 +2233,18 @@ footer {
 footer h2 {
   font-family: "Bitter", serif;
   font-style: normal;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 21.6px;
+  color: #fff;
   font-size: 24px;
   line-height: 29px;
   color: #CCCCCC;
 }
 
 footer .footer-content-container {
-  width: 940px;
+  max-width: 940px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -1980,13 +2259,16 @@ footer .footer-content-container .upper-footer-container {
 }
 
 footer .footer-content-container .upper-footer-container .kenaz {
-  height: 174px;
+  max-height: 174px;
+  height: 100%;
 }
 
 footer .footer-content-container .upper-footer-container .footer-logo {
   position: absolute;
-  width: 28px;
-  height: 43px;
+  max-width: 28px;
+  max-height: 43px;
+  width: 100%;
+  height: 100%;
   background: url("../assets/footerLogo.png") no-repeat;
 }
 
@@ -2005,27 +2287,34 @@ footer .footer-content-container .upper-footer-container .footer-heading h2 {
 }
 
 footer .footer-content-container .upper-footer-container .kenaz-text {
-  width: 303px;
-  height: 40px;
+  max-width: 303px;
+  max-height: 40px;
+  width: 100%;
+  height: 100%;
   margin-top: 60px;
 }
 
 footer .footer-content-container .upper-footer-container p {
   font-family: "Bitter", serif;
   font-style: normal;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 21.6px;
+  color: #fff;
   font-size: 14px;
   line-height: 20px;
   color: #666666;
 }
 
 footer .footer-content-container .upper-footer-container .socials {
-  margin-top: 17px;
+  margin-top: 27px;
 }
 
 footer .footer-content-container .upper-footer-container .socials i {
-  width: 18px;
-  height: 18px;
+  max-width: 18px;
+  max-height: 18px;
+  width: 100%;
+  height: 100%;
   color: #FFFFFF;
   padding: 10px;
 }
@@ -2035,56 +2324,64 @@ footer .footer-content-container .upper-footer-container .socials:hover {
 }
 
 footer .footer-content-container .upper-footer-container .rss {
-  width: 38px;
+  max-width: 38px;
   height: 38px;
+  width: 100%;
   background: #F8BC2E;
   display: inline-block;
 }
 
 footer .footer-content-container .upper-footer-container .facebook {
-  width: 38px;
+  max-width: 38px;
   height: 38px;
+  width: 100%;
   background: #39599F;
   display: inline-block;
 }
 
 footer .footer-content-container .upper-footer-container .twitter {
-  width: 38px;
+  max-width: 38px;
   height: 38px;
+  width: 100%;
   background: #45B0E3;
   display: inline-block;
 }
 
 footer .footer-content-container .upper-footer-container .dribble {
-  width: 38px;
+  max-width: 38px;
   height: 38px;
+  width: 100%;
   background: #D97AA5;
   display: inline-block;
 }
 
 footer .footer-content-container .upper-footer-container .linkedin {
-  width: 38px;
+  max-width: 38px;
   height: 38px;
+  width: 100%;
   background: #65B7D2;
   display: inline-block;
 }
 
 footer .footer-content-container .upper-footer-container .youtube {
-  width: 38px;
+  max-width: 38px;
   height: 38px;
+  width: 100%;
   background: #E70031;
   display: inline-block;
 }
 
 footer .footer-content-container .upper-footer-container .skype {
-  width: 38px;
+  max-width: 38px;
   height: 38px;
+  width: 100%;
   background: #00C6FF;
   display: inline-block;
 }
 
 footer .footer-content-container .upper-footer-container .newsletter {
-  height: 174px;
+  max-height: 174px;
+  height: 100%;
 }
 
 footer .footer-content-container .upper-footer-container .newsletter-heading {
@@ -2105,7 +2402,8 @@ footer .footer-content-container .upper-footer-container p {
 }
 
 footer .footer-content-container .upper-footer-container .text {
-  width: 190px;
+  max-width: 190px;
+  width: 100%;
 }
 
 footer .footer-content-container .upper-footer-container .form {
@@ -2114,16 +2412,21 @@ footer .footer-content-container .upper-footer-container .form {
 
 footer .footer-content-container .upper-footer-container .email {
   background: #333333;
-  padding: 15px 70px 20px 20px;
+  padding: 0 15px;
   border: none;
   color: #FFFFFF;
   height: 53px;
+  max-width: 193px;
+  width: 100%;
 }
 
 footer .footer-content-container .upper-footer-container .email::-webkit-input-placeholder {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EEF6FA;
   font-size: 16px;
   line-height: 19px;
   color: #999999;
@@ -2133,6 +2436,9 @@ footer .footer-content-container .upper-footer-container .email:-ms-input-placeh
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EEF6FA;
   font-size: 16px;
   line-height: 19px;
   color: #999999;
@@ -2142,6 +2448,9 @@ footer .footer-content-container .upper-footer-container .email::-ms-input-place
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EEF6FA;
   font-size: 16px;
   line-height: 19px;
   color: #999999;
@@ -2151,6 +2460,9 @@ footer .footer-content-container .upper-footer-container .email::placeholder {
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EEF6FA;
   font-size: 16px;
   line-height: 19px;
   color: #999999;
@@ -2161,16 +2473,22 @@ footer .footer-content-container .upper-footer-container .email:focus {
 }
 
 footer .footer-content-container .upper-footer-container .subscribe-button {
-  width: 110px;
+  max-width: 110px;
+  width: 100%;
   height: 53px;
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EEF6FA;
   font-size: 16px;
   line-height: 19px;
+  color: #999999;
   background: #4D4382;
   border: none;
   color: #CCCCCC;
+  padding: 0 20px;
 }
 
 footer .footer-content-container .upper-footer-container .tags-widget {
@@ -2184,7 +2502,10 @@ footer .footer-content-container .upper-footer-container .tags-widget .tags-widg
 footer .footer-content-container .upper-footer-container .tags-widget h2 {
   font-family: "Bitter", serif;
   font-style: normal;
+  font-size: 18px;
   font-weight: bold;
+  line-height: 21.6px;
+  color: #fff;
   font-size: 24px;
   line-height: 29px;
   color: #CCCCCC;
@@ -2199,6 +2520,9 @@ footer .footer-content-container .upper-footer-container .tags-widget .button-ta
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EEF6FA;
   font-size: 12px;
   line-height: 20px;
   height: 28px;
@@ -2215,18 +2539,22 @@ footer .footer-content-container .upper-footer-container .tags-widget .button-ta
 }
 
 footer .footer-content-container .upper-footer-container .featured, footer .footer-content-container .upper-footer-container .random-posts {
-  height: 364px;
+  max-height: 364px;
+  height: 100%;
 }
 
 footer .footer-content-container .upper-footer-container .featured .row, footer .footer-content-container .upper-footer-container .random-posts .row {
-  height: 115px;
+  max-height: 115px;
+  height: 100%;
   position: relative;
 }
 
 footer .footer-content-container .upper-footer-container .featured .row .caption-container, footer .footer-content-container .upper-footer-container .random-posts .row .caption-container {
   margin-top: 25px;
-  width: 214px;
-  height: 52px;
+  max-width: 214px;
+  max-height: 52px;
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 
@@ -2234,6 +2562,9 @@ footer .footer-content-container .upper-footer-container .featured .row .caption
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EEF6FA;
   font-size: 10px;
   line-height: 12px;
   color: #666666;
@@ -2245,18 +2576,26 @@ footer .footer-content-container .upper-footer-container .featured .row .caption
   right: 14px;
 }
 
+footer .footer-content-container .upper-footer-container .featured .row .caption-container a, footer .footer-content-container .upper-footer-container .random-posts .row .caption-container a {
+  text-decoration: none;
+}
+
 footer .footer-content-container .upper-footer-container .featured .row .caption-container p, footer .footer-content-container .upper-footer-container .random-posts .row .caption-container p {
   font-family: "Bitter", serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 20px;
+  color: #666666;
+  font-size: 15px;
   color: #CCCCCC;
 }
 
 footer .footer-content-container .upper-footer-container .featured .row .image-container, footer .footer-content-container .upper-footer-container .random-posts .row .image-container {
-  width: 70px;
-  height: 70px;
+  max-width: 70px;
+  max-height: 70px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 20px;
   left: 220px;
@@ -2267,8 +2606,10 @@ footer .footer-content-container .upper-footer-container .featured .row .image-c
 }
 
 footer .footer-content-container .upper-footer-container .featured hr, footer .footer-content-container .upper-footer-container .random-posts hr {
-  width: 303px;
-  height: 2px;
+  max-width: 303px;
+  max-height: 2px;
+  width: 100%;
+  height: 100%;
   margin-top: 41px;
   margin-left: 12px;
   margin-right: 12px;
@@ -2277,26 +2618,31 @@ footer .footer-content-container .upper-footer-container .featured hr, footer .f
 }
 
 footer .footer-content-container .upper-footer-container .twitter-feed {
-  height: 364px;
+  max-height: 364px;
+  height: 100%;
 }
 
 footer .footer-content-container .upper-footer-container .twitter-feed .row {
-  height: 115px;
+  max-height: 115px;
+  height: 100%;
   position: relative;
   margin: 0;
 }
 
 footer .footer-content-container .upper-footer-container .twitter-feed .row .caption-container {
   margin-top: 15px;
-  height: 54px;
+  max-height: 54px;
+  height: 100%;
   position: relative;
   display: inline;
   padding: 0;
 }
 
 footer .footer-content-container .upper-footer-container .twitter-feed .row .caption-container i {
-  width: 24px;
-  height: 18px;
+  max-width: 24px;
+  max-height: 18px;
+  width: 100%;
+  height: 100%;
   color: #45B0E3;
   margin: 0;
   padding: 0;
@@ -2308,8 +2654,9 @@ footer .footer-content-container .upper-footer-container .twitter-feed .row .cap
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 20px;
   color: #666666;
+  line-height: 16px;
   margin: 0;
   padding: 0;
   display: inline;
@@ -2320,6 +2667,9 @@ footer .footer-content-container .upper-footer-container .twitter-feed .row .cap
   font-family: "Varela Round", serif;
   font-style: normal;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EEF6FA;
   font-size: 13px;
   line-height: 18px;
   color: #CCCCCC;
@@ -2335,7 +2685,8 @@ footer .footer-content-container .bottom-hr {
 }
 
 footer .footer-content-container .lower-footer-container {
-  height: 36px;
+  max-height: 36px;
+  height: 100%;
   margin-top: 18px;
   color: #999999;
   display: -webkit-box;
