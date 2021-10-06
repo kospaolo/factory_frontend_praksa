@@ -1,7 +1,7 @@
 .news-category
   max-width: 620px
   width: 100%
-  background: #FFFFFF
+  background: $white
   display: flex
   flex-direction: column
   margin: 19px 0
@@ -15,7 +15,7 @@
     @include bitter-bold
     font-size: 24px
     line-height: 29px
-    color: #363F48
+    color: $lightBlack
 
   .row
     border-bottom: 1px solid #DDDDDD
@@ -33,7 +33,7 @@
     @include bitter-bold
     font-size: 24px
     line-height: 28.8px
-    color: #363F48
+    color: $lightBlack
 
   .date-and-author
     max-width: 380px
@@ -51,7 +51,7 @@
       @include varela-normal
       font-size: 12px
       display: inline-block
-      color: #666666
+      color: $grayish
 
   .content
     display: flex
@@ -76,7 +76,7 @@
 
   p
     @include bitter-normal
-    color: #444444
+    color: $darkGray
     float: right
 
   @include category-button
@@ -97,13 +97,13 @@
       vertical-align: middle
       text-align: center
       @include varela-normal
-      color: #4D4382
+      color: $purple
 
     span:hover
-      background: #4D4382
+      background: $purple
       cursor: pointer
-      color: #FFFFFF
+      color: $white
 
     .highlight
-      background: #4D4382
-      color: #FFFFFF
+      background: $purple
+      color: $white

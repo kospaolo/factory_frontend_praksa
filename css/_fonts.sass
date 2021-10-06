@@ -1,52 +1,72 @@
 $varela: 'Varela Round',serif
 $bitter: 'Bitter',serif
 
+$smallest: 13px
+$small: 14px
+$medium: 16px
+$mediumBig: 17px
+$mediumBigger: 18px
+$big: 24px
+$biggest: 33px
+
+$darkerWhite: #EEF6FA
+$white: #FFFFFF
+$grayish: #666666
+$darkGray: #444444
+$gray: #999999
+$lightGray: #CCCCCC
+$lightBlack: #363F48
+$purple: #4D4382
+$black: #222222
+$headerBackground: #252525
+$arrowBackground: $white
+
 @mixin varela-normal
  font-family: $varela
  font-style: normal
  font-weight: normal
- font-size: 14px
- line-height: 17px
- color: #EEF6FA
+ font-size: $small
+ line-height: $mediumBig
+ color: $darkerWhite
 
 @mixin varela-normaln-smaller
  @include varela-normal
- font-size: 13px
+ font-size: $smallest
  line-height: 20px
- color: #444444
+ color: $darkGray
 
 @mixin varela-normal-bigger
  @include varela-normal
- font-size: 16px
+ font-size: $medium
  line-height: 19px
- color: #999999
+ color: $gray
 
 @mixin varela-bold
  font-family: $varela
  font-style: normal
  font-weight: bold
- font-size: 33px
+ font-size: $biggest
  line-height: 40,8px
- color: #EEF6FA
+ color: $darkerWhite
 
 @mixin bitter-normal
  font-family: $bitter
  font-style: normal
  font-weight: normal
- font-size: 14px
+ font-size: $small
  line-height: 20px
- color: #666666
+ color: $grayish
 
 @mixin bitter-bold
  font-family: $bitter
  font-style: normal
- font-size: 18px
+ font-size: $mediumBigger
  font-weight: bold
  line-height: 21.6px
- color: #fff
+ color: $white
 
 @mixin bitter-bold-bigger
  @include bitter-bold
- font-size: 24px
+ font-size: $big
  line-height: 29px
- color: #363F48
+ color: $lightBlack

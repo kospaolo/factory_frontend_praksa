@@ -265,7 +265,7 @@ header .main-nav .sub-nav .search-icon {
   font-size: 18px;
   font-weight: bold;
   line-height: 21.6px;
-  color: #fff;
+  color: #FFFFFF;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -525,7 +525,6 @@ header .main-nav .sub-nav .search-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #D7D7D7;
 }
 
 .nineforty-banner p {
@@ -555,7 +554,6 @@ header .main-nav .sub-nav .search-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #D7D7D7;
 }
 
 .sixtwenty-banner p {
@@ -585,7 +583,6 @@ header .main-nav .sub-nav .search-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #D7D7D7;
   margin: 0;
 }
 
@@ -643,7 +640,7 @@ header .main-nav .sub-nav .search-icon {
   font-size: 18px;
   font-weight: bold;
   line-height: 21.6px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 24px;
   line-height: 29px;
   color: #363F48;
@@ -669,7 +666,7 @@ header .main-nav .sub-nav .search-icon {
   font-size: 18px;
   font-weight: bold;
   line-height: 21.6px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 14px;
   line-height: 15px;
   float: left;
@@ -723,7 +720,7 @@ header .main-nav .sub-nav .search-icon {
 
 .news-tab .row .column .caption-container p {
   margin-top: 16px;
-  color: #222;
+  color: #222222;
 }
 
 .news-tab .row .column .caption-container .comments-container {
@@ -747,7 +744,7 @@ header .main-nav .sub-nav .search-icon {
   font-size: 18px;
   font-weight: bold;
   line-height: 21.6px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 24px;
   line-height: 29px;
   color: #363F48;
@@ -773,7 +770,7 @@ header .main-nav .sub-nav .search-icon {
   font-size: 18px;
   font-weight: bold;
   line-height: 21.6px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 14px;
   line-height: 15px;
   float: left;
@@ -827,7 +824,7 @@ header .main-nav .sub-nav .search-icon {
 
 .sport-tab .row .caption-container p {
   margin-top: 16px;
-  color: #222;
+  color: #222222;
 }
 
 .business-tab {
@@ -846,7 +843,7 @@ header .main-nav .sub-nav .search-icon {
   font-size: 18px;
   font-weight: bold;
   line-height: 21.6px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 24px;
   line-height: 29px;
   color: #363F48;
@@ -872,7 +869,7 @@ header .main-nav .sub-nav .search-icon {
   font-size: 18px;
   font-weight: bold;
   line-height: 21.6px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 14px;
   line-height: 15px;
   float: left;
@@ -926,7 +923,7 @@ header .main-nav .sub-nav .search-icon {
 
 .business-tab .row .column .caption-container p {
   margin-top: 16px;
-  color: #222;
+  color: #222222;
 }
 
 .news-carousel {
@@ -946,7 +943,7 @@ header .main-nav .sub-nav .search-icon {
   font-size: 18px;
   font-weight: bold;
   line-height: 21.6px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 24px;
   line-height: 29px;
   color: #363F48;
@@ -972,7 +969,7 @@ header .main-nav .sub-nav .search-icon {
   font-size: 18px;
   font-weight: bold;
   line-height: 21.6px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 14px;
   line-height: 15px;
   float: left;
@@ -1055,7 +1052,7 @@ header .main-nav .sub-nav .search-icon {
 
 .news-carousel .news-carousel-content-container .column .image-container .caption-container p {
   margin-top: 16px;
-  color: #222;
+  color: #222222;
 }
 
 .brown-tabs {
@@ -1076,7 +1073,7 @@ header .main-nav .sub-nav .search-icon {
   font-size: 18px;
   font-weight: bold;
   line-height: 21.6px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 24px;
   line-height: 29px;
   color: #363F48;
@@ -1102,7 +1099,7 @@ header .main-nav .sub-nav .search-icon {
   font-size: 18px;
   font-weight: bold;
   line-height: 21.6px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 14px;
   line-height: 15px;
   float: left;
@@ -1184,7 +1181,7 @@ header .main-nav .sub-nav .search-icon {
 
 .brown-tabs .editorials-tab .caption-container p {
   margin-top: 16px;
-  color: #222;
+  color: #222222;
 }
 
 .brown-tabs .local-news-tab {
@@ -1250,7 +1247,7 @@ header .main-nav .sub-nav .search-icon {
 
 .brown-tabs .local-news-tab .caption-container p {
   margin-top: 16px;
-  color: #222;
+  color: #222222;
 }
 
 .side-bars {
@@ -1404,7 +1401,7 @@ header .main-nav .sub-nav .search-icon {
   font-size: 18px;
   font-weight: bold;
   line-height: 21.6px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 24px;
   line-height: 29px;
   color: #363F48;
@@ -1550,7 +1547,7 @@ header .main-nav .sub-nav .search-icon {
   font-size: 18px;
   font-weight: bold;
   line-height: 21.6px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 24px;
   line-height: 29px;
   color: #363F48;
@@ -1577,7 +1574,7 @@ header .main-nav .sub-nav .search-icon {
   font-size: 18px;
   font-weight: bold;
   line-height: 21.6px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 24px;
   line-height: 29px;
   color: #363F48;
@@ -1657,7 +1654,7 @@ header .main-nav .sub-nav .search-icon {
   font-size: 18px;
   font-weight: bold;
   line-height: 21.6px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 24px;
   line-height: 29px;
   color: #363F48;
@@ -1683,7 +1680,7 @@ header .main-nav .sub-nav .search-icon {
   font-size: 18px;
   font-weight: bold;
   line-height: 21.6px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 24px;
   line-height: 28.8px;
   color: #363F48;
@@ -2236,7 +2233,7 @@ footer h2 {
   font-size: 18px;
   font-weight: bold;
   line-height: 21.6px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 24px;
   line-height: 29px;
   color: #CCCCCC;
@@ -2300,7 +2297,7 @@ footer .footer-content-container .upper-footer-container p {
   font-size: 18px;
   font-weight: bold;
   line-height: 21.6px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 14px;
   line-height: 20px;
   color: #666666;
@@ -2505,7 +2502,7 @@ footer .footer-content-container .upper-footer-container .tags-widget h2 {
   font-size: 18px;
   font-weight: bold;
   line-height: 21.6px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 24px;
   line-height: 29px;
   color: #CCCCCC;
